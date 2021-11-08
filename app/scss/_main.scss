@@ -126,11 +126,22 @@
       font-weight: 500;
       margin-bottom: 30px;
    }
+   &__descr--gray {
+      color: $middleGray;
+   }
+   &__descr--left {
+      text-align: left;
+   }
    &__radio-block {
       margin-bottom: 15px;
       .card-reg-radio:not(:last-child) {
          margin-bottom: 15px;
       }
+   }
+   &__message {
+      text-align: center;
+      font-weight: 500;
+      color: $blue;
    }
 }
 // логин
@@ -172,20 +183,19 @@
    &__btn-get-code {
       margin-bottom: 52px;
    }
-   &__btn-enter-email {
-      display: block;
+   &__link-item {
       width: max-content;
       margin: 0 auto;
       font-weight: 500;
    }
-   &__btn-enter-email--blue {
+   &__link {
       color: blue;
       text-decoration-line: underline;
    }
 }
 .entrance-login-sms {
    .entrance__tabs {
-      margin-bottom: 52px;
+      // margin-bottom: 52px;
    }
    .entrance__input-container {
       margin-bottom: 10px;
@@ -235,7 +245,7 @@
       margin-bottom: 10px;
    }
    .entrance__tabs {
-      margin: 30px 0 25px;
+      // margin: 30px 0 25px;
    }
    .entrance__input-container {
       margin-bottom: 15px;
@@ -254,3 +264,26 @@
    }
 }
 // Страница регистрации, блок ркгистрация  конец
+
+// Страница регистрации, блок восстановления пароля
+.entrance-recovery {
+   .entrance__radio-block .card-reg-radio:not(:last-child) {
+      margin-bottom: 10px;
+   }
+   .entrance__input-container .input__block:not(:last-child) {
+      margin-bottom: 10px;
+   }
+   .entrance__radio-block {
+      margin-bottom: 10px;
+   }
+   .entrance__link-item {
+      margin-top: 10px;
+   }
+   .entrance__subtitle {
+      margin-bottom: 10px;
+   }
+   .entrance__sign-in {
+      margin-top: 30px;
+   }
+}
+// Страница регистрации, блок восстановления пароля конец

@@ -30,11 +30,12 @@
       }
       &__content {
          padding: unset;
-         align-items: flex-start;
+         // align-items: flex-start;
       }
       &__container {
          box-shadow: unset;
          padding: 30px 37px;
+         // max-width: 375px;
       }
       &__topline {
          padding: 10px;
@@ -52,7 +53,9 @@
          font-size: 13px;
       }
       &__tabs {
-         margin-bottom: 55px;
+         // margin-bottom: 55px;
+         margin-top: 30px;
+         display: none;
       }
       &__tabs--mobile {
          display: flex;
@@ -88,12 +91,6 @@
          margin: unset;
       }
    }
-
-   .entrance-login-sms {
-      .entrance__tabs {
-         margin-bottom: 112px;
-      }
-   }
 }
 // MAX-WIDTH 767.98PX breakpoints END
 
@@ -103,11 +100,11 @@
 // MAX-WIDTH 576.98PX breakpoints END
 
 @media (max-width: 374.98px) {
-   .entrance {
-      &__container {
-         padding: 30px 10px;
-      }
-   }
+   // .entrance {
+   //    &__container {
+   //       padding: 30px 10px;
+   //    }
+   // }
 }
 
 // fonts

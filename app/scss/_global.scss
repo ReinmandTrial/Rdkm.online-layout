@@ -162,6 +162,11 @@ textarea {
 			pointer-events: none;
 			left: 17px;
 		}
+		.icon-mail {
+			font-size: 12px;
+			left: 14px;
+			pointer-events: none;
+		}
 	}
 	&__box--secondary {
 		display: flex;
@@ -302,6 +307,7 @@ textarea {
 		transform: translateY(-50%);
 		left: 25px;
 		font-size: 18px;
+		pointer-events: none;
 	}
 	&__input {
 		width: 100%;
@@ -412,10 +418,12 @@ textarea {
 		.icon-humans,
 		.icon-school,
 		.icon-person,
-		.icon-kindergarten {
+		.icon-kindergarten,
+		.icon-mobile {
 			font-size: 16px;
 		}
-		.icon-corner-cap {
+		.icon-corner-cap,
+		.icon-mail {
 			font-size: 12px;
 		}
 	}
@@ -461,6 +469,30 @@ textarea {
 		.card-reg-radio__check {
 			background: $blue;
 			color: $white;
+		}
+	}
+	&--yandex {
+		.card-reg-radio__title {
+			font-weight: 400;
+			span {
+				font-weight: 600;
+				display: inline-block;
+			}
+		}
+		.card-reg-radio__icon {
+			font-weight: 600;
+			font-size: 14px;
+		}
+	}
+	&--yandex.active {
+		.card-reg-radio__title {
+			color: $black;
+			& span::first-letter {
+				color: $red;
+			}
+		}
+		.card-reg-radio__icon {
+			color: $red;
 		}
 	}
 }
