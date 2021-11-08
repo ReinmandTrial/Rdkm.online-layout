@@ -1,0 +1,124 @@
+// MAX-WIDTH 1600PX breakpoints START
+@media (max-width: 1600px) {
+}
+// MAX-WIDTH 1600PX breakpoints END
+
+// MAX-WIDTH 1399.98PX breakpoints START
+@media (max-width: 1399.98px) {
+}
+// MAX-WIDTH 1399.98PX breakpoints END
+
+// MAX-WIDTH 1199.98PX breakpoints START
+@media (max-width: 1199.98px) {
+}
+// MAX-WIDTH 1199.98PX breakpoints END
+
+// MAX-WIDTH 991.98PX breakpoints START
+@media (max-width: 991.98px) {
+}
+// MAX-WIDTH 991.98PX breakpoints END
+
+// MAX-WIDTH 767.98PX breakpoints START
+@media (max-width: 767.98px) {
+   .entrance {
+      &__leftside {
+         display: none;
+      }
+      &__rightside {
+         width: 100%;
+         border-radius: unset;
+      }
+      &__content {
+         padding: unset;
+         align-items: flex-start;
+      }
+      &__container {
+         box-shadow: unset;
+         padding: 30px 37px;
+      }
+      &__topline {
+         padding: 10px;
+         margin: 14px;
+         box-shadow: 0px 0px 15px rgba(213, 218, 234, 0.5);
+      }
+      &__title {
+         display: none;
+      }
+      &__logo--mobile {
+         display: block;
+      }
+      &__back {
+         left: 10px;
+         font-size: 13px;
+      }
+      &__tabs {
+         margin-bottom: 55px;
+      }
+      &__tabs--mobile {
+         display: flex;
+      }
+      &__tabs-item:not(:last-child) {
+         margin-right: 40px;
+      }
+      &__input-container {
+         margin-bottom: 16px;
+         .input__block:not(:last-child) {
+            margin-bottom: 18px;
+         }
+      }
+      &__forgot-pass {
+         margin-bottom: 16px;
+      }
+      &__btn-login {
+         margin-bottom: 24px;
+      }
+      &__or {
+         margin-bottom: 24px;
+      }
+      &__footer {
+         // display: none;
+         padding: 25px 37px;
+         margin-top: unset;
+         font-weight: 600;
+      }
+      &__btn-get-code {
+         margin-bottom: 10px;
+      }
+      &__btn-enter-email {
+         margin: unset;
+      }
+   }
+
+   .entrance-login-sms {
+      .entrance__tabs {
+         margin-bottom: 112px;
+      }
+   }
+}
+// MAX-WIDTH 767.98PX breakpoints END
+
+// MAX-WIDTH 576.98PX breakpoints START
+@media (max-width: 575.98px) {
+}
+// MAX-WIDTH 576.98PX breakpoints END
+
+@media (max-width: 374.98px) {
+   .entrance {
+      &__container {
+         padding: 30px 10px;
+      }
+   }
+}
+
+// fonts
+@media (max-width: 575.98px) {
+   .h2 {
+      font-size: 18px;
+   }
+   .logo {
+      font-size: 16px;
+   }
+   .h5 {
+      font-size: 9px;
+   }
+}

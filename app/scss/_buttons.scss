@@ -1,0 +1,43 @@
+.btn {
+    font-weight: 600;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    display: block;
+    width: 100%;
+    &:hover {
+    }
+    &:focus {
+    }
+    &:active {
+    }
+    &-primary {
+        padding: 14px;
+        border-radius: 10px;
+        background: $blue;
+        border: 1px solid $blue;
+        color: $white;
+        &:disabled {
+            background: $background;
+            border-color: $background;
+            color: $lightGray;
+        }
+    }
+    &-secondary {
+        padding: 14px;
+        border-radius: 10px;
+        background: $white;
+        border: 1px solid $blue;
+        color: $blue;
+        &:hover {
+        }
+    }
+    &-contour {
+        &:hover {
+        }
+    }
+    &-filter {
+        &:hover {
+        }
+    }
+}

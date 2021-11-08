@@ -1,0 +1,256 @@
+// Страница регистрации, блок вход
+.entrance {
+   display: flex;
+   position: relative;
+   background: $background;
+   &__leftside {
+      width: 30%;
+      height: 100vh;
+   }
+
+   &__logo {
+      padding: 30px 50px 50px 30px;
+      max-width: 300px;
+      position: relative;
+      z-index: 10;
+   }
+   &__logo--mobile {
+      display: none;
+   }
+
+   &__bg {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 88%;
+      img {
+         max-width: unset;
+         height: 100%;
+      }
+   }
+
+   &__rightside {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 10;
+      width: 70%;
+      background: $white;
+      box-shadow: -5px 0px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 25px 0px 0px 25px;
+   }
+
+   &__topline {
+      padding: 30px 50px;
+      text-align: center;
+      position: relative;
+      margin-bottom: 10px;
+   }
+
+   &__back {
+      position: absolute;
+      top: 50%;
+      left: 30px;
+      transform: translateY(-50%);
+      font-size: 20px;
+      color: $blue;
+   }
+
+   &__title {
+      font-weight: 600;
+   }
+
+   &__content {
+      flex: 1 1 auto;
+      display: flex;
+      align-items: center;
+      padding: 0 30px;
+   }
+
+   &__container {
+      max-width: 428px;
+      width: 100%;
+      border-radius: 10px;
+      background: $white;
+      box-shadow: $shadowMain;
+      padding: 64px;
+      margin: 0 auto;
+   }
+
+   &__tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 23px;
+   }
+   &__tabs--mobile {
+      display: none;
+   }
+
+   &__tabs-item {
+      padding-bottom: 8.5px;
+      font-weight: 500;
+      &.active {
+         border-bottom: 1px solid $blue;
+      }
+      &:not(:last-child) {
+         margin-right: 56px;
+      }
+   }
+
+   &__input-container {
+      margin-bottom: 23px;
+      .input__block {
+         &:not(:last-child) {
+            margin-bottom: 23px;
+         }
+      }
+   }
+
+   &__footer {
+      padding: 30px;
+      margin-top: 10px;
+      font-weight: 500;
+   }
+
+   &__info {
+      color: #bfbfbf;
+   }
+
+   &__subtitle {
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 30px;
+   }
+   &__descr {
+      text-align: center;
+      font-weight: 500;
+      margin-bottom: 30px;
+   }
+   &__radio-block {
+      margin-bottom: 15px;
+      .card-reg-radio:not(:last-child) {
+         margin-bottom: 15px;
+      }
+   }
+}
+// логин
+.entrance {
+   &__forgot-pass {
+      display: block;
+      text-decoration-line: underline;
+      color: $middleGray;
+      width: max-content;
+      margin: 0 auto;
+      margin-bottom: 23px;
+   }
+   &__forgot-pass--error {
+      color: $blue;
+   }
+
+   &__btn-login {
+      margin-bottom: 23px;
+   }
+
+   &__or {
+      margin-bottom: 23px;
+      color: $lightGray;
+      text-align: center;
+   }
+}
+.entrance-login-filled {
+   .input__box .icon-eye-closed {
+      display: block;
+   }
+}
+// логин конец
+
+// смс
+.entrance {
+   &__input-container {
+      margin-bottom: 10px;
+   }
+   &__btn-get-code {
+      margin-bottom: 52px;
+   }
+   &__btn-enter-email {
+      display: block;
+      width: max-content;
+      margin: 0 auto;
+      font-weight: 500;
+   }
+   &__btn-enter-email--blue {
+      color: blue;
+      text-decoration-line: underline;
+   }
+}
+.entrance-login-sms {
+   .entrance__tabs {
+      margin-bottom: 52px;
+   }
+   .entrance__input-container {
+      margin-bottom: 10px;
+   }
+}
+.entrance-login-sms--enter-code {
+   .entrance__subtitle {
+      margin-bottom: 10px;
+   }
+   .entrance__btn-get-code {
+      margin-bottom: 10px;
+   }
+}
+.entrance--step-one {
+   .entrance__bg {
+      transform: translateX(0%);
+   }
+}
+.entrance--step-two {
+   .entrance__bg {
+      transform: translateX(-21.4%);
+   }
+}
+.entrance--step-three {
+   .entrance__bg {
+      transform: translateX(-39.7%);
+   }
+}
+.entrance--step-four {
+   .entrance__bg {
+      transform: translateX(-57.7%);
+   }
+}
+.entrance--step-five {
+   .entrance__bg {
+      transform: translateX(-75.9%);
+   }
+   background: url(/wp-content/uploads/2021/10/hit-item-bg.png) 0 0/100% 100% cover no-repeat;
+}
+// смс конец
+
+// Страница регистрации, блок вход  конец
+
+// Страница регистрации, блок ркгистрация
+.entrance-reg {
+   .entrance__subtitle {
+      margin-bottom: 10px;
+   }
+   .entrance__tabs {
+      margin: 30px 0 25px;
+   }
+   .entrance__input-container {
+      margin-bottom: 15px;
+      .input__block:not(:last-child) {
+         margin-bottom: 15px;
+      }
+   }
+   .btn:not(:last-child) {
+      margin-bottom: 15px;
+   }
+}
+
+.entrance-container--large {
+   .entrance__container {
+      max-width: 512px;
+   }
+}
+// Страница регистрации, блок ркгистрация  конец
