@@ -108,6 +108,12 @@
 }
 
 // fonts
+@media (max-width: 767.98px) {
+   .h1 {
+      font-size: 16px;
+      font-weight: 800;
+   }
+}
 @media (max-width: 575.98px) {
    .h2 {
       font-size: 18px;

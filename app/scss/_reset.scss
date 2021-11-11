@@ -65,6 +65,7 @@ input {
 input,
 textarea {
   background: transparent;
+  border: unset;
   &::placeholder {
   }
 }

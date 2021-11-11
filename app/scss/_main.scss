@@ -287,3 +287,18 @@
    }
 }
 // Страница регистрации, блок восстановления пароля конец
+
+// page main start
+.main-page {
+   .header__title {
+      display: none;
+   }
+}
+@media (max-width: 767.98px) {
+   .main-page {
+      .header__title {
+         display: block;
+      }
+   }
+}
+// page main end
