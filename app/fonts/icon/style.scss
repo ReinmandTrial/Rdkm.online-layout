@@ -2,9 +2,9 @@
 
 @font-face {
   font-family: "#{$icomoon-font-family}";
-  src: url("../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?fnbyrw") format("truetype"),
-    url("../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.woff?fnbyrw") format("woff"),
-    url("../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.svg?fnbyrw##{$icomoon-font-family}") format("svg");
+  src: url("../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?oer6rl") format("truetype"),
+    url("../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.woff?oer6rl") format("woff"),
+    url("../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.svg?oer6rl##{$icomoon-font-family}") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,71 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-forward {
+  &:before {
+    content: $icon-forward;
+  }
+}
+.icon-camera {
+  &:before {
+    content: $icon-camera;
+  }
+}
+.icon-answer {
+  &:before {
+    content: $icon-answer;
+  }
+}
+.icon-copy {
+  &:before {
+    content: $icon-copy;
+  }
+}
+.icon-download {
+  &:before {
+    content: $icon-download;
+  }
+}
+.icon-mask {
+  &:before {
+    content: $icon-mask;
+  }
+}
+.icon-send {
+  &:before {
+    content: $icon-send;
+  }
+}
+.icon-smile {
+  &:before {
+    content: $icon-smile;
+  }
+}
+.icon-clip {
+  &:before {
+    content: $icon-clip;
+  }
+}
+.icon-dots-vertical {
+  &:before {
+    content: $icon-dots-vertical;
+  }
+}
+.icon-delete {
+  &:before {
+    content: $icon-delete;
+  }
+}
+.icon-doc {
+  &:before {
+    content: $icon-doc;
+  }
+}
+.icon-plus {
+  &:before {
+    content: $icon-plus;
+  }
+}
 .icon-burger {
   &:before {
     content: $icon-burger;

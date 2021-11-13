@@ -28,6 +28,9 @@
       margin: 50px 25px;
       width: 100%;
       overflow: hidden;
+      @media (max-width: 767.98px) {
+         margin: 40px 17.5px;
+      }
    }
    .popup-close {
       position: absolute;
@@ -97,11 +100,20 @@
       border-radius: 10px;
       max-width: 510px;
    }
+   .popup-close {
+      top: 30px;
+      @media (min-width: 768px) {
+         display: none;
+      }
+   }
    &__wrapper {
       padding-right: 10px;
       height: 60vh;
       min-height: 350px;
       overflow-y: auto;
+      @media (max-width: 767.98px) {
+         padding-right: unset;
+      }
    }
    &__title {
       font-weight: 500;
@@ -147,7 +159,6 @@
    }
 }
 .popup-feedback-success {
-   // display: block;
    .popup__content {
       padding-top: 52px;
       padding-bottom: 52px;
@@ -156,6 +167,10 @@
       font-weight: 800;
       margin-bottom: 10px;
       text-align: center;
+      @media (max-width: 767.98px) {
+         margin: 0 -14px;
+         margin-bottom: 15px;
+      }
    }
 
    &__descr {
@@ -180,3 +195,28 @@
    }
 }
 // popup feedback end
+
+// popup exit
+.popup-exit {
+   .popup__content {
+      max-width: 332px;
+   }
+   &__title {
+      font-weight: 600;
+      margin-bottom: 26px;
+   }
+   &__buttons-block {
+      display: flex;
+      justify-content: space-between;
+      .btn:not(:last-child) {
+         margin-right: 30px;
+         @media (max-width: 767.98px) {
+            margin-right: 12px;
+         }
+      }
+   }
+   .btn {
+      padding: 9.5px;
+   }
+}
+// popup exit end

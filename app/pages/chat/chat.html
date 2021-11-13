@@ -22,10 +22,13 @@
          для открытия сайдбара в дальнейшем необходимо убрать класс closed. При разрешении меньше 768px класс
           closed удаляется и начинает работать класс mobile-open. При добавлении открывается, при удалении закрывается  -->
 
-         <aside class="left-sidebar ">
+         <aside class="left-sidebar closed">
             <div class="left-sidebar__body">
                <button type="button" class="left-sidebar__btn-open">
                   <span class="icon icon-triangle-right"></span>
+               </button>
+               <button type="button" class="left-sidebar__btn-close">
+                  <span class="icon icon-triangle-left"></span>
                </button>
                <button type="button" class="left-sidebar__btn-close--mobile">
                   <span class="icon icon-close"></span>
@@ -121,6 +124,7 @@
          <!-- CONTENT start  -->
          <div class="content">
             <div class="container">
+
                <header class="header">
                   <button class="burger-icon"><span class="icon icon-burger"></span></button>
                   <p class="header__title h1">Родительский
@@ -163,15 +167,98 @@
                      </button>
                   </div>
                </header>
-               <div class="body">
 
+
+               <div class="body">
+                  <div class="chat">
+
+                     <!-- chat main start -->
+                     <div class="chat__main">
+                        <!-- chat head start -->
+                        <div class="chat__head">
+                           <div class="chat-interlocutor">
+                              <div class="chat-interlocutor__photo">
+                                 <img src="../../images/profile-photo-man.png" alt="">
+                              </div>
+                              <div class="chat-interlocutor__text-block">
+                                 <div class="chat-interlocutor__top-row">
+                                    <span class="chat-interlocutor__name h4">Сидоров Сергей</span>
+                                    <span class="chat-interlocutor__function">Помощник</span>
+                                 </div>
+                                 <div class="chat-interlocutor__bottom-row">
+                                    <div class="chat-interlocutor__info chat-interlocutor__sum">
+                                       <div class="circle-status"></div>
+                                       Онлайн
+                                    </div>
+                                    <!-- <div class="chat-interlocutor__info chat-interlocutor__status">
+                                       <div class="circle-status"></div>
+
+                                    </div> -->
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="chat__possibilities">
+                              <div class="search-small closed">
+                                 <input type="text" class="search-small__input" placeholder="Поиск...">
+                                 <span class="icon icon-search"></span>
+                              </div>
+                              <div class="chat-options">
+                                 <div class="chat-options__head">
+                                    <span class="icon icon-dots-vertical"></span>
+                                 </div>
+                                 <!-- <div class="chat-options__body">
+
+                                 </div> -->
+                              </div>
+                           </div>
+                        </div>
+                        <!-- chat head end -->
+
+                     </div>
+                     <!-- chat main end -->
+
+                     <!-- chat brief start -->
+                     <div class="chat__brief">
+                        <div class="chat__head">
+                           <div class="chat__tabs">
+                              <div class="chat__tab-item active">Группы</div>
+                              <div class="chat__tab-item">Голосование</div>
+                              <div class="chat__tab-item">Чаты</div>
+                           </div>
+                        </div>
+                        <div class="chat__brief-body">
+                           <div class="chat__tab-groups">
+                              <div class="brief-chat-item active">
+                                 <div class="brief-chat-item__img">
+                                    <span class="icon icon-person"></span>
+                                 </div>
+                                 <div class="brief-chat-item__text-block">
+                                    <p class="brief-chat-item__name h4">Общий чат</p>
+                                 </div>
+                              </div>
+                              <div class="brief-chat-item">
+                                 <div class="brief-chat-item__img">
+                                    <span class="icon icon-mask"></span>
+                                 </div>
+                                 <div class="brief-chat-item__text-block">
+                                    <p class="brief-chat-item__name h4">Без учителя</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- chat brief end -->
+
+                  </div>
                </div>
+
+
             </div>
 
             <!-- right sidebar start -->
-            <div class="right-sidebar">
+            <aside class="right-sidebar">
 
-            </div>
+            </aside>
             <!-- right sidebar end -->
 
          </div>
@@ -186,73 +273,6 @@
          </div>
          <!-- POPUP END  -->
 
-         <!-- POPUP version start  -->
-         <div class="popup popup-version" style="display: block;">
-            <div class="popup__body">
-               <div class="popup__content">
-                  <button type="button" class="popup-close icon icon-close"></button>
-                  <div class="popup-version__wrapper">
-                     <p class="popup-version__title h3">Версия 2.2</p>
-                     <ul class="popup-version__list h4">
-                        <li class="popup-version__list-item">Многие думают, что Lorem Ipsum - взятый с
-                           потолка
-                           псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один
-                           фрагмент
-                           классической латыни 45 года н.э., то есть более двух тысячелетий назад. </li>
-                        <li class="popup-version__list-item">Есть много вариантов Lorem Ipsum, но
-                           большинство
-                           из них имеет не всегда приемлемые модификации, например, юмористические вставки
-                           или
-                           слова, которые даже отдалённо не напоминают латынь.</li>
-                        <li class="popup-version__list-item">Это делает предлагаемый здесь генератор
-                           единственным настоящим Lorem Ipsum генератором.</li>
-                        <li class="popup-version__list-item">В результате сгенерированный Lorem Ipsum
-                           выглядит
-                           правдоподобно, не имеет повторяющихся абзацей или "невозможных" слов.</li>
-                        <li class="popup-version__list-item">В результате сгенерированный Lorem Ipsum
-                           выглядит
-                           правдоподобно, не имеет повторяющихся абзацей или "невозможных" слов.</li>
-                        <li class="popup-version__list-item">Ричард МакКлинток, профессор латыни из колледжа
-                           Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum,
-                           "consectetur", и занялся его поисками в классической латинской литературе. В
-                           результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и
-                           1.10.33 книги "de Finibus Bonorum et Malorum" ("О пределах добра и зла"),
-                           написанной
-                           Цицероном в 45 году н.э. </li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-         <!-- POPUP version END  -->
-
-         <!-- POPUP feedback  -->
-         <div class="popup popup-feedback">
-            <div class="popup__body">
-               <div class="popup__content">
-                  <button type="button" class="popup-close icon icon-close"></button>
-                  <p class="popup-feedback__title h3">Напишите нам в поддержку</p>
-                  <textarea class="popup-feedback__textarea textarea" placeholder="Оставьте свой отзыв"></textarea>
-                  <button type="button" class="popup-feedback__btn-send btn btn-primary">Отправить</button>
-               </div>
-            </div>
-         </div>
-         <!-- POPUP feedback END  -->
-
-         <!-- POPUP feedback  -->
-         <div class="popup popup-feedback popup-feedback-success">
-            <div class="popup__body">
-               <div class="popup__content">
-                  <p class="popup-feedback-success__title h2">Ваш отзыв успешно составлен</p>
-                  <p class="popup-feedback-success__descr">Спасибо , что помогаете нам стать лучше!</p>
-                  <span class="popup-feedback-success__check icon icon-check"></span>
-                  <button type="button" class="popup-feedback__btn-back btn btn-primary">Перейти на главную
-                     страницу</button>
-               </div>
-            </div>
-         </div>
-         <!-- POPUP feedback END  -->
 
       </main>
       <!-- MAIN end -->
