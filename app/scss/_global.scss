@@ -311,7 +311,7 @@ textarea {
 }
 // селектор конец
 
-// поиск внутри селектора
+// поиск
 .search-small {
 	margin-bottom: 20px;
 	position: relative;
@@ -336,13 +336,60 @@ textarea {
 			color: $middleGray;
 		}
 	}
+	&__body {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background: $background;
+		box-shadow: $shadowModal;
+		border-radius: 0px 0px 10px 10px;
+		z-index: 40;
+	}
+	&__block {
+		margin: 20px 25px 10px 20px;
+		padding-right: 15px;
+		padding-bottom: 10px;
+		position: relative;
+		border-bottom: 1px solid $middleGray;
+	}
+	&__title {
+		font-weight: 500;
+		margin-bottom: 4px;
+	}
+	&__name {
+		font-weight: 600;
+		color: $blue;
+	}
+	&__body-block-close {
+		position: absolute;
+		right: -5px;
+		transform: translateY(-50%);
+		top: 50%;
+		padding: 5px;
+		font-size: 10px;
+		color: $middleGray;
+	}
+	&__container {
+		max-height: 320px;
+		overflow-y: auto;
+		&::-webkit-scrollbar {
+			width: 0;
+		}
+	}
+	&.open {
+		border-radius: 25px 25px 0px 0px;
+	}
 	&.closed {
-		width: 32px;
-		height: 32px;
-		overflow: hidden;
-		cursor: pointer;
+		.search-small__head {
+			width: 32px;
+			height: 32px;
+			overflow: hidden;
+			cursor: pointer;
+		}
 		.search-small__input {
 			display: none;
+			max-width: 290px;
 		}
 		.icon-search {
 			transform: translate(-50%, -50%);
@@ -352,7 +399,7 @@ textarea {
 		}
 	}
 }
-// поиск внутри селектора конец
+// поиск конец
 
 // шаги регистрации
 .steps-reg {
@@ -539,11 +586,17 @@ textarea {
 	margin-right: 0;
 	flex: 0 0 300px;
 	background: $background;
+	position: sticky;
+	top: 0;
+	height: 100vh;
+	overflow-y: auto;
+	&::-webkit-scrollbar {
+		width: 0;
+	}
 	&__body {
 		min-height: 100vh;
 		height: fit-content;
-		position: sticky;
-		top: 0;
+
 		width: 100%;
 		// transition: 0.5s;
 		background: $white;
@@ -977,6 +1030,7 @@ textarea {
 	padding: 23px 23px 18px;
 	@media (max-width: 767.98px) {
 		align-items: center;
+		position: relative;
 	}
 	@media (min-width: 1800px) {
 		.header__buttons {
@@ -1262,6 +1316,8 @@ textarea {
 	position: absolute;
 	top: 0;
 	right: -400px;
+	height: 100vh;
+	overflow: hidden;
 	&.open {
 		right: 0;
 	}
@@ -1323,9 +1379,12 @@ textarea {
 
 	&__body {
 		padding: 30px 25px 30px 30px;
+		height: calc(100% - 78px);
+		overflow-y: auto;
 		@media (max-width: 767.98px) {
 			padding-left: 15px;
 			padding-right: 15px;
+			height: calc(100% - 65px);
 		}
 	}
 
@@ -1398,3 +1457,26 @@ textarea {
 	}
 }
 // right sidebar end
+
+// checkbox
+.checkbox {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: $background;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 13px;
+	.icon {
+		font-size: 7px;
+		color: $lightGray;
+	}
+	&.active {
+		background: blue;
+		.icon {
+			color: $white;
+		}
+	}
+}
+// checkbox end

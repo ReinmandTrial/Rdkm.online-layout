@@ -172,7 +172,7 @@
                   <div class="chat">
 
                      <!-- chat main start -->
-                     <div class="chat__main">
+                     <div class="chat__main" style="display: none;">
                         <!-- chat head start -->
                         <div class="chat__head">
                            <button type="button" class="chat__head-back--mobile">
@@ -202,11 +202,8 @@
                            </div>
                            <div class="chat__possibilities">
                               <div class="search-small closed">
-                                 <div class="search-small__head">
-                                    <input type="text" class="search-small__input" placeholder="Поиск...">
-                                    <span class="icon icon-search"></span>
-                                 </div>
-
+                                 <input type="text" class="search-small__input" placeholder="Поиск...">
+                                 <span class="icon icon-search"></span>
                               </div>
                               <div class="chat-options">
                                  <button type="button" class="chat-options__head">
@@ -356,139 +353,66 @@
                         <div class="chat__head">
                            <div class="chat__tabs">
                               <div class="chat__tab-item">Группы</div>
-                              <div class="chat__tab-item">Голосование</div>
-                              <div class="chat__tab-item active">Чаты</div>
+                              <div class="chat__tab-item active">Голосование</div>
+                              <div class="chat__tab-item">Чаты</div>
                            </div>
                         </div>
                         <div class="chat__brief-body">
-                           <div class="chat-tab-chat-rooms">
-                              <div class="search-small">
-                                 <input type="text" class="search-small__input" placeholder="Поиск...">
-                                 <span class="icon icon-search"></span>
-                              </div>
-                              <div class="chat-tab-chat-rooms__container">
-                                 <div class="chat-tab-chat-rooms__wrapper">
-                                    <a href="#" class="card-chat">
-                                       <span class="circle-status circle-status--online"></span>
-                                       <div class="card-chat__block">
-                                          <div class="card-chat__photo">
-                                             <img src="../../images/profile-photo-man.png" alt="">
-                                          </div>
-                                          <div class="card-chat__text-block">
-                                             <p class="card-chat__name h4">Человек Человеков</p>
-                                             <p class="card-chat__text">Места обитания большого тушканчика отличаются
-                                                разнообразием. На севере ареала он держится открытых участков с
-                                                разреженным травостоем. В степной зоне обычен по обочинам грунтовых
-                                                дорог, кромкам полей, на выгонах, по пологим склонам балок и оврагов.
-                                             </p>
-                                          </div>
-                                          <div class="card-chat__info">
-                                             <span class="card-chat__amount">3</span>
-                                          </div>
+                           <div class="chat-tab-vote">
+                              <div class="chat-tab-vote__wrapper">
+                                 <p class="chat-tab-vote__title h2">Голосование</p>
+                                 <p class="chat-tab-vote__descr h3">Куда идем на 23 февраля?</p>
+                                 <div class="chat-tab-vote__options">
+                                    <div class="chat-tab-vote__item">
+                                       <p class="chat-tab-vote__item-title">Поход в музей Природы и человека</p>
+                                       <div class="chat-tab-vote__item-progress chat-tab-vote__item-progress--27">
+                                          <span></span>
                                        </div>
-                                    </a>
-                                    <a href="#" class="card-chat">
-                                       <span class="circle-status circle-status--online"></span>
-                                       <div class="card-chat__block">
-                                          <div class="card-chat__photo">
-                                             <img src="../../images/profile-photo-man.png" alt="">
-                                          </div>
-                                          <div class="card-chat__text-block">
-                                             <p class="card-chat__name h4">Человек Человеков</p>
-                                             <p class="card-chat__text">Места обитания большого тушканчика отличаются
-                                                разнообразием. На севере ареала он держится открытых участков с
-                                                разреженным травостоем. В степной зоне обычен по обочинам грунтовых
-                                                дорог, кромкам полей, на выгонах, по пологим склонам балок и оврагов.
-                                             </p>
-                                          </div>
-                                          <div class="card-chat__info">
-                                             <span class="card-chat__icon-bell">
-                                                <img src="../../images/svg icons/bell-crossed-out.svg" alt="">
-                                             </span>
-                                             <p class="card-chat__time h4">22:15</p>
-                                          </div>
+                                       <div class="chat-tab-vote__item-row">
+                                          <p class="chat-tab-vote__item-amount">6 голосов</p>
+                                          <p class="chat-tab-vote__item-percent">27%</p>
                                        </div>
-                                    </a>
-                                    <a href="#" class="card-chat">
-                                       <span class="circle-status circle-status--offline"></span>
-                                       <div class="card-chat__block">
-                                          <div class="card-chat__photo">
-                                             <img src="../../images/profile-photo-man.png" alt="">
-                                          </div>
-                                          <div class="card-chat__text-block">
-                                             <p class="card-chat__name h4">Человек Человеков</p>
-                                             <p class="card-chat__text">Места обитания большого тушканчика отличаются
-                                                разнообразием. На севере ареала он держится открытых участков с
-                                                разреженным травостоем. В степной зоне обычен по обочинам грунтовых
-                                                дорог, кромкам полей, на выгонах, по пологим склонам балок и оврагов.
-                                             </p>
-                                          </div>
-                                          <div class="card-chat__info">
-                                             <p class="card-chat__time h4">22:15</p>
-                                          </div>
+                                    </div>
+                                    <div class="chat-tab-vote__item chat-tab-vote__item--select">
+                                       <p class="chat-tab-vote__item-title">Поход в музей Природы и человека</p>
+                                       <div class="chat-tab-vote__item-progress chat-tab-vote__item-progress--52">
+                                          <span></span>
                                        </div>
-                                    </a>
-                                    <a href="#" class="card-chat">
-                                       <span class="circle-status circle-status--offline"></span>
-                                       <div class="card-chat__block">
-                                          <div class="card-chat__photo">
-                                             <img src="../../images/profile-photo-man.png" alt="">
-                                          </div>
-                                          <div class="card-chat__text-block">
-                                             <p class="card-chat__name h4">Человек Человеков</p>
-                                             <p class="card-chat__text">Места обитания большого тушканчика отличаются
-                                                разнообразием. На севере ареала он держится открытых участков с
-                                                разреженным травостоем. В степной зоне обычен по обочинам грунтовых
-                                                дорог, кромкам полей, на выгонах, по пологим склонам балок и оврагов.
-                                             </p>
-                                          </div>
-                                          <div class="card-chat__info">
-                                             <p class="card-chat__time h4">22:15</p>
-                                          </div>
+                                       <div class="chat-tab-vote__item-row">
+                                          <p class="chat-tab-vote__item-amount">6 голосов</p>
+                                          <p class="chat-tab-vote__item-percent">52%</p>
                                        </div>
-                                    </a>
-                                    <a href="#" class="card-chat">
-                                       <span class="circle-status circle-status--offline"></span>
-                                       <div class="card-chat__block">
-                                          <div class="card-chat__photo">
-                                             <img src="../../images/profile-photo-man.png" alt="">
-                                          </div>
-                                          <div class="card-chat__text-block">
-                                             <p class="card-chat__name h4">Человек Человеков</p>
-                                             <p class="card-chat__text">Места обитания большого тушканчика отличаются
-                                                разнообразием. На севере ареала он держится открытых участков с
-                                                разреженным травостоем. В степной зоне обычен по обочинам грунтовых
-                                                дорог, кромкам полей, на выгонах, по пологим склонам балок и оврагов.
-                                             </p>
-                                          </div>
-                                          <div class="card-chat__info">
-                                             <p class="card-chat__time h4">22:15</p>
-                                          </div>
+                                    </div>
+                                    <div class="chat-tab-vote__item">
+                                       <p class="chat-tab-vote__item-title">Поход в музей Природы и человека</p>
+                                       <div class="chat-tab-vote__item-progress chat-tab-vote__item-progress--27">
+                                          <span></span>
                                        </div>
-                                    </a>
-                                    <a href="#" class="card-chat">
-                                       <span class="circle-status circle-status--offline"></span>
-                                       <div class="card-chat__block">
-                                          <div class="card-chat__photo">
-                                             <img src="../../images/profile-photo-man.png" alt="">
-                                          </div>
-                                          <div class="card-chat__text-block">
-                                             <p class="card-chat__name h4">Человек Человеков</p>
-                                             <p class="card-chat__text">Места обитания большого тушканчика отличаются
-                                                разнообразием. На севере ареала он держится открытых участков с
-                                                разреженным травостоем. В степной зоне обычен по обочинам грунтовых
-                                                дорог, кромкам полей, на выгонах, по пологим склонам балок и оврагов.
-                                             </p>
-                                          </div>
-                                          <div class="card-chat__info">
-                                             <p class="card-chat__time h4">22:15</p>
-                                          </div>
+                                       <div class="chat-tab-vote__item-row">
+                                          <p class="chat-tab-vote__item-amount">6 голосов</p>
+                                          <p class="chat-tab-vote__item-percent">27%</p>
                                        </div>
-                                    </a>
+                                    </div>
+                                    <div class="chat-tab-vote__item">
+                                       <p class="chat-tab-vote__item-title">Поход в музей Природы и человека</p>
+                                       <div class="chat-tab-vote__item-progress chat-tab-vote__item-progress--27">
+                                          <span></span>
+                                       </div>
+                                       <div class="chat-tab-vote__item-row">
+                                          <p class="chat-tab-vote__item-amount">6 голосов</p>
+                                          <p class="chat-tab-vote__item-percent">27%</p>
+                                       </div>
+                                    </div>
                                  </div>
+                                 <div class="chat-tab-vote__amount h4">
+                                    <p class="chat-tab-vote__amount-title">Проголосовало</p>
+                                    <p class="chat-tab-vote__amount-sum">29 из 30</p>
+                                 </div>
+                                 <button type="button" class="chat-tab-vote__btn-change btn btn-primary">Изменить
+                                    выбор</button>
                               </div>
-                              <button type="button" class="chat-tab-chat-rooms__btn-new-chat btn btn-secondary">+ Новый
-                                 чат </button>
+
+
                            </div>
                         </div>
                      </div>

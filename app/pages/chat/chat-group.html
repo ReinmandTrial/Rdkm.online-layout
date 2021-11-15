@@ -125,6 +125,8 @@
          <!-- CONTENT start  -->
          <div class="content">
             <div class="container">
+
+               <!-- header start -->
                <header class="header">
                   <button class="burger-icon"><span class="icon icon-burger"></span></button>
                   <p class="header__title h1">Чат<span>.</span></p>
@@ -168,6 +170,8 @@
                      </button>
                   </div>
                </header>
+               <!-- header end -->
+
                <div class="body">
                   <div class="chat">
 
@@ -180,54 +184,42 @@
                            </button>
                            <div class="chat-interlocutor">
                               <div class="chat-interlocutor__photo">
-                                 <img src="../../images/profile-photo-man.png" alt="">
+                                 <img src="../../images/profile-school.png">
                               </div>
                               <div class="chat-interlocutor__text-block">
                                  <div class="chat-interlocutor__top-row">
-                                    <span class="chat-interlocutor__name h4">Сидоров Сергей</span>
-                                    <span class="chat-interlocutor__function">Помощник</span>
+                                    <span class="chat-interlocutor__name h4">
+                                       <span class="chat-interlocutor__name-group">Групповой чат -</span>
+                                       <span class="chat-interlocutor__name-class">СОШ №216 - 5 «Б»</span>
+                                    </span>
                                  </div>
                                  <div class="chat-interlocutor__bottom-row">
+                                    <div class="chat-interlocutor__info chat-interlocutor__sum">
+                                       <div class="circle-status"></div>
+                                       30 участников
+                                    </div>
                                     <div
                                        class="chat-interlocutor__info chat-interlocutor__status chat-interlocutor__status--online">
                                        <div class="circle-status"></div>
-                                       Онлайн
+                                       7 онлайн
                                     </div>
-                                    <!-- <div class="chat-interlocutor__info chat-interlocutor__sum">
-                                       <div class="circle-status"></div>
-                  
-                                    </div> -->
                                  </div>
                               </div>
                            </div>
                            <div class="chat__possibilities">
                               <div class="search-small closed">
-                                 <div class="search-small__head">
-                                    <input type="text" class="search-small__input" placeholder="Поиск...">
-                                    <span class="icon icon-search"></span>
-                                 </div>
-
+                                 <input type="text" class="search-small__input" placeholder="Поиск...">
+                                 <span class="icon icon-search"></span>
                               </div>
                               <div class="chat-options">
                                  <button type="button" class="chat-options__head">
                                     <span class="icon icon-dots-vertical"></span>
                                  </button>
-                                 <div class="chat-options__body">
-                                    <p class="chat-options__item">Очистить чат</p>
-                                    <p class="chat-options__item">Отключить уведомелния</p>
-                                    <p class="chat-options__item">Удалить чат</p>
-                                    <p class="chat-options__item">Покинуть чат</p>
-                                 </div>
+                                 <!-- <div class="chat-options__body">
+                  
+                                 </div> -->
                               </div>
                            </div>
-
-                           <!-- selected -->
-                           <div class="chat__head--selected">
-                              <button type="button" class="chat__head-btn-forward btn btn-primary">Переслать</button>
-                              <button type="button" class="chat__head-btn-delete btn btn-secondary">Удалить</button>
-                              <span class="icon icon-close chat__head-btn-cancel"></span>
-                           </div>
-                           <!-- selected end -->
                         </div>
                         <!-- chat head end -->
 
@@ -239,47 +231,43 @@
                                        <img src="../../images/profile-photo-man.png" alt="">
                                     </div>
                                     <div class="message__content">
+                                       <div class="message__info">
+                                          <span class="message__name h4">
+                                             <span class="circle-status circle-status--online"></span>
+                                             Человек Человеков
+                                          </span>
+                                          <span class="message__function">Помощник</span>
+                                       </div>
                                        <div class="message__text-block">
                                           <p class="message__text">Тушка́нчиковые, или настоящие тушканчики, или
-                                             трёхпалые тушканчики, или тушка́нчики, — семейство млекопитающих,
-                                             объединяющее группу грызунов, населяющих степи, полупустыни и пустыни
-                                             Палеарктики и приспособленных к специфическим условиям обитания в этих
-                                             ландшафтах.</p>
+                                             трёхпалые
+                                             тушканчики, или тушка́нчики, — семейство млекопитающих, объединяющее группу
+                                             грызунов, населяющих степи, полупустыни и пустыни Палеарктики и
+                                             приспособленных к специфическим условиям обитания в этих ландшафтах.</p>
                                        </div>
                                     </div>
                                     <p class="message__time h4">22:12</p>
                                  </div>
                               </div>
-                              <p class="message-system">11.02.2021</p>
                               <p class="message-system message-system--today">Сегодня</p>
+                              <p class="message-system">11.02.2021</p>
                               <div class="message message-out">
                                  <div class="message__block">
                                     <p class="message__time h4">22:13</p>
                                     <div class="message__content">
+                                       <div class="message__info">
+                                          <span class="message__name h4">
+                                             <span class="circle-status circle-status--offline"></span>
+                                             Сюзанна Шиншилкина
+                                          </span>
+                                          <span class="message__function">Председатель</span>
+                                       </div>
                                        <div class="message__text-block">
-                                          <p class="message__text">Давайте проведем голосование и выберем как обычно по
-                                             количеству
-                                             голосов</p>
+                                          <p class="message__text">Меня интересует конкретно большой тушканчик</p>
                                        </div>
                                     </div>
-                                 </div>
-                              </div>
-                              <div class="message message-out">
-                                 <div class="message__block">
-                                    <p class="message__time h4">22:39</p>
-                                    <div class="message__content">
-                                       <div class="message__text-block">
-                                          <div class="message__answer">
-                                             <div class="message__file-icon">
-                                                <span class="icon icon-download"></span>
-                                             </div>
-                                             <div class="message__answer-text-block">
-                                                <p class="message__answer-name h4">Человек Человеков</p>
-                                                <p class="message__answer-type">Файл</p>
-                                             </div>
-                                          </div>
-                                          <p class="message__text">Это правильный ответ, поздравляю</p>
-                                       </div>
+                                    <div class="message__photo">
+                                       <img src="../../images/profile-photo-woman.png" alt="">
                                     </div>
                                  </div>
                               </div>
@@ -289,37 +277,19 @@
                                        <img src="../../images/profile-photo-man.png" alt="">
                                     </div>
                                     <div class="message__content">
+                                       <div class="message__info">
+                                          <span class="message__name h4">
+                                             <span class="circle-status circle-status--online"></span>
+                                             Человек Человеков
+                                          </span>
+                                          <span class="message__function">Помощник</span>
+                                       </div>
                                        <div class="message__text-block">
-                                          <p class="message__text">Просто голосование?</p>
+                                          <p class="message__text">Большой тушканчик — самый крупный среди тушканчиков.
+                                          </p>
                                        </div>
                                     </div>
                                     <p class="message__time h4">22:14</p>
-                                 </div>
-                              </div>
-                              <div class="message message-in">
-                                 <div class="message__block">
-                                    <div class="message__photo">
-                                       <img src="../../images/profile-photo-man.png" alt="">
-                                    </div>
-                                    <div class="message__content">
-                                       <div class="message__text-block">
-                                          <p class="message__text">Лучше выбрать из рейтинга организаций, которые
-                                             проводят
-                                             свои
-                                             мероприятия в городе</p>
-                                       </div>
-                                    </div>
-                                    <p class="message__time h4">22:16</p>
-                                 </div>
-                              </div>
-                              <div class="message message-out">
-                                 <div class="message__block">
-                                    <p class="message__time h4">22:39</p>
-                                    <div class="message__content">
-                                       <div class="message__text-block">
-                                          <p class="message__text">Отличная идея!</p>
-                                       </div>
-                                    </div>
                                  </div>
                               </div>
                            </div>
@@ -332,8 +302,6 @@
                               <button class="send-message__item send-message__attach">
                                  <span class="icon icon-clip"></span>
                               </button>
-                              <!--  <textarea class="send-message__input" placeholder="Написать сообщение..."
-                                 rows="1"></textarea> -->
                               <textarea class="send-message__input" placeholder="Написать сообщение..."
                                  rows="1"></textarea>
                               <div class="send-message__rightside">
@@ -355,140 +323,29 @@
                      <div class="chat__brief">
                         <div class="chat__head">
                            <div class="chat__tabs">
-                              <div class="chat__tab-item">Группы</div>
+                              <div class="chat__tab-item active">Группы</div>
                               <div class="chat__tab-item">Голосование</div>
-                              <div class="chat__tab-item active">Чаты</div>
+                              <div class="chat__tab-item">Чаты</div>
                            </div>
                         </div>
                         <div class="chat__brief-body">
-                           <div class="chat-tab-chat-rooms">
-                              <div class="search-small">
-                                 <input type="text" class="search-small__input" placeholder="Поиск...">
-                                 <span class="icon icon-search"></span>
-                              </div>
-                              <div class="chat-tab-chat-rooms__container">
-                                 <div class="chat-tab-chat-rooms__wrapper">
-                                    <a href="#" class="card-chat">
-                                       <span class="circle-status circle-status--online"></span>
-                                       <div class="card-chat__block">
-                                          <div class="card-chat__photo">
-                                             <img src="../../images/profile-photo-man.png" alt="">
-                                          </div>
-                                          <div class="card-chat__text-block">
-                                             <p class="card-chat__name h4">Человек Человеков</p>
-                                             <p class="card-chat__text">Места обитания большого тушканчика отличаются
-                                                разнообразием. На севере ареала он держится открытых участков с
-                                                разреженным травостоем. В степной зоне обычен по обочинам грунтовых
-                                                дорог, кромкам полей, на выгонах, по пологим склонам балок и оврагов.
-                                             </p>
-                                          </div>
-                                          <div class="card-chat__info">
-                                             <span class="card-chat__amount">3</span>
-                                          </div>
-                                       </div>
-                                    </a>
-                                    <a href="#" class="card-chat">
-                                       <span class="circle-status circle-status--online"></span>
-                                       <div class="card-chat__block">
-                                          <div class="card-chat__photo">
-                                             <img src="../../images/profile-photo-man.png" alt="">
-                                          </div>
-                                          <div class="card-chat__text-block">
-                                             <p class="card-chat__name h4">Человек Человеков</p>
-                                             <p class="card-chat__text">Места обитания большого тушканчика отличаются
-                                                разнообразием. На севере ареала он держится открытых участков с
-                                                разреженным травостоем. В степной зоне обычен по обочинам грунтовых
-                                                дорог, кромкам полей, на выгонах, по пологим склонам балок и оврагов.
-                                             </p>
-                                          </div>
-                                          <div class="card-chat__info">
-                                             <span class="card-chat__icon-bell">
-                                                <img src="../../images/svg icons/bell-crossed-out.svg" alt="">
-                                             </span>
-                                             <p class="card-chat__time h4">22:15</p>
-                                          </div>
-                                       </div>
-                                    </a>
-                                    <a href="#" class="card-chat">
-                                       <span class="circle-status circle-status--offline"></span>
-                                       <div class="card-chat__block">
-                                          <div class="card-chat__photo">
-                                             <img src="../../images/profile-photo-man.png" alt="">
-                                          </div>
-                                          <div class="card-chat__text-block">
-                                             <p class="card-chat__name h4">Человек Человеков</p>
-                                             <p class="card-chat__text">Места обитания большого тушканчика отличаются
-                                                разнообразием. На севере ареала он держится открытых участков с
-                                                разреженным травостоем. В степной зоне обычен по обочинам грунтовых
-                                                дорог, кромкам полей, на выгонах, по пологим склонам балок и оврагов.
-                                             </p>
-                                          </div>
-                                          <div class="card-chat__info">
-                                             <p class="card-chat__time h4">22:15</p>
-                                          </div>
-                                       </div>
-                                    </a>
-                                    <a href="#" class="card-chat">
-                                       <span class="circle-status circle-status--offline"></span>
-                                       <div class="card-chat__block">
-                                          <div class="card-chat__photo">
-                                             <img src="../../images/profile-photo-man.png" alt="">
-                                          </div>
-                                          <div class="card-chat__text-block">
-                                             <p class="card-chat__name h4">Человек Человеков</p>
-                                             <p class="card-chat__text">Места обитания большого тушканчика отличаются
-                                                разнообразием. На севере ареала он держится открытых участков с
-                                                разреженным травостоем. В степной зоне обычен по обочинам грунтовых
-                                                дорог, кромкам полей, на выгонах, по пологим склонам балок и оврагов.
-                                             </p>
-                                          </div>
-                                          <div class="card-chat__info">
-                                             <p class="card-chat__time h4">22:15</p>
-                                          </div>
-                                       </div>
-                                    </a>
-                                    <a href="#" class="card-chat">
-                                       <span class="circle-status circle-status--offline"></span>
-                                       <div class="card-chat__block">
-                                          <div class="card-chat__photo">
-                                             <img src="../../images/profile-photo-man.png" alt="">
-                                          </div>
-                                          <div class="card-chat__text-block">
-                                             <p class="card-chat__name h4">Человек Человеков</p>
-                                             <p class="card-chat__text">Места обитания большого тушканчика отличаются
-                                                разнообразием. На севере ареала он держится открытых участков с
-                                                разреженным травостоем. В степной зоне обычен по обочинам грунтовых
-                                                дорог, кромкам полей, на выгонах, по пологим склонам балок и оврагов.
-                                             </p>
-                                          </div>
-                                          <div class="card-chat__info">
-                                             <p class="card-chat__time h4">22:15</p>
-                                          </div>
-                                       </div>
-                                    </a>
-                                    <a href="#" class="card-chat">
-                                       <span class="circle-status circle-status--offline"></span>
-                                       <div class="card-chat__block">
-                                          <div class="card-chat__photo">
-                                             <img src="../../images/profile-photo-man.png" alt="">
-                                          </div>
-                                          <div class="card-chat__text-block">
-                                             <p class="card-chat__name h4">Человек Человеков</p>
-                                             <p class="card-chat__text">Места обитания большого тушканчика отличаются
-                                                разнообразием. На севере ареала он держится открытых участков с
-                                                разреженным травостоем. В степной зоне обычен по обочинам грунтовых
-                                                дорог, кромкам полей, на выгонах, по пологим склонам балок и оврагов.
-                                             </p>
-                                          </div>
-                                          <div class="card-chat__info">
-                                             <p class="card-chat__time h4">22:15</p>
-                                          </div>
-                                       </div>
-                                    </a>
+                           <div class="chat__tab-groups">
+                              <div class="brief-chat-item active">
+                                 <div class="brief-chat-item__img">
+                                    <span class="icon icon-person"></span>
+                                 </div>
+                                 <div class="brief-chat-item__text-block">
+                                    <p class="brief-chat-item__name h4">Общий чат</p>
                                  </div>
                               </div>
-                              <button type="button" class="chat-tab-chat-rooms__btn-new-chat btn btn-secondary">+ Новый
-                                 чат </button>
+                              <div class="brief-chat-item">
+                                 <div class="brief-chat-item__img">
+                                    <span class="icon icon-mask"></span>
+                                 </div>
+                                 <div class="brief-chat-item__text-block">
+                                    <p class="brief-chat-item__name h4">Без учителя</p>
+                                 </div>
+                              </div>
                            </div>
                         </div>
                      </div>
@@ -655,13 +512,13 @@
          <!-- CONTENT end -->
 
          <!-- POPUP  -->
-         <div class="popup  popup-questions-small">
+         <div class="popup popup-exit">
             <div class="popup__body">
                <div class="popup__content">
-                  <p class=" popup-questions-small__title h4">Вы точно хотите покинуть чат?</p>
-                  <div class=" popup-questions-small__buttons-block">
-                     <button type="button" class=" popup-questions-small__cancel btn btn-secondary">Отменить</button>
-                     <button type="button" class=" popup-questions-small__delete btn btn-primary">Удалить</button>
+                  <p class="popup-exit__title h4">Вы уверены, что хотите выйти?</p>
+                  <div class="popup-exit__buttons-block">
+                     <button type="button" class="popup-exit__cancel btn btn-secondary">Отменить</button>
+                     <button type="button" class="popup-exit__exit btn btn-primary">Выйти</button>
                   </div>
                </div>
             </div>
