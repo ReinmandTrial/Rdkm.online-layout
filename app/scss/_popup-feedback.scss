@@ -1,0 +1,54 @@
+// popup feedback
+.popup-feedback {
+   // display: block;
+
+   .popup__content {
+      padding-top: 70px;
+   }
+   &__title {
+      font-weight: 600;
+      margin-bottom: 30px;
+   }
+
+   &__textarea {
+      margin-bottom: 25px;
+   }
+
+   &__btn-send {
+   }
+}
+.popup-feedback-success {
+   .popup__content {
+      padding-top: 52px;
+      padding-bottom: 52px;
+   }
+   &__title {
+      margin-bottom: 10px;
+      text-align: center;
+      @media (max-width: 767.98px) {
+         margin: 0 -14px;
+         margin-bottom: 15px;
+      }
+   }
+
+   &__descr {
+      color: $middleGray;
+      margin-bottom: 22px;
+      text-align: center;
+   }
+
+   &__check {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: $blue;
+      color: $white;
+      font-size: 16px;
+   }
+}
+// popup feedback end

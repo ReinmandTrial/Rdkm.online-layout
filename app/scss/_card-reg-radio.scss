@@ -1,0 +1,99 @@
+// карточка радио
+.card-reg-radio {
+   border-radius: 10px;
+   border: 1px solid $lightGray;
+   padding: 15px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   &__icon {
+      flex: none;
+      width: 32px;
+      height: 32px;
+      background: $background;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $lightGray;
+      .icon-humans,
+      .icon-school,
+      .icon-person,
+      .icon-kindergarten,
+      .icon-mobile {
+         font-size: 16px;
+      }
+      .icon-corner-cap,
+      .icon-mail {
+         font-size: 12px;
+      }
+   }
+
+   &__text-block {
+      flex: 1 1 auto;
+      margin: 0 10px;
+      padding: 10px;
+      color: $middleGray;
+   }
+
+   &__title {
+   }
+
+   &__descr {
+      margin-top: 10px;
+      // min-height: 30px;
+   }
+
+   &__check {
+      background: $background;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $lightGray;
+      width: 24px;
+      height: 24px;
+      flex: none;
+      .icon-check {
+         font-size: 9px;
+      }
+   }
+   &.active {
+      border-color: $blue;
+      .card-reg-radio__icon {
+         color: $blue;
+      }
+      .card-reg-radio__title {
+         color: $blue;
+      }
+      .card-reg-radio__check {
+         background: $blue;
+         color: $white;
+      }
+   }
+   &--yandex {
+      .card-reg-radio__title {
+         font-weight: 400;
+         span {
+            font-weight: 600;
+            display: inline-block;
+         }
+      }
+      .card-reg-radio__icon {
+         font-weight: 600;
+         font-size: 14px;
+      }
+   }
+   &--yandex.active {
+      .card-reg-radio__title {
+         color: $black;
+         & span::first-letter {
+            color: $red;
+         }
+      }
+      .card-reg-radio__icon {
+         color: $red;
+      }
+   }
+}
+// карточка радио конец

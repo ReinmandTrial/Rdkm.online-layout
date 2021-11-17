@@ -13,19 +13,123 @@ $shadowModal: 2px 4px 10px rgba(0, 0, 0, 0.15);
 .h1 {
    font-size: 36px;
    font-weight: bold;
+   @media (max-width: 767.98px) {
+      font-size: 16px;
+      font-weight: 800;
+   }
 }
 .h2 {
    font-size: 22px;
+   font-weight: 800;
+   @media (max-width: 767.98px) {
+      font-size: 18px;
+      font-weight: 700;
+   }
 }
 .h3 {
    font-size: 18px;
+   font-weight: 600;
+   @media (max-width: 767.98px) {
+      font-size: 16px;
+      font-weight: 800;
+   }
+}
+.h3sb {
+   font-size: 18px;
+   font-weight: 600;
+}
+.h3eb {
+   font-size: 18px;
+   font-weight: 800;
+}
+.h3m {
+   font-size: 18px;
+   font-weight: 500;
+}
+.h3m2 {
+   font-size: 18px;
+   font-weight: 500;
+   @media (max-width: 767.98px) {
+      font-size: 14px;
+      font-weight: 600;
+   }
 }
 .h4 {
    font-size: 14px;
+   font-weight: 500;
+}
+.h4r {
+   font-size: 14px;
+   font-weight: 400;
+}
+.h4sb {
+   font-size: 14px;
+   font-weight: 600;
+}
+.h4sb2 {
+   font-size: 14px;
+   font-weight: 600;
+   @media (max-width: 767.98px) {
+      font-size: 12px;
+      font-weight: 700;
+   }
+}
+.h4b {
+   font-size: 14px;
+   font-weight: 700;
+}
+.h4b2 {
+   font-size: 14px;
+   font-weight: 700;
+   @media (max-width: 767.98px) {
+      font-size: 12px;
+      font-weight: 600;
+   }
+}
+.h4m2 {
+   font-size: 14px;
+   font-weight: 500;
+   @media (max-width: 767.98px) {
+      font-size: 9px;
+      font-weight: 600;
+   }
 }
 .h5 {
-   font-size: 10px;
+   font-size: 12px;
+   font-weight: 400;
+}
+.h5sb {
+   font-size: 12px;
+   font-weight: 600;
+}
+.h5m {
+   font-size: 12px;
+   font-weight: 500;
+   @media (max-width: 767.98px) {
+      font-weight: 700;
+   }
+}
+.h5b {
+   font-size: 12px;
+   font-weight: 700;
+   @media (max-width: 767.98px) {
+      font-size: 9px;
+      font-weight: 600;
+   }
 }
 .h6 {
+   font-size: 10px;
+   font-weight: 500;
+   @media (max-width: 767.98px) {
+      font-size: 9px;
+      font-weight: 600;
+   }
+}
+.h6m {
+   font-size: 10px;
+   font-weight: 500;
+}
+.h7 {
    font-size: 9px;
+   font-weight: 600;
 }

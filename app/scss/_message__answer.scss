@@ -1,0 +1,53 @@
+.message {
+   &__answer {
+      position: relative;
+      padding-left: 8px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      &::before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         bottom: 0;
+         width: 2px;
+         height: 100%;
+         background: $lightGray;
+      }
+      .message__file-icon {
+         margin-right: 6px;
+      }
+   }
+   &__answer-img {
+      flex: none;
+      margin-right: 6px;
+      width: 33px;
+      // max-height: 100%;
+      height: 36px;
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+   &__answer-name {
+      margin-bottom: 4px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -moz-box;
+      -moz-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      line-clamp: 1;
+      box-orient: vertical;
+   }
+
+   &__answer-text {
+   }
+
+   &__answer-type {
+      color: $lightGray;
+   }
+}

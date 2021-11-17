@@ -1,0 +1,50 @@
+.card-chat-xs {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 5px 0;
+   &__photo {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex: none;
+   }
+
+   &__name {
+      flex: 1 1 auto;
+      margin: 0 12px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -moz-box;
+      -moz-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      line-clamp: 1;
+      word-break: break-all;
+      box-orient: vertical;
+   }
+
+   &__check {
+      flex: none;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: $background;
+      color: $lightGray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 9px;
+      &::before {
+         transform: translate(1px, 1px);
+      }
+   }
+   &.active {
+      .card-chat-xs__check {
+         background: $blue;
+         color: $white;
+      }
+   }
+}

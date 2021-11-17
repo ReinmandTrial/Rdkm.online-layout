@@ -1,12 +1,62 @@
 @import "reset";
 @import "fonts";
 @import "../fonts/icon/style.scss";
-@import "libs";
-@import "mixins";
 @import "config";
 @import "global";
+@import "input";
 @import "buttons";
+@import "checkbox";
+
+@import "left-sidebar";
+@import "header";
+@import "right-sidebar";
+
+@import "logo";
+@import "entrance__container";
+@import "entrance__tabs";
+@import "entrance__footer";
+@import "steps-reg";
+@import "card-reg-radio";
+@import "select";
+@import "profile-small";
+@import "menu-item";
+@import "search-small";
+@import "search";
+@import "card-notification";
+@import "chat-options";
+@import "popup-add-file--mobile__photo";
+@import "chat__head";
+@import "chat-interlocutor";
+@import "circle-status";
+@import "send-message";
+@import "send-message-additional-panel";
+@import "chat__tabs";
+@import "chat__brief";
+@import "chat-tab-groups";
+@import "chat-tab-vote";
+@import "chat-tab-chat-rooms";
+@import "brief-chat-item";
+@import "chat-tab-vote__item";
+@import "card-chat";
+@import "card-chat-xs";
+@import "chat__head--selected";
+@import "message__answer";
+@import "message__file";
+@import "message__img";
+@import "message-options";
+@import "message-options--delete";
+@import "message-system";
+@import "message";
+@import "chat__messages";
+
+@import "popup-info";
+@import "popup-feedback";
+@import "popup-version";
+@import "popup-exit";
+@import "popup-questions-small";
+@import "popup-add-file";
+@import "popup-add-file--mobile";
+@import "popup-select-for-forwarding";
+
 @import "popup";
 @import "main";
-
-@import "media";

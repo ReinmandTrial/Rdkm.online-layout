@@ -1,0 +1,36 @@
+// popup delete message,clear chat, leave chat
+.popup-questions-small {
+   .popup__content {
+      max-width: 332px;
+   }
+   &__title {
+      margin-bottom: 25px;
+   }
+
+   &__evetyone {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+      cursor: pointer;
+   }
+
+   &__everyone-text {
+   }
+
+   &__buttons-block {
+      display: flex;
+      align-items: center;
+      .btn {
+         padding: 8.5px;
+         &:not(:last-child) {
+            margin-right: 30px;
+         }
+      }
+   }
+}
+.popup-delete-message {
+   @media (max-width: 767.98px) {
+      display: none;
+   }
+}
+// popup delete message,clear chat, leave chat end

@@ -1,0 +1,73 @@
+// шаги регистрации
+.steps-reg {
+   padding: 30px;
+   margin-bottom: 10px;
+   @media (max-width: 767.98px) {
+      padding: 0 37px;
+      margin-bottom: 6px;
+   }
+   @media (max-width: 374.98px) {
+      padding: 0 10px;
+   }
+   &__wrapper {
+      // max-width: 348px;
+      width: max-content;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+   }
+
+   &__item {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 3px solid $ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-weight: 600;
+      color: $ff;
+      background: $white;
+      position: relative;
+      // z-index: 10;
+      &:not(:first-child) {
+         margin-left: 47px;
+         @media (max-width: 767.98px) {
+            margin-left: 35px;
+         }
+      }
+      &:last-child {
+         background: $ff;
+      }
+      .icon-check {
+         font-size: 9px;
+         color: $white;
+      }
+      &:not(:first-child)::after {
+         content: "";
+         position: absolute;
+         transform: translateY(-50%);
+         top: 50%;
+         right: 99%;
+         height: 3px;
+         width: 53px;
+         background: $ff;
+         z-index: -1;
+      }
+      &.active {
+         color: $blue;
+         border-color: $blue;
+         &:not(:first-child)::after {
+            background: $blue;
+         }
+      }
+      &.complited {
+         background: $blue;
+         color: $white;
+      }
+   }
+}
+// шаги регистрации конец

@@ -1,0 +1,13 @@
+.entrance__container {
+   max-width: 428px;
+   width: 100%;
+   border-radius: 10px;
+   background: $white;
+   box-shadow: $shadowMain;
+   padding: 64px;
+   margin: 0 auto;
+   @media (max-width: 767.98px) {
+      box-shadow: unset;
+      padding: 30px 37px;
+   }
+}

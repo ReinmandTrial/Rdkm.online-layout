@@ -1,0 +1,22 @@
+// checkbox
+.checkbox {
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background: $background;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 13px;
+   .icon {
+      font-size: 7px;
+      color: $lightGray;
+   }
+   &.active {
+      background: blue;
+      .icon {
+         color: $white;
+      }
+   }
+}
+// checkbox end

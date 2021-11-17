@@ -1,0 +1,168 @@
+// popup add file
+.popup-add-file {
+   @media (max-width: 767.98px) {
+      display: none;
+   }
+   .popup__content {
+      max-width: 412px;
+   }
+   &__title {
+      margin-bottom: 20px;
+      text-align: center;
+   }
+
+   &__insert {
+      width: 100%;
+      height: 92px;
+      background: url("../images/border-dashed-small.png") 0 0/100% 100% no-repeat;
+      // border: 5px dashed $lightGray;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 25px;
+      padding: 10px;
+   }
+
+   &__insert-icon {
+      font-size: 20px;
+      color: $lightGray;
+      margin-bottom: 12px;
+   }
+
+   &__insert-text {
+      color: $lightGray;
+   }
+
+   &__or {
+      color: $middleGray;
+      margin-bottom: 20px;
+      text-align: center;
+   }
+
+   &__buttons-block {
+      display: flex;
+      align-items: center;
+      .btn {
+         padding: 8.5px;
+         &:not(:last-child) {
+            margin-right: 30px;
+         }
+      }
+   }
+
+   &__btn-cancel {
+   }
+
+   &__btn-delete {
+   }
+   &.popup-add-file--items {
+      .popup-add-file__insert {
+         background: url("../images/border-dashed-large.png") 0 0/100% 100% no-repeat;
+         height: 165px;
+         margin-bottom: 20px;
+      }
+      .popup-add-file__buttons-block .btn {
+         padding: 14px;
+      }
+   }
+   &__file {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      background: $background;
+      border-radius: 10px;
+   }
+
+   &__file-icon-doc {
+      flex: none;
+      font-size: 31px;
+      color: $middleGray;
+      margin-right: 15px;
+   }
+
+   &__file-text-block {
+      flex: 1 1 auto;
+   }
+
+   &__file-name {
+      margin-bottom: 4px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -moz-box;
+      -moz-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      line-clamp: 1;
+      box-orient: vertical;
+   }
+
+   &__file-weight {
+      color: $middleGray;
+   }
+   &__manipulation {
+      display: flex;
+      align-items: center;
+   }
+   &__btn-change,
+   &__btn-delete {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $middleGray;
+   }
+   &__btn-change {
+      background: $lightGray;
+      flex: none;
+      font-size: 14px;
+      margin-left: 10px;
+   }
+
+   &__btn-delete {
+      background: $white;
+      flex: none;
+      font-size: 16px;
+      margin-left: 6px;
+   }
+
+   &__input {
+      width: 100%;
+      padding: 10px;
+      background: $background;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      &::placeholder {
+         color: $lightGray;
+      }
+   }
+
+   &__buttons-block {
+   }
+
+   &__btn-cancel {
+   }
+
+   &__btn-send {
+   }
+   &__image {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: contain;
+      }
+      .popup-add-file__manipulation {
+         position: absolute;
+         top: 0;
+         right: 0;
+      }
+   }
+}
+// popup add file end

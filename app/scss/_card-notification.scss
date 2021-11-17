@@ -1,0 +1,60 @@
+.card-notification {
+   padding: 30px 0;
+   border-bottom: 1px solid $lightGray;
+   display: flex;
+   &__icon {
+      margin-right: 14px;
+      .icon {
+         font-size: 20px;
+      }
+      .icon-finance {
+         font-size: 15.5px;
+      }
+      .icon-folder {
+         font-size: 17.7px;
+      }
+   }
+
+   &__text-block {
+      flex: 1 1 auto;
+   }
+
+   &__title-row {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 500;
+      margin-bottom: 14px;
+   }
+
+   &__category {
+   }
+
+   &__date {
+      color: $middleGray;
+   }
+
+   &__descr {
+      margin-bottom: 30px;
+   }
+
+   &__buttons-block {
+      display: flex;
+      justify-content: space-between;
+      .btn {
+         padding: 12.5px;
+      }
+   }
+
+   &__details {
+      margin-right: 12px;
+      @media (min-width: 1800px) {
+         margin-right: 20px;
+      }
+   }
+
+   &__ignore {
+   }
+
+   &__link {
+   }
+}

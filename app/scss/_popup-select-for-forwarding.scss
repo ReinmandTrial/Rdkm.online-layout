@@ -1,0 +1,44 @@
+.popup-select-for-forwarding {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   width: 100%;
+   height: 100vh;
+   z-index: 1000;
+   background: $white;
+   display: flex;
+   flex-direction: column;
+
+   &__head {
+      padding-top: 10px;
+      height: 65px;
+      flex: none;
+   }
+   &__content {
+      flex: 1 1 auto;
+      padding: 0 30px 7px;
+      display: flex;
+      flex-direction: column;
+      height: calc(100% - 65px);
+   }
+   &__title {
+      flex: none;
+      text-align: center;
+      margin-bottom: 20px;
+   }
+
+   &__container {
+      flex: 1 1 auto;
+      overflow-y: auto;
+      margin-bottom: 20px;
+   }
+
+   &__wrapper {
+   }
+
+   &__btn-send {
+      flex: none;
+   }
+}

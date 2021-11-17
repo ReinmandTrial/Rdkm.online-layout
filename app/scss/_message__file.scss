@@ -1,0 +1,32 @@
+.message {
+   &__file {
+      display: flex;
+      align-items: center;
+   }
+
+   &__file-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: $white;
+      font-size: 14px;
+      color: $black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      flex: none;
+   }
+
+   &__file-text {
+      font-weight: 500;
+   }
+
+   &__file-name {
+      margin-bottom: 4px;
+   }
+
+   &__file-weight {
+      color: $lightGray;
+   }
+}

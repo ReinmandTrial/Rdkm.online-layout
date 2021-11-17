@@ -1,0 +1,68 @@
+.brief-chat-item {
+   height: 75px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   padding: 15px;
+   cursor: pointer;
+   &__img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $background;
+      margin-right: 10px;
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+      .icon {
+         font-size: 24px;
+         color: $lightGray;
+      }
+      .icon-mask {
+         font-size: 15px;
+      }
+   }
+
+   &__text-block {
+      flex: 1 1 auto;
+   }
+
+   &__name {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -moz-box;
+      -moz-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      line-clamp: 1;
+      box-orient: vertical;
+   }
+
+   &__message {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -moz-box;
+      -moz-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      line-clamp: 1;
+      box-orient: vertical;
+   }
+   &.active {
+      background: $background;
+      .brief-chat-item__img {
+         background: $white;
+      }
+      .brief-chat-item__img .icon {
+         color: $blue;
+      }
+   }
+}

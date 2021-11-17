@@ -1,0 +1,51 @@
+.message-options {
+   position: absolute;
+   top: calc(100% + 7px);
+   left: 4px;
+   box-shadow: $shadowModal;
+   background: $white;
+   border: 1px solid $background;
+   border-radius: 10px;
+   min-width: 158px;
+   z-index: 50;
+   overflow: hidden;
+   &__item {
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .icon {
+         font-size: 16px;
+         margin-left: 10px;
+      }
+      .icon-check {
+         width: 16px;
+         height: 16px;
+         border-radius: 50%;
+         background: $black;
+         color: white;
+         font-size: 6px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+      &:hover {
+         background: $background;
+         &:not(.message-options__item--red) {
+            color: $blue;
+            .icon-check {
+               background: $blue;
+            }
+         }
+      }
+   }
+   &__item--red {
+      color: $red;
+   }
+
+   &__title {
+   }
+
+   &__item-red {
+   }
+}

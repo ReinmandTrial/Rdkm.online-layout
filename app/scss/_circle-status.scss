@@ -1,0 +1,15 @@
+.circle-status {
+   flex: none;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background: $green;
+   margin-right: 10px;
+   display: inline-block;
+   &--online {
+      background: $green;
+   }
+   &--offline {
+      background: $lightGray;
+   }
+}

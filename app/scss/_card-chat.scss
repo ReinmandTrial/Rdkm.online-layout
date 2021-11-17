@@ -1,0 +1,107 @@
+.card-chat {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   padding: 15px;
+   cursor: pointer;
+   &:not(:last-child) {
+      margin-bottom: 15px;
+   }
+   &:hover {
+      background: $background;
+   }
+   &__block {
+      display: flex;
+      align-items: center;
+      flex: 1 1 auto;
+   }
+
+   &__photo {
+      flex: none;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 10px;
+   }
+
+   &__text-block {
+      flex: 1 1 auto;
+   }
+
+   &__name {
+      margin-bottom: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -moz-box;
+      -moz-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      line-clamp: 1;
+      word-break: break-all;
+      box-orient: vertical;
+   }
+
+   &__text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -moz-box;
+      -moz-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      line-clamp: 1;
+      box-orient: vertical;
+      word-break: break-all;
+      // word-wrap: break-word;
+   }
+
+   &__info {
+      flex: none;
+      width: 33px;
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+   }
+
+   &__amount {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $white;
+      background: $blue;
+      border-radius: 50%;
+   }
+   &__icon-bell {
+      margin-bottom: 6px;
+   }
+
+   &__time {
+      color: $lightGray;
+   }
+}
+.card-chat-small {
+   padding: 10px 20px;
+   .card-chat__photo {
+      width: 36px;
+      height: 36px;
+      margin-right: 15px;
+   }
+   .card-chat__name {
+      margin-bottom: 4px;
+   }
+   .card-chat__text {
+      color: $middleGray;
+   }
+   .card-chat__info {
+      // height: 100%;m
+      margin-left: unset;
+      align-self: stretch;
+      justify-content: flex-start;
+   }
+}

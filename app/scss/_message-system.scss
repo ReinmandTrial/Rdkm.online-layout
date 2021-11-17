@@ -1,0 +1,18 @@
+.message-system {
+   width: max-content;
+   margin: 0 auto;
+   padding: 5px 10px;
+   border-radius: 250px;
+   background: $background;
+   color: $lightGray;
+   &:not(:last-child) {
+      margin-bottom: 25px;
+      @media (max-width: 767.98px) {
+         margin-bottom: 18px;
+      }
+   }
+   &--today {
+      background: $blue;
+      color: $white;
+   }
+}

@@ -1,0 +1,30 @@
+// popup add file mobile start
+.popup-add-file--mobile {
+   @media (min-width: 768px) {
+      display: none;
+   }
+   .popup__content {
+      background: $background;
+      border-radius: 10px;
+      padding: 10px 12.5px 18px;
+      margin: 15px;
+      max-width: 345px;
+   }
+   &__photo-block {
+      display: flex;
+      overflow-x: auto;
+      margin-bottom: 7px;
+   }
+
+   &__items {
+   }
+
+   &__item {
+      padding: 11px;
+      border-bottom: 1px solid rgba(213, 218, 234, 0.2);
+      text-align: center;
+      color: $lightGray;
+   }
+}
+
+// popup add file mobile end

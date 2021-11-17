@@ -1,0 +1,47 @@
+.menu-item {
+   cursor: pointer;
+   padding: 15px 47px;
+   display: flex;
+   align-items: center;
+   position: relative;
+   &__icon {
+      margin-right: 10px;
+      font-size: 18px;
+   }
+   .icon-main-page {
+      font-size: 9px;
+   }
+   .icon-finance {
+      font-size: 13.9px;
+   }
+   .icon-folder {
+      font-size: 16px;
+   }
+   &__title {
+      font-weight: 500;
+      font-size: 14px;
+   }
+   &.active {
+      // .menu-item__icon {
+      // 	color: $lightGray;
+      // }
+      .menu-item__title {
+         font-weight: 600;
+      }
+   }
+   &:hover {
+      background: $background;
+   }
+   &:hover::before,
+   &.active::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      height: 100%;
+      background: $blue;
+      border-radius: 0px 2px 2px 0px;
+   }
+}
