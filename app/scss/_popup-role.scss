@@ -1,0 +1,20 @@
+.popup-role {
+   .popup__content {
+      max-width: 450px;
+      padding: 55px 30px 20px;
+   }
+   &__title {
+      margin-bottom: 16px;
+   }
+
+   &__descr {
+      color: $lightGray;
+      margin-bottom: 25px;
+   }
+   .input__block {
+      margin-bottom: 25px;
+   }
+
+   &__btn-send {
+   }
+}

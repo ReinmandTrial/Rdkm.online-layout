@@ -27,7 +27,8 @@
    }
 
    &__text-block {
-      margin: 0 15px;
+      margin: 0 5px 0 15px;
+      flex: 1 1 auto;
       & > *:not(:last-child) {
          margin-bottom: 5px;
       }
@@ -71,6 +72,7 @@
 
    .icon-swap {
       font-size: 16px;
+      position: relative;
    }
    &__change-class {
       cursor: pointer;
@@ -145,12 +147,26 @@
 
    &__btn-add-class {
    }
+   &__counter {
+      display: inline-block;
+      position: absolute;
+      top: -4px;
+      right: -4px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: $blue;
+      &--white {
+         background: $white;
+      }
+   }
    &.open {
       box-shadow: $shadowModal;
       .profile-small__body {
          display: block;
       }
       .profile-small__change-class {
+         transform: translateX(-10px);
          background: unset;
          .icon-triangle-up {
             display: block;

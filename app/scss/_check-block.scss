@@ -1,0 +1,28 @@
+.check-block {
+   display: flex;
+   align-items: center;
+   margin-bottom: 15px;
+   .checkbox {
+      margin-right: 18px;
+      .icon {
+         font-size: 9px;
+      }
+   }
+   &__text {
+      color: $middleGray;
+      font-weight: 400;
+   }
+
+   &__link {
+      color: $blue;
+      text-decoration: underline;
+   }
+   &.active {
+      .checkbox {
+         background: $blue;
+         .icon {
+            color: $white;
+         }
+      }
+   }
+}
