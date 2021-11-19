@@ -168,6 +168,9 @@
       .profile-small__change-class {
          transform: translateX(-10px);
          background: unset;
+         .profile-small__counter {
+            display: none;
+         }
          .icon-triangle-up {
             display: block;
          }
