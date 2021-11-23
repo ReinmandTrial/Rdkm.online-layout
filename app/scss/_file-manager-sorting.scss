@@ -1,0 +1,37 @@
+.file-manager-sorting {
+   display: flex;
+   align-items: center;
+   margin-left: 10px;
+   @media (max-width: 767.98px) {
+      display: none;
+   }
+   &__item {
+      cursor: pointer;
+      width: 28px;
+      height: 28px;
+      border-radius: 5px;
+      color: $lightGray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:not(:last-child) {
+         margin-right: 10px;
+      }
+      &.active {
+         background: $blue;
+         color: $white;
+      }
+   }
+
+   &__item--large {
+      font-size: 11px;
+   }
+
+   &__item--medium {
+      font-size: 18px;
+   }
+
+   &__item--small {
+      font-size: 18px;
+   }
+}

@@ -1,0 +1,26 @@
+.popup-create-folder {
+   .popup__content {
+      max-width: 360px;
+   }
+   &__title {
+      margin-bottom: 25px;
+   }
+   .input__block {
+      margin-bottom: 25px;
+   }
+   &__buttons-block {
+      display: flex;
+      & > *:not(:last-child) {
+         margin-right: 12px;
+      }
+      .btn {
+         padding: 8.5px;
+      }
+   }
+
+   &__cancel {
+   }
+
+   &__save {
+   }
+}

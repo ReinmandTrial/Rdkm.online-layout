@@ -1,0 +1,70 @@
+.file-manager-select-panel {
+   position: absolute;
+   z-index: 50;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   background: $background;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 15px;
+   display: none;
+   &__select-all {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      color: $lightGray;
+      .checkbox {
+         width: 24px;
+         height: 24px;
+         background: $white;
+         margin-right: 10px;
+         .icon {
+            font-size: 9px;
+         }
+      }
+      &.active {
+         color: $blue;
+         .checkbox {
+            background: $blue;
+            color: $white;
+         }
+      }
+   }
+
+   &__rightside {
+      display: flex;
+      align-items: center;
+   }
+
+   &__amount {
+      color: $blue;
+   }
+
+   &__buttons-block {
+      display: flex;
+      align-items: center;
+      margin-left: 15px;
+      & > *:not(:last-child) {
+         margin-right: 10px;
+      }
+   }
+   &__download,
+   &__delete {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: $white;
+      color: $lightGray;
+      cursor: pointer;
+   }
+   &__download {
+      font-size: 11px;
+   }
+
+   &__delete {
+      font-size: 12px;
+   }
+}

@@ -1,0 +1,57 @@
+.file-manager-leftside {
+   height: 100%;
+   width: 29%;
+   border-right: 1px solid $background;
+   display: flex;
+   flex-direction: column;
+   @media (max-width: 991.98px) {
+      width: 45%;
+   }
+   @media (max-width: 767.98px) {
+      display: none;
+   }
+   .file-manager__head {
+      padding: 15px;
+   }
+   &__title {
+   }
+
+   &__head-actions {
+      & > *:not(:last-child) {
+         margin-right: 10px;
+      }
+   }
+
+   &__upload,
+   &__add-folder {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      font-size: 14px;
+   }
+   &__upload {
+      background: $background;
+      color: $middleGray;
+   }
+
+   &__add-folder {
+      background: $blue;
+      color: $white;
+   }
+
+   &__body {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+   }
+
+   &__content {
+      flex: 1 1 auto;
+      overflow: auto;
+   }
+   &__wrapper {
+      width: max-content;
+      min-width: 100%;
+   }
+}

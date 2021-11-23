@@ -1,0 +1,25 @@
+.popup-delete-photo {
+   .popup__content {
+      max-width: 332px;
+   }
+   &__title {
+      margin-bottom: 26px;
+   }
+
+   &__buttons-block {
+      display: flex;
+      align-items: center;
+      & > *:not(:last-child) {
+         margin-right: 31px;
+      }
+      .btn {
+         padding: 8.5px;
+      }
+   }
+
+   &__cancel {
+   }
+
+   &__delete {
+   }
+}

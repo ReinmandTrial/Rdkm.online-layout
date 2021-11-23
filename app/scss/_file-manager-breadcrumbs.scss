@@ -1,0 +1,23 @@
+.file-manager-breadcrumbs {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -moz-box;
+   -moz-box-orient: vertical;
+   display: -webkit-box;
+   -webkit-line-clamp: 1;
+   -webkit-box-orient: vertical;
+   line-clamp: 1;
+   box-orient: vertical;
+   // max-width: 381px;
+   @media (max-width: 767.98px) {
+      display: none;
+   }
+   &__item {
+      &:not(:last-child)::after {
+         content: " -";
+      }
+   }
+   &__item--last {
+      color: $blue;
+   }
+}

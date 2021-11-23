@@ -49,6 +49,21 @@
 @import "message-system";
 @import "message";
 @import "chat__messages";
+@import "file-manager-leftside";
+@import "file-manager-actions";
+@import "folder-row";
+@import "storage-volume";
+@import "file-manager-main";
+@import "file-manager-folders-container";
+@import "file-manager-options";
+@import "file-manager-breadcrumbs";
+@import "file-manager-sorting";
+@import "file-manager-sorting-mobile";
+@import "file-manager-filter";
+@import "toggle";
+@import "file-manager-select-panel";
+@import "file-manager-media";
+@import "media-item";
 
 @import "popup-info";
 @import "popup-role";
@@ -59,6 +74,11 @@
 @import "popup-add-file";
 @import "popup-add-file--mobile";
 @import "popup-select-for-forwarding";
+@import "popup-create-folder";
+@import "popup-delete-photo";
+@import "popup-zoom-media";
 
 @import "popup";
 @import "main";
+
+@import "test";

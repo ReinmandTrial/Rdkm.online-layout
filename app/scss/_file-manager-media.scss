@@ -1,0 +1,174 @@
+.file-manager-media {
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+
+   &__container {
+      height: max-content;
+      flex: 1 1 auto;
+      overflow-y: auto;
+      margin-top: 10px;
+      margin-bottom: -10px;
+      padding-bottom: 10px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-auto-rows: max-content;
+      grid-column-gap: 25px;
+      grid-row-gap: 10px;
+      @media (max-width: 991.98px) {
+         grid-column-gap: 10px;
+      }
+   }
+   &--grid-s {
+      .file-manager-media__container {
+         grid-template-columns: repeat(5, 1fr);
+         grid-column-gap: 25px;
+         grid-row-gap: 10px;
+         @media (max-width: 991.98px) {
+            grid-column-gap: 10px;
+         }
+      }
+      .media-item .media-item__img {
+         border-radius: 5px;
+      }
+      .media-item:first-child .file-manager-options__body,
+      .media-item:nth-child(5n + 6) .file-manager-options__body {
+         right: unset;
+         left: 0;
+      }
+   }
+   &--grid-m {
+      .file-manager-media__container {
+         grid-template-columns: repeat(3, 1fr);
+         grid-column-gap: 25px;
+         grid-row-gap: 10px;
+         @media (max-width: 991.98px) {
+            grid-column-gap: 10px;
+         }
+      }
+      .media-item .file-manager-options {
+         top: 7px;
+         right: 7px;
+      }
+      .media-item .media-item__play {
+         font-size: 56px;
+         @media (max-width: 991.98px) {
+            font-size: 33px;
+         }
+      }
+      .media-item:first-child .file-manager-options__body,
+      .media-item:nth-child(3n + 4) .file-manager-options__body {
+         @media (max-width: 991.98px) {
+            right: unset;
+            left: 0;
+         }
+      }
+   }
+   &--grid-l {
+      .file-manager-media__container {
+         grid-template-columns: repeat(2, 1fr);
+         grid-column-gap: 10px;
+         grid-row-gap: 10px;
+      }
+      .media-item .file-manager-options {
+         top: 10px;
+         right: 10px;
+      }
+      .media-item .media-item__play {
+         font-size: 90px;
+         @media (max-width: 991.98px) {
+            font-size: 33px;
+         }
+      }
+      .media-item:first-child .file-manager-options__body,
+      .media-item:nth-child(3n + 4) .file-manager-options__body {
+         @media (max-width: 575.98px) {
+            right: unset;
+            left: 0;
+         }
+      }
+   }
+   &--to-select {
+      .file-manager-select-panel {
+         display: flex;
+      }
+      .media-item .media-item__img .checkbox {
+         display: flex;
+      }
+      .file-manager-options {
+         display: none;
+      }
+   }
+
+   @media (max-width: 767.98px) {
+      padding: unset;
+      .file-manager-media__container {
+         margin: 10px 0 0;
+         padding: 0 10px 10px;
+         grid-template-columns: repeat(3, 1fr);
+         grid-column-gap: 12px;
+         grid-row-gap: 6px;
+      }
+      .media-item__play {
+         font-size: 42px !important;
+      }
+      .media-item .file-manager-options {
+         top: 1px;
+         right: 0;
+      }
+   }
+   &--line {
+      @media (max-width: 767.98px) {
+         padding: 0 0 10px;
+         .file-manager-media__container {
+            grid-template-columns: repeat(1, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 6px;
+            // display: block;
+         }
+         .media-item {
+            padding: 0 10px;
+            height: 52px;
+            padding: unset;
+            display: flex;
+            align-items: center;
+            &__img {
+               position: relative;
+               width: 52px;
+               height: 52px;
+               border-radius: 5px;
+               margin-right: 15px;
+            }
+            &__play {
+               font-size: 24px !important;
+            }
+            &__text-block {
+               display: block;
+            }
+            .file-manager-options {
+               position: static;
+            }
+            .file-manager-options__head {
+               color: $middleGray;
+            }
+         }
+         .media-item__img .checkbox {
+            @media (max-width: 767.98px) {
+               top: 2px;
+               left: 2px;
+               width: 16px;
+               height: 16px;
+               .icon {
+                  font-size: 6px;
+               }
+            }
+         }
+         .media-item:first-child .file-manager-options__body,
+         .media-item:nth-child(3n + 4) .file-manager-options__body {
+            right: 0 !important;
+            left: unset !important;
+         }
+      }
+   }
+}

@@ -1,0 +1,33 @@
+.file-manager-actions {
+   flex: none;
+   & > *:not(:last-child) {
+      margin-right: 10px;
+   }
+
+   &__upload,
+   &__add-folder {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      font-size: 14px;
+   }
+   &__upload {
+      background: $background;
+      color: $middleGray;
+   }
+
+   &__add-folder {
+      background: $blue;
+      color: $white;
+   }
+   &--desktop {
+      @media (max-width: 767.98px) {
+         display: none;
+      }
+   }
+   &--mobile {
+      @media (min-width: 768px) {
+         display: none;
+      }
+   }
+}

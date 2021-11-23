@@ -1,0 +1,77 @@
+.popup-zoom-media {
+   .popup__content {
+      max-width: 100%;
+      padding: unset;
+      background: unset;
+      max-height: 100%;
+      padding: 105px 50px 75px;
+      margin: unset;
+      width: max-content;
+      display: flex;
+      align-items: center;
+      overflow: visible;
+      box-shadow: unset;
+      border-radius: unset;
+      @media (max-width: 767.98px) {
+         padding: 50px 10px 80px;
+      }
+   }
+   &__prev,
+   &__next {
+      font-size: 60px;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $lightGray;
+      &:hover {
+         color: $white;
+      }
+      @media (max-width: 767.98px) {
+         font-size: 48px;
+         width: 48px;
+         height: 48px;
+         position: absolute;
+         bottom: 15px;
+      }
+   }
+   &__prev {
+      margin-right: 20px;
+      @media (max-width: 767.98px) {
+         left: 0;
+      }
+   }
+   &__next {
+      margin-left: 20px;
+      @media (max-width: 767.98px) {
+         right: 0;
+      }
+   }
+
+   &__image {
+      position: relative;
+      img {
+         width: 100%;
+         max-height: 100%;
+         object-fit: contain;
+         border-radius: 10px;
+         overflow: hidden;
+      }
+   }
+   .popup-close {
+      font-size: 16px !important;
+      bottom: calc(100% - 4px) !important;
+      left: 100% !important;
+      top: unset !important;
+      right: unset !important;
+      color: $background !important;
+      @media (max-width: 767.98px) {
+         right: 0 !important;
+         left: unset !important;
+         bottom: calc(100% + 4px) !important;
+         width: 32px;
+         height: 32px;
+      }
+   }
+}

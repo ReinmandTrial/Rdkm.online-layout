@@ -1,0 +1,141 @@
+.folder-large {
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+   background: $background;
+   cursor: pointer;
+   &__head {
+      display: flex;
+      align-items: center;
+      height: 33.333%;
+      padding: 15px;
+   }
+
+   &__icon {
+      flex: none;
+      margin-right: 12px;
+   }
+
+   &__title {
+      pointer-events: none;
+      margin-right: 10px;
+      flex: 1 1 auto;
+      padding: unset;
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -moz-box;
+      -moz-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      line-clamp: 2;
+      box-orient: vertical;
+      &:disabled {
+         color: inherit;
+      }
+   }
+   &__descr-wrapper {
+      height: 33.333%;
+      padding: 10px 15px;
+      position: relative;
+      @media (max-width: 767.98px) {
+         display: none;
+      }
+      &::before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         bottom: 0;
+         width: 2px;
+         background: $blue;
+      }
+   }
+   &__descr {
+      pointer-events: none;
+      width: 100%;
+      height: 100%;
+      padding: unset;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -moz-box;
+      -moz-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      -webkit-box-orient: vertical;
+      box-orient: vertical;
+   }
+
+   &__footer {
+      height: 33.333%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      @media (max-width: 767.98px) {
+         display: none;
+      }
+   }
+
+   &__amount {
+      color: $blue;
+   }
+
+   &__date {
+      color: $middleGray;
+   }
+
+   &__edit-block {
+      display: none;
+      position: absolute;
+      z-index: 20;
+      left: -2px;
+      right: -2px;
+      width: calc(100% + 4px);
+      background: $white;
+      padding: 0 8px 8px 8px;
+      background: $white;
+      border: 2px solid $blue;
+      border-radius: 0 0 10px 10px;
+      border-top: unset;
+   }
+
+   &__edit-btn {
+      padding: 11.5px;
+   }
+   &.edit {
+      position: relative;
+      background: $white;
+      border: 2px solid $blue;
+      border-bottom: unset;
+      border-radius: 10px 10px 0 0;
+      .folder-large__edit-block {
+         display: block;
+      }
+      .file-manager-options {
+         display: none;
+      }
+      .folder-large__descr-wrapper {
+         padding: 10px 10px 10px 5px;
+         margin-left: 10px;
+         margin-right: 5px;
+         background: $background;
+         border-radius: 5px;
+         &::before {
+            display: none;
+         }
+      }
+      .folder-large__title,
+      .folder-large__descr {
+         pointer-events: auto;
+      }
+      .folder-large__descr {
+         overflow-y: visible;
+         -webkit-line-clamp: unset;
+         line-clamp: unset;
+      }
+   }
+}
