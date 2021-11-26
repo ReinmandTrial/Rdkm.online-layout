@@ -159,6 +159,9 @@
    }
    &__forgot-pass--error {
       color: $blue;
+      &:hover {
+         color: $lightBlue;
+      }
    }
 
    &__btn-login {
@@ -189,7 +192,7 @@
    &__input-container {
       margin-bottom: 10px;
    }
-   &__btn-get-code {
+   &__btn-get-code:not(:last-child) {
       margin-bottom: 52px;
       @media (max-width: 767.98px) {
          margin-bottom: 10px;
@@ -203,6 +206,9 @@
    &__link {
       color: blue;
       text-decoration-line: underline;
+      &:hover {
+         color: $lightBlue;
+      }
    }
 }
 .entrance-login-sms {
@@ -256,7 +262,7 @@
 // Страница регистрации, блок регистрация
 .entrance-reg {
    .entrance__subtitle {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
    }
    .entrance__tabs {
       // margin: 30px 0 25px;
@@ -301,6 +307,14 @@
    }
 }
 // Страница регистрации, блок восстановления пароля конец
+
+// Страница регистрации, блок подтверждения email
+.entrance-email-confirmation {
+   .entrance__subtitle {
+      margin-bottom: 10px;
+   }
+}
+// Страница регистрации, блок подтверждения email конец
 
 // главная страница start
 .main-page {

@@ -41,7 +41,7 @@
    }
    &__head-btn-forward--mobile {
       font-size: 21px;
-      color: $red;
+      color: $blue;
       @media (min-width: 768px) {
          display: none;
       }
@@ -49,13 +49,14 @@
 
    &__head-btn-delete--mobile {
       font-size: 24px;
-      color: $blue;
+      color: $red;
       @media (min-width: 768px) {
          display: none;
       }
    }
 
    &__head-btn-cancel {
+      cursor: pointer;
       margin-left: auto;
       color: $lightGray;
       padding: 5px;

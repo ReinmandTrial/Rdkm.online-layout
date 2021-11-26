@@ -1,12 +1,16 @@
 // popup add file mobile start
-.popup-add-file--mobile {
+.panel-add-file--mobile {
+   position: absolute;
+   left: 0;
+   right: 0;
+   bottom: calc(100% + 10px);
+   background: $background;
+   border-radius: 10px;
+   padding: 10px 12.5px 18px;
    @media (min-width: 768px) {
       display: none;
    }
    .popup__content {
-      background: $background;
-      border-radius: 10px;
-      padding: 10px 12.5px 18px;
       margin: 15px;
       max-width: 345px;
    }
@@ -14,12 +18,14 @@
       display: flex;
       overflow-x: auto;
       margin-bottom: 7px;
+      justify-content: space-between;
    }
 
    &__items {
    }
 
    &__item {
+      cursor: pointer;
       padding: 11px;
       border-bottom: 1px solid rgba(213, 218, 234, 0.2);
       text-align: center;

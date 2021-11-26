@@ -68,6 +68,9 @@
       &:not(:first-child) {
          margin-left: 10px;
       }
+      &:hover {
+         background: $background;
+      }
       @media (max-width: 767.98px) {
          width: unset;
          height: unset;

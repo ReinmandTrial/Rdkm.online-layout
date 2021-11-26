@@ -9,6 +9,12 @@
    font-weight: 400;
    &:focus {
       border: 1px solid $middleGray;
+      & + .icon {
+         color: $middleGray;
+      }
+      & + .icon + .icon {
+         color: $middleGray;
+      }
    }
    &::placeholder {
       color: $lightGray;
@@ -144,6 +150,9 @@
    }
    &__block--secondary .input__error {
       text-align: center;
+   }
+   &__block--secondary.input__block--error .input {
+      color: $red;
    }
    &__block--standart {
       .input {

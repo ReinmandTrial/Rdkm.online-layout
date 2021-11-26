@@ -210,14 +210,6 @@
                                  </div> -->
                               </div>
                            </div>
-
-                           <!-- selected -->
-                           <div class="chat__head--selected">
-                              <button type="button" class="chat__head-btn-forward btn btn-primary">Переслать</button>
-                              <button type="button" class="chat__head-btn-delete btn btn-secondary">Удалить</button>
-                              <span class="icon icon-close chat__head-btn-cancel"></span>
-                           </div>
-                           <!-- selected end -->
                         </div>
                         <!-- chat head end -->
 
@@ -230,11 +222,7 @@
                                     </div>
                                     <div class="message__content">
                                        <div class="message__text-block">
-                                          <p class="message__text">Тушка́нчиковые, или настоящие тушканчики, или
-                                             трёхпалые тушканчики, или тушка́нчики, — семейство млекопитающих,
-                                             объединяющее группу грызунов, населяющих степи, полупустыни и пустыни
-                                             Палеарктики и приспособленных к специфическим условиям обитания в этих
-                                             ландшафтах.</p>
+                                          <p class="message__text">На какое мероприятие пойдем?</p>
                                        </div>
                                     </div>
                                     <p class="message__time h4">22:12</p>
@@ -244,29 +232,8 @@
                                  <div class="message__block">
                                     <p class="message__time h4">22:13</p>
                                     <div class="message__content">
-                                       <div class="message__text-block">
-                                          <p class="message__text">Давайте проведем голосование и выберем как обычно по
-                                             количеству
-                                             голосов</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="message message-out">
-                                 <div class="message__block">
-                                    <p class="message__time h4">22:39</p>
-                                    <div class="message__content">
-                                       <div class="message__text-block">
-                                          <div class="message__answer">
-                                             <div class="message__file-icon">
-                                                <span class="icon icon-download"></span>
-                                             </div>
-                                             <div class="message__answer-text-block">
-                                                <p class="message__answer-name h4sb">Человек Человеков</p>
-                                                <p class="message__answer-type">Файл</p>
-                                             </div>
-                                          </div>
-                                          <p class="message__text">Это правильный ответ, поздравляю</p>
+                                       <div class="message__img">
+                                          <img src="../../images/moscow.png" alt="">
                                        </div>
                                     </div>
                                  </div>
@@ -320,8 +287,6 @@
                               <button class="send-message__item send-message__attach">
                                  <span class="icon icon-clip"></span>
                               </button>
-                              <!--  <textarea class="send-message__input" placeholder="Написать сообщение..."
-                                 rows="1"></textarea> -->
                               <textarea class="send-message__input" placeholder="Написать сообщение..."
                                  rows="1"></textarea>
                               <div class="send-message__rightside">
@@ -532,29 +497,22 @@
          <!-- CONTENT end -->
 
          <!-- POPUP  -->
-         <div class="popup popup-add-file popup-add-file--items popup-add-file--file" style="display: block;">
+         <div class="popup popup-zoom-media" style="display: block;">
             <div class="popup__body">
                <div class="popup__content">
-                  <div class="popup-add-file__insert">
-                     <div class="popup-add-file__files">
-                        <div class="popup-add-file__file">
-                           <span class="popup-add-file__file-icon-doc icon icon-doc"></span>
-
-                           <div class="popup-add-file__file-text-block">
-                              <p class="popup-add-file__file-name">Материалы для подготовки</p>
-                              <p class="popup-add-file__file-weight h6m">13.4 мб</p>
-                           </div>
-                           <button class="popup-add-file__btn-delete popup-add-file__btn-delete--file">
-                              <span class="icon icon-delete"></span>
-                           </button>
-                        </div>
-                     </div>
-                     <button type="button" class="popup-add-file__add-more h4sb">Добавить еще+</button>
+                  <button class="popup-zoom-media__prev icon icon-triangle-left-thin"></button>
+                  <div class="popup-zoom-media__image">
+                     <img src="../../images/media1--large.png" alt="">
                   </div>
-                  <input type="text" class="popup-add-file__input" placeholder="Добавить описание">
-                  <div class="popup-add-file__buttons-block">
-                     <button type="button" class="popup-add-file__btn-cancel btn btn-secondary">Отменить</button>
-                     <button type="button" class="popup-add-file__btn-send btn btn-primary">Отправить</button>
+                  <button type="button" class="popup-zoom-media__next icon icon-triangle-right-thin"></button>
+                  <button type="button" class="popup-close icon icon-close"></button>
+                  <div class="file-manager-options">
+                     <div class="file-manager-options__head icon icon-dots-vertical"></div>
+                     <div class="file-manager-options__body h4r">
+                        <p class="file-manager-options__item">Посмотреть в чате</p>
+                        <p class="file-manager-options__item">Скачать</p>
+                        <p class="file-manager-options__item">Удалить</p>
+                     </div>
                   </div>
                </div>
             </div>

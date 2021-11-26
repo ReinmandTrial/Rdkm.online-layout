@@ -6,11 +6,16 @@
          .chat-tab-vote__item-progress span {
             background: $blue;
          }
+         .checkbox {
+            background: $blue;
+            color: $white;
+         }
       }
    }
 
    &__item-title {
-      margin-bottom: 15px;
+      // margin-bottom: 15px;
+      margin-right: 10px;
    }
 
    &__item-progress {
@@ -41,6 +46,12 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      &:not(:last-child) {
+         margin-bottom: 10px;
+      }
+   }
+   .checkbox {
+      margin-right: unset;
    }
 
    &__item-amount {

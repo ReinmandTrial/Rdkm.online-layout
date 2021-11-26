@@ -9,23 +9,22 @@
 @import "check-block";
 
 @import "left-sidebar";
+@import "logo";
+@import "menu-item";
 @import "header";
 @import "right-sidebar";
+@import "profile-small";
 
-@import "logo";
 @import "entrance__container";
 @import "entrance__tabs";
 @import "entrance__footer";
 @import "steps-reg";
 @import "card-reg-radio";
 @import "select";
-@import "profile-small";
-@import "menu-item";
 @import "search-small";
 @import "search";
 @import "card-notification";
 @import "chat-options";
-@import "popup-add-file--mobile__photo";
 @import "chat__head";
 @import "chat-interlocutor";
 @import "circle-status";
@@ -44,10 +43,13 @@
 @import "message__answer";
 @import "message__file";
 @import "message__img";
+@import "message__many-images";
 @import "message-options";
 @import "message-options--delete";
 @import "message-system";
 @import "message";
+@import "panel-add-file--mobile__photo";
+@import "panel-add-file--mobile";
 @import "chat__messages";
 @import "file-manager-leftside";
 @import "file-manager-actions";
@@ -64,6 +66,7 @@
 @import "file-manager-select-panel";
 @import "file-manager-media";
 @import "media-item";
+@import "folder-large";
 
 @import "popup-info";
 @import "popup-role";
@@ -72,11 +75,11 @@
 @import "popup-exit";
 @import "popup-questions-small";
 @import "popup-add-file";
-@import "popup-add-file--mobile";
 @import "popup-select-for-forwarding";
 @import "popup-create-folder";
 @import "popup-delete-photo";
 @import "popup-zoom-media";
+@import "popup-file-from-file-manager";
 
 @import "popup";
 @import "main";

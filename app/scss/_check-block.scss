@@ -3,6 +3,7 @@
    align-items: center;
    margin-bottom: 15px;
    .checkbox {
+      cursor: pointer;
       margin-right: 18px;
       .icon {
          font-size: 9px;
@@ -16,6 +17,9 @@
    &__link {
       color: $blue;
       text-decoration: underline;
+      &:hover {
+         color: $lightBlue;
+      }
    }
    &.active {
       .checkbox {

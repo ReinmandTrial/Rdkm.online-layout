@@ -4,11 +4,17 @@
    border-radius: 10px;
    background: $background;
    cursor: pointer;
+   @media (max-width: 767.98px) {
+      height: 52px;
+   }
    &__head {
       display: flex;
       align-items: center;
       height: 33.333%;
       padding: 15px;
+      @media (max-width: 767.98px) {
+         height: 100%;
+      }
    }
 
    &__icon {

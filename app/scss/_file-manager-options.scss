@@ -30,6 +30,7 @@
       width: max-content;
       padding: 6px 20px;
       cursor: pointer;
+      min-width: 100%;
       &:hover {
          background: $background;
       }

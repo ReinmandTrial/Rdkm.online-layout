@@ -94,6 +94,9 @@
          top: 50%;
          right: 0;
       }
+      &:hover {
+         background: $lightGray;
+      }
    }
 
    &__body {
@@ -118,6 +121,7 @@
    }
 
    &__item {
+      cursor: pointer;
       padding: 14px 37px;
       background: $blue;
       border-radius: 10px;

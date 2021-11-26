@@ -1,0 +1,82 @@
+.popup-file-from-file-manager {
+   .popup__content {
+      max-width: 770px;
+      padding: 20px;
+      @media (max-width: 767.98px) {
+         margin: 15px;
+         padding: unset;
+      }
+   }
+   &--folders {
+      .file-manager__head {
+         @media (min-width: 768px) {
+            display: none;
+         }
+      }
+      .popup-file-from-file-manager__buttons-block {
+         @media (max-width: 767.98px) {
+            display: none;
+         }
+      }
+   }
+   .file-manager-folders-container {
+      max-height: 532px;
+      overflow-y: auto;
+      padding: unset;
+      margin: unset;
+   }
+   .file-manager-main {
+      width: 100%;
+      margin-bottom: 20px;
+      @media (max-width: 767.98px) {
+         margin-bottom: unset;
+      }
+   }
+   .file-manager__head {
+      border: unset;
+      .file-manager-actions {
+         display: none;
+      }
+   }
+   .file-manager-media__container {
+      max-height: 525px;
+      overflow-y: auto;
+      @media (max-width: 767.98px) {
+         max-height: 400px;
+      }
+   }
+   .file-manager-select-panel {
+      display: none !important;
+   }
+   .folder-large {
+      @media (max-width: 767.98px) {
+         background: unset;
+      }
+   }
+   &__buttons-block {
+      display: flex;
+      justify-content: flex-end;
+      .btn:not(:last-child) {
+         margin-right: 32px;
+         @media (max-width: 767.98px) {
+            margin-right: unset;
+            margin-bottom: 6px;
+         }
+      }
+      @media (max-width: 767.98px) {
+         padding: 10px;
+         flex-direction: column;
+         .btn {
+            width: 100%;
+         }
+      }
+   }
+
+   &__btn-cancel {
+      width: 160px;
+   }
+
+   &__btn-send {
+      width: 160px;
+   }
+}
