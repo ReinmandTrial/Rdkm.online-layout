@@ -6,6 +6,12 @@
          display: block;
       }
    }
+   &--up {
+      .chat-options__body {
+         bottom: calc(100% + 13px);
+         top: unset;
+      }
+   }
    &__head {
       width: 32px;
       height: 32px;

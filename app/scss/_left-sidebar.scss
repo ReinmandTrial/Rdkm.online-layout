@@ -4,6 +4,7 @@
 
    display: flex;
    // transition: 0.5s;
+   transition: 0.3s ease-out;
    position: relative;
    margin-right: 0;
    flex: 0 0 300px;
@@ -149,6 +150,7 @@
       font-weight: 500;
    }
    &.closed {
+      transition: none;
       @media (max-width: 1199.98px) {
          margin-right: unset;
          // transition: 0s;

@@ -152,7 +152,11 @@
       }
    }
    &__block--secondary .input__error {
+      margin-bottom: 10px;
       text-align: center;
+      @media (max-width: 575.98px) {
+         text-align: left;
+      }
    }
    &__block--secondary.input__block--error .input {
       color: $red;
@@ -183,6 +187,17 @@
    &__block--disabled {
       .input {
          color: $middleGray;
+      }
+   }
+   &__btn-blue {
+      color: $blue;
+      text-decoration-line: underline;
+      text-align: center;
+      @media (max-width: 575.98px) {
+         text-align: left;
+      }
+      &:hover {
+         color: $lightBlue;
       }
    }
 }

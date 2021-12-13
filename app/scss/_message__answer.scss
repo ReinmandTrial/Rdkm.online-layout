@@ -42,6 +42,7 @@
       -webkit-box-orient: vertical;
       line-clamp: 1;
       box-orient: vertical;
+      word-break: break-all;
    }
 
    &__answer-text {
