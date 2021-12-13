@@ -67,6 +67,27 @@
 @import "file-manager-media";
 @import "media-item";
 @import "folder-large";
+@import "nav-profile";
+@import "data-profile";
+@import "user-data";
+@import "related-users";
+@import "card-related-user";
+@import "connected-services";
+@import "block-helpers";
+@import "childs-profile";
+@import "card-child-profile";
+@import "single-childs-profile";
+@import "profile-achievements";
+@import "card-achievement";
+@import "related-groups";
+@import "card-related-groups";
+@import "tariff-and-payment-instruments";
+@import "tariff";
+@import "card-tariff";
+@import "extra-space";
+@import "card-extra-space";
+@import "payment";
+@import "card-payment";
 
 @import "popup-info";
 @import "popup-role";
@@ -80,6 +101,12 @@
 @import "popup-delete-photo";
 @import "popup-zoom-media";
 @import "popup-file-from-file-manager";
+@import "popup-change-pass";
+@import "popup-transfer-of-authority";
+@import "popup-change-data";
+@import "popup-select-people";
+@import "popup-select-tariff";
+@import "popup-unsubscribe";
 
 @import "popup";
 @import "main";

@@ -2,9 +2,9 @@
 
 @font-face {
   font-family: "#{$icomoon-font-family}";
-  src: url("../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?374mtv") format("truetype"),
-    url("../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.woff?374mtv") format("woff"),
-    url("../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.svg?374mtv##{$icomoon-font-family}") format("svg");
+  src: url("../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?sosf6c") format("truetype"),
+    url("../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.woff?sosf6c") format("woff"),
+    url("../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.svg?sosf6c##{$icomoon-font-family}") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-pen {
+  &:before {
+    content: $icon-pen;
+  }
+}
+.icon-camera--secondary {
+  &:before {
+    content: $icon-camera--secondary;
+  }
+}
 .icon-grid-line {
   &:before {
     content: $icon-grid-line;

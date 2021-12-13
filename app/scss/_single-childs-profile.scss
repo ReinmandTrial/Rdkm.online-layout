@@ -1,0 +1,179 @@
+.single-childs-profile {
+   flex: 1 1 auto;
+   padding: 25px;
+   background: #ffffff;
+   border-radius: 25px;
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+   overflow-y: auto;
+   display: flex;
+   flex-direction: column;
+   @media (max-width: 767.98px) {
+      border-radius: unset;
+      padding: 10px 10px 145px;
+   }
+   &__top-line {
+      flex: none;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      @media (max-width: 767.98px) {
+         margin-bottom: 10px;
+      }
+   }
+
+   &__back {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      color: $blue;
+      @media (max-width: 767.98px) {
+         padding: 12px 17px 12px 0;
+         font-size: 20px;
+      }
+   }
+
+   &__title {
+      flex: 1 1 auto;
+      @media (min-width: 768px) {
+         display: none;
+      }
+   }
+
+   &__to-delete {
+      display: flex;
+      align-items: center;
+      color: $middleGray;
+      margin-left: 20px;
+   }
+   &__to-delete-text {
+      @media (max-width: 767.98px) {
+         display: none;
+      }
+   }
+
+   &__to-delete-icon {
+      font-size: 12px;
+      margin-left: 10px;
+      position: relative;
+      @media (max-width: 767.98px) {
+         font-size: 16px;
+      }
+      &:hover {
+         .single-childs-profile__to-delete-popup {
+            display: block;
+         }
+      }
+   }
+
+   &__to-delete-popup {
+      font-family: "Montserrat";
+      position: absolute;
+      top: 120%;
+      left: 120%;
+      width: max-content;
+      max-width: 325px;
+      padding: 20px;
+      color: $middleGray;
+      border-radius: 10px;
+      box-shadow: $shadowModal;
+      display: none;
+      z-index: 40;
+      background: $white;
+      @media (max-width: 767.98px) {
+         left: unset;
+         right: 120%;
+      }
+   }
+   &__to-delete-close {
+      font-size: 8px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $white;
+      color: $middleGray;
+      position: absolute;
+      top: -5px;
+      right: -11px;
+      @media (min-width: 768px) {
+         display: none;
+      }
+   }
+
+   &__info {
+      flex: none;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 55px;
+      @media (max-width: 767.98px) {
+         margin-bottom: 25px;
+      }
+   }
+
+   &__card {
+      display: flex;
+      margin-right: 20px;
+   }
+
+   &__card-img {
+      border-radius: 25px;
+      width: 125px;
+      height: 125px;
+      flex: none;
+      margin-right: 20px;
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__card-text-block {
+   }
+
+   &__card-name {
+      margin-bottom: 8px;
+   }
+
+   &__card-date {
+      color: $middleGray;
+      margin-bottom: 12px;
+   }
+
+   &__card-class {
+      color: $blue;
+   }
+
+   &__options {
+      max-width: 236px;
+      width: 100%;
+      @media (max-width: 767.98px) {
+         position: fixed;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         max-width: none;
+         background: $white;
+         padding: 9px 10px 30px;
+         z-index: 40;
+      }
+   }
+
+   &__btn-download-all {
+      margin-bottom: 25px;
+      @media (max-width: 767.98px) {
+         margin-bottom: 12px;
+      }
+   }
+
+   &__btn-add {
+   }
+}

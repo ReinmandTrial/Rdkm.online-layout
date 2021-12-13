@@ -1,0 +1,20 @@
+.related-users {
+   margin-bottom: 90px;
+   border-radius: 25px;
+   background: $background;
+   padding: 15px;
+   @media (max-width: 767.98px) {
+      display: none;
+      background: unset;
+      padding: unset;
+      border-radius: unset;
+   }
+   &__grid {
+      display: grid;
+      grid-gap: 15px;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      @media (max-width: 767.98px) {
+         grid-gap: 10px;
+      }
+   }
+}

@@ -1,0 +1,38 @@
+.card-payment {
+   width: 300px;
+   height: 200px;
+   background: conic-gradient(from 153.27deg at 50% 50%, #9d5bff 0deg, #8b3ffd 360deg);
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   color: $white;
+   padding: 15px;
+   &__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__logo {
+   }
+
+   &__edit {
+      color: rgba(255, 255, 255, 0.5);
+   }
+
+   &__num {
+   }
+
+   &__foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__balance {
+   }
+
+   &__mastercard {
+   }
+}

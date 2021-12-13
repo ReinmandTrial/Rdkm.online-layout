@@ -93,6 +93,11 @@
          left: 14px;
          pointer-events: none;
       }
+      .icon-calendar {
+         font-size: 16px;
+         left: 14px;
+         pointer-events: none;
+      }
    }
    &__box--secondary {
       display: flex;
@@ -165,6 +170,20 @@
       display: none;
       color: $red;
       font-weight: 500;
+   }
+   &__block--data {
+      .input__title {
+         margin-bottom: unset;
+         color: $middleGray;
+      }
+      .input {
+         border-color: $middleGray;
+      }
+   }
+   &__block--disabled {
+      .input {
+         color: $middleGray;
+      }
    }
 }
 // поле ввода конец

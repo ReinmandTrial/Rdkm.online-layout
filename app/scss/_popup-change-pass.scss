@@ -1,0 +1,13 @@
+.popup-change-pass {
+   &__title {
+      margin-bottom: 30px;
+      text-align: center;
+   }
+
+   &__input-container {
+      margin-bottom: 40px;
+      .input__block:not(:last-child) {
+         margin-bottom: 20px;
+      }
+   }
+}

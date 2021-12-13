@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Шаблон</title>
+   <link rel="stylesheet" href="../../css/style.min.css">
+</head>
+
+<body>
+
+   <!-- WRAPPER start -->
+   <div class="wrapper">
+
+      <!-- MAIN start  -->
+      <main class="main pages page-file-manager">
+
+         <!-- left sidebar start -->
+
+         <!-- Класс closed добавлен изначально. При разрешшении меньше 1200px к нему добавляются стили.
+         для открытия сайдбара в дальнейшем необходимо убрать класс closed. При разрешении меньше 768px класс
+          closed удаляется и начинает работать класс mobile-open. При добавлении открывается, при удалении закрывается  -->
+
+         <aside class="left-sidebar closed">
+            <div class="left-sidebar__body">
+               <button type="button" class="left-sidebar__btn-open">
+                  <span class="icon icon-triangle-right"></span>
+               </button>
+               <button type="button" class="left-sidebar__btn-close--mobile">
+                  <span class="icon icon-close"></span>
+               </button>
+               <a href="#" class="left-sidebar__logo logo h3eb">Родительский
+                  комитет<span class="logo--blue">.</span></a>
+               <div class="left-sidebar__content">
+                  <div class="profile-small">
+                     <div class="profile-small__head">
+                        <a href="#" class="profile-small__img">
+                           <img src="../../images/profile-school.png" alt="">
+                        </a>
+                        <div class="profile-small__text-block">
+                           <p class="profile-small__name h7">МБОУ СОШ № 316</p>
+                           <p class="profile-small__num h4sb">5 «‎Б» </p>
+                           <p class="profile-small__type">Класс</p>
+                        </div>
+                        <button type="button" class="profile-small__change-class">
+                           <span class="icon icon-swap">
+                              <span class="profile-small__counter"></span>
+                           </span>
+                           <span class="icon icon-triangle-up"></span>
+                        </button>
+                     </div>
+                     <div class="profile-small__body">
+                        <div class="profile-small__classes-block">
+                           <div class="profile-small__item">
+                              <div class="profile-small__item-text-block">
+                                 <p class="profile-small__item-class-name h4sb">9 “A” класс</p>
+                                 <p class="profile-small__item-school h7">МБОУ СОШ № 316</p>
+                              </div>
+                              <span class="profile-small__item-icon icon icon-swap">
+                                 <span class="profile-small__counter profile-small__counter--white"></span></span>
+                           </div>
+                           <div class="profile-small__item">
+                              <div class="profile-small__item-text-block">
+                                 <p class="profile-small__item-class-name h4sb">8 “В” класс</p>
+                                 <p class="profile-small__item-school h7">МБОУ СОШ № 316</p>
+                              </div>
+                              <span class="profile-small__item-icon icon icon-swap">
+                                 <span class="profile-small__counter profile-small__counter--white"></span></span>
+                           </div>
+                        </div>
+                        <button type="button" class="profile-small__btn-add-class btn btn-secondary">Добавить класс
+                           +</button>
+                     </div>
+                  </div>
+                  <div class="left-sidebar__menu">
+                     <div class="menu-item active">
+                        <span class="menu-item__icon icon icon-main-page"></span>
+                        <p class="menu-item__title">Главная</p>
+                     </div>
+                     <div class="menu-item">
+                        <span class="menu-item__icon icon icon-chat"></span>
+                        <p class="menu-item__title">Чат</p>
+                     </div>
+                     <div class="menu-item">
+                        <span class="menu-item__icon icon icon-finance"></span>
+                        <p class="menu-item__title">Финансы</p>
+                     </div>
+                     <div class="menu-item">
+                        <span class="menu-item__icon icon icon-calendar"></span>
+                        <p class="menu-item__title">Календарь</p>
+                     </div>
+                     <div class="menu-item">
+                        <span class="menu-item__icon icon icon-folder"></span>
+                        <p class="menu-item__title">Файл менеджер</p>
+                     </div>
+                     <div class="menu-item">
+                        <span class="menu-item__icon icon icon-voting"></span>
+                        <p class="menu-item__title">Голосование</p>
+                     </div>
+                     <div class="menu-item">
+                        <span class="menu-item__icon icon icon-blackboard"></span>
+                        <p class="menu-item__title">Данные класса</p>
+                     </div>
+                     <div class="menu-item">
+                        <span class="menu-item__icon icon icon-person"></span>
+                        <p class="menu-item__title">Профиль</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="left-sidebar__footer">
+                  <div class="left-sidebar__footer-item ">
+                     <span class="icon icon-exclamation"></span>
+                     <p class="left-sidebar__footer-item-title">Версия 2.2</p>
+                  </div>
+                  <div class="left-sidebar__footer-item">
+                     <span class="icon icon-comments"></span>
+                     <p class="left-sidebar__footer-item-title">Обратная связь</p>
+                  </div>
+                  <div class="left-sidebar__footer-item left-sidebar__footer-item--exit">
+                     <span class="icon icon-exit"></span>
+                     <p class="left-sidebar__footer-item-title">Выйти</p>
+                  </div>
+               </div>
+            </div>
+         </aside>
+         <!-- left sidebar end -->
+
+         <!-- CONTENT start  -->
+         <div class="content">
+            <div class="container">
+
+               <header class="header">
+                  <button class="burger-icon"><span class="icon icon-burger"></span></button>
+                  <p class="header__title h1">Файл менеджер<span>.</span></p>
+                  <div class="search__popup closed">
+                     <div class="search">
+                        <div class="search__head">
+                           <input type="text" class="search__input" placeholder="Поиск...">
+                           <span class="icon icon-search"></span>
+                        </div>
+                        <div class="search__body ">
+                           <div class="search__section">
+                              <p class="search__title h4sb">Календарь</p>
+                              <div class="search__block h4r">
+                                 <p class="search__subtitle">День рождения Вани Семенова</p>
+                                 <p class="search__subtitle">Поход в музей жизни космонавта</p>
+                                 <p class="search__subtitle">Поездка на катере</p>
+                                 <p class="search__subtitle">Мои расходы</p>
+                                 <p class="search__subtitle">Хельсинки</p>
+                              </div>
+                           </div>
+                           <div class="search__section">
+                              <p class="search__title h4sb">Профиль</p>
+                              <div class="search__block h4r">
+                                 <p class="search__subtitle">Профиль ребенка</p>
+                                 <p class="search__subtitle">Тариф и платежные инструменты</p>
+                                 <p class="search__subtitle">Данные и уведомления</p>
+                                 <p class="search__subtitle">Список групп</p>
+                                 <p class="search__subtitle">Хельсинки</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="header__buttons">
+                     <button type="button" class="header__notifications header__btn">
+                        <span class="icon icon-bell"><span class="counter"></span></span>
+
+                     </button>
+                     <button type="button" class="header__btn header__exit">
+                        <span class="icon icon-exit"></span>
+                     </button>
+                  </div>
+               </header>
+
+               <div class="body">
+                  <div class="file-manager">
+                     <div class="file-manager-leftside">
+                        <div class="file-manager__head">
+                           <p class="file-manager-leftside__title h3sb">Папки</p>
+                           <div class="file-manager-actions file-manager-actions--desktop">
+                              <button type="button" class="file-manager-actions__upload icon icon-upload"></button>
+                              <button type="button" class="file-manager-actions__add-folder icon icon-plus"></button>
+                           </div>
+                        </div>
+                        <div class="file-manager-leftside__body">
+
+                           <div class="file-manager-leftside__content">
+                              <div class="file-manager-leftside__wrapper">
+                                 <div class="folder-row__block">
+                                    <div class="folder-row">
+
+                                       <span class="folder-row__arrow icon icon-triangle-right"></span>
+                                       <div class="folder-row__icon">
+                                          <img src="../../images/svg icons/folder-gray.svg" alt="">
+                                       </div>
+                                       <p class="folder-row__title h4">2019</p>
+                                    </div>
+                                    <div class="folder-row__body">
+
+                                    </div>
+                                 </div>
+                                 <div class="folder-row__block open">
+                                    <div class="folder-row">
+
+                                       <span class="folder-row__arrow icon icon-triangle-right"></span>
+                                       <div class="folder-row__icon">
+                                          <img src="../../images/svg icons/folder-gray.svg" alt="">
+                                       </div>
+                                       <p class="folder-row__title h4">2020</p>
+                                    </div>
+                                    <div class="folder-row__body">
+                                       <div class="folder-row__block">
+                                          <div class="folder-row">
+
+                                             <span class="folder-row__arrow icon icon-triangle-right"></span>
+                                             <div class="folder-row__icon">
+                                                <img src="../../images/svg icons/folder-m.svg" alt="">
+                                             </div>
+                                             <p class="folder-row__title h4">Дни рождения</p>
+                                          </div>
+                                          <div class="folder-row__body">
+                                             <div class="folder-row__block">
+                                                <div class="folder-row">
+
+                                                   <span class="folder-row__arrow icon icon-triangle-right"></span>
+                                                   <div class="folder-row__icon">
+                                                      <img src="../../images/svg icons/folder-s.svg" alt="">
+                                                   </div>
+                                                   <p class="folder-row__title h4">Август</p>
+                                                </div>
+                                                <div class="folder-row__body">
+                                                   <div class="folder-row__block">
+                                                      <div class="folder-row">
+
+                                                         <span
+                                                            class="folder-row__arrow icon icon-triangle-right"></span>
+                                                         <div class="folder-row__icon">
+                                                            <img src="../../images/svg icons/folder-s.svg" alt="">
+                                                         </div>
+                                                         <p class="folder-row__title h4">День Рождение Альбины
+                                                            Сорокиной
+                                                            (11 лет)</p>
+                                                      </div>
+                                                      <div class="folder-row__body">
+
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="folder-row__block">
+                                                <div class="folder-row">
+
+                                                   <span class="folder-row__arrow icon icon-triangle-right"></span>
+                                                   <div class="folder-row__icon">
+                                                      <img src="../../images/svg icons/folder-xs.svg" alt="">
+                                                   </div>
+                                                   <p class="folder-row__title h4">Сентябрь</p>
+                                                </div>
+                                                <div class="folder-row__body">
+                                                   <div class="folder-row__block">
+                                                      <div class="folder-row">
+
+                                                         <span
+                                                            class="folder-row__arrow icon icon-triangle-right"></span>
+                                                         <div class="folder-row__icon">
+                                                            <img src="../../images/svg icons/folder-xxs.svg" alt="">
+                                                         </div>
+                                                         <p class="folder-row__title h4">День Рождение Альбины
+                                                            Сорокиной
+                                                            (11 лет)</p>
+                                                      </div>
+                                                      <div class="folder-row__body">
+
+                                                      </div>
+                                                   </div>
+                                                   <div class="folder-row__block">
+                                                      <div class="folder-row">
+
+                                                         <span
+                                                            class="folder-row__arrow icon icon-triangle-right"></span>
+                                                         <div class="folder-row__icon">
+                                                            <img src="../../images/svg icons/folder-xxs.svg" alt="">
+                                                         </div>
+                                                         <p class="folder-row__title h4">День Рождение Игоря
+                                                            Воробушкина
+                                                            (10 лет)</p>
+                                                      </div>
+                                                      <div class="folder-row__body">
+
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="folder-row__block">
+                                          <div class="folder-row">
+
+                                             <span class="folder-row__arrow icon icon-triangle-right"></span>
+                                             <div class="folder-row__icon">
+                                                <img src="../../images/svg icons/folder-l.svg" alt="">
+                                             </div>
+                                             <p class="folder-row__title h4">Мероприятия</p>
+                                          </div>
+                                          <div class="folder-row__body">
+
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="folder-row__block">
+                                    <div class="folder-row">
+
+                                       <span class="folder-row__arrow icon icon-triangle-right"></span>
+                                       <div class="folder-row__icon">
+                                          <img src="../../images/svg icons/folder-gray.svg" alt="">
+                                       </div>
+                                       <p class="folder-row__title h4">2021</p>
+                                    </div>
+                                    <div class="folder-row__body">
+
+                                    </div>
+                                 </div>
+                              </div>
+
+                           </div>
+
+                           <div class="storage-volume">
+                              <div class="storage-volume__block">
+                                 <div class="storage-volume__text-row">
+                                    <span class="storage-volume__icon icon icon-disc"></span>
+                                    <p class="storage-volume__title h5b2">Объем хранилища</p>
+                                    <p class="storage-volume__value h5sb">8GB из 12</p>
+                                 </div>
+                                 <div class="storage-volume__line"><span class="storage-volume__line--70"></span></div>
+                                 <a href="#" class="storage-volume__btn btn btn-secondary">
+                                    Увеличить объем
+                                    <span class="icon icon-triangle-right"></span>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="file-manager-main">
+                        <div class="file-manager__head">
+                           <div class="file-manager-breadcrumbs">
+                              <span class="file-manager-breadcrumbs__item h4">2020</span>
+                              <span class="file-manager-breadcrumbs__item h4">...</span>
+                              <span class="file-manager-breadcrumbs__item file-manager-breadcrumbs__item--last h4sb">
+                                 День Рождение Альбины
+                                 Сорокиной
+                                 (11 лет)
+                              </span>
+                           </div>
+                           <div class="file-manager-sorting">
+                              <span
+                                 class="file-manager-sorting__item file-manager-sorting__item--large icon icon-grid-l"></span>
+                              <span
+                                 class="file-manager-sorting__item file-manager-sorting__item--medium icon icon-grid-m"></span>
+                              <span
+                                 class="file-manager-sorting__item file-manager-sorting__item--small icon icon-grid-s active"></span>
+                           </div>
+                           <div class="file-manager-main__back icon icon-triangle-left"></div>
+                           <p class="file-manager-main__title--mobile h3sb">День Рождение Альбины
+                              Сорокиной
+                              (11 лет)</p>
+                           <div class="file-manager-actions file-manager-actions--mobile">
+                              <button type="button" class="file-manager-actions__upload icon icon-upload"></button>
+                              <button type="button" class="file-manager-actions__add-folder icon icon-plus"></button>
+                           </div>
+                        </div>
+
+                        <div class="file-manager-main__body">
+                           <div class="file-manager-media file-manager-media--grid-m">
+                              <div class="file-manager-filter">
+                                 <div class="toggle">
+                                    <div class="toggle__item">
+                                       <span></span>
+                                    </div>
+                                    <p class="toggle__descr">
+                                       От А до Я
+                                    </p>
+                                 </div>
+                                 <ul class="file-manager-filter__letters">
+                                    <li class="file-manager-filter__letters-item active">А</li>
+                                    <li class="file-manager-filter__letters-item">Б</li>
+                                    <li class="file-manager-filter__letters-item">В</li>
+                                    <li class="file-manager-filter__letters-item">Г</li>
+                                    <li class="file-manager-filter__letters-item">Д</li>
+                                    <li class="file-manager-filter__letters-item">Е</li>
+                                    <li class="file-manager-filter__letters-item">Ё</li>
+                                    <li class="file-manager-filter__letters-item">Ж</li>
+                                    <li class="file-manager-filter__letters-item">З</li>
+                                    <li class="file-manager-filter__letters-item">И</li>
+                                    <li class="file-manager-filter__letters-item">Й</li>
+                                    <li class="file-manager-filter__letters-item">К</li>
+                                    <li class="file-manager-filter__letters-item">Л</li>
+                                    <li class="file-manager-filter__letters-item">М</li>
+                                    <li class="file-manager-filter__letters-item">Н</li>
+                                    <li class="file-manager-filter__letters-item">О</li>
+                                    <li class="file-manager-filter__letters-item">П</li>
+                                    <li class="file-manager-filter__letters-item">Р</li>
+                                    <li class="file-manager-filter__letters-item">С</li>
+                                    <li class="file-manager-filter__letters-item">Т</li>
+                                    <li class="file-manager-filter__letters-item">У</li>
+                                    <li class="file-manager-filter__letters-item">Ф</li>
+                                    <li class="file-manager-filter__letters-item">Х</li>
+                                    <li class="file-manager-filter__letters-item">Ц</li>
+                                    <li class="file-manager-filter__letters-item">Ч</li>
+                                    <li class="file-manager-filter__letters-item">Ш</li>
+                                    <li class="file-manager-filter__letters-item">Щ</li>
+                                    <li class="file-manager-filter__letters-item">Э</li>
+                                    <li class="file-manager-filter__letters-item">Ю</li>
+                                    <li class="file-manager-filter__letters-item">Я</li>
+                                 </ul>
+                                 <div class="file-manager-sorting-mobile">
+                                    <span
+                                       class="file-manager-sorting-mobile__item file-manager-sorting-mobile__grid icon icon-grid-ms"></span>
+                                    <span
+                                       class="file-manager-sorting-mobile__item file-manager-sorting-mobile__line active icon icon-grid-line"></span>
+                                 </div>
+
+                                 <div class="file-manager-select-panel">
+                                    <div class="file-manager-select-panel__select-all">
+                                       <div class="checkbox">
+                                          <span class="icon icon-check"></span>
+                                       </div>
+                                       Выбрать все
+                                    </div>
+
+                                    <div class="file-manager-select-panel__rightside">
+                                       <p class="file-manager-select-panel__amount">Выбрано: 2</p>
+                                       <div class="file-manager-select-panel__buttons-block">
+                                          <button type="button"
+                                             class="file-manager-select-panel__download icon icon-download"></button>
+                                          <button type="button"
+                                             class="file-manager-select-panel__delete icon icon-delete"></button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="file-manager-media__container">
+                                 <div class="media-item media-item--video">
+                                    <div class="media-item__img">
+                                       <div class="media-item__img-bg"></div>
+                                       <img src="../../images/media1.png" alt="">
+                                       <div class="checkbox">
+                                          <span class="icon icon-check"></span>
+                                       </div>
+                                       <span class="media-item__play icon icon-play"></span>
+                                    </div>
+                                    <div class="media-item__text-block">
+                                       <p class="media-item__name h5b2">
+                                          Photo1784 87588P hoto178 87588 Phot o1 487588 Photo17 87588P hoto17848
+                                          7588Photo
+                                          178487588
+                                       </p>
+                                       <p class="media-item__date">24.10.2021</p>
+                                    </div>
+                                    <div class="file-manager-options">
+                                       <div class="file-manager-options__head icon icon-dots-vertical"></div>
+                                       <div class="file-manager-options__body h4r">
+                                          <p class="file-manager-options__item">Редактировать</p>
+                                          <p class="file-manager-options__item">Выбрать медиа</p>
+                                          <p class="file-manager-options__item">Скачать</p>
+                                          <p class="file-manager-options__item">Удалить</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="media-item">
+                                    <div class="media-item__img">
+                                       <div class="media-item__img-bg"></div>
+                                       <img src="../../images/media2.png" alt="">
+                                       <div class="checkbox">
+                                          <span class="icon icon-check"></span>
+                                       </div>
+                                       <span class="media-item__play icon icon-play"></span>
+                                    </div>
+                                    <div class="media-item__text-block">
+                                       <p class="media-item__name h5b2">Photo178487588</p>
+                                       <p class="media-item__date">24.10.2021</p>
+                                    </div>
+                                    <div class="file-manager-options">
+                                       <div class="file-manager-options__head icon icon-dots-vertical"></div>
+                                       <div class="file-manager-options__body h4r">
+                                          <p class="file-manager-options__item">Редактировать</p>
+                                          <p class="file-manager-options__item">Выбрать медиа</p>
+                                          <p class="file-manager-options__item">Скачать</p>
+                                          <p class="file-manager-options__item">Удалить</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="media-item">
+                                    <div class="media-item__img">
+                                       <div class="media-item__img-bg"></div>
+                                       <img src="../../images/media3.png" alt="">
+                                       <div class="checkbox">
+                                          <span class="icon icon-check"></span>
+                                       </div>
+                                       <span class="media-item__play icon icon-play"></span>
+                                    </div>
+                                    <div class="media-item__text-block">
+                                       <p class="media-item__name h5b2">Photo178487588</p>
+                                       <p class="media-item__date">24.10.2021</p>
+                                    </div>
+                                    <div class="file-manager-options">
+                                       <div class="file-manager-options__head icon icon-dots-vertical"></div>
+                                       <div class="file-manager-options__body h4r">
+                                          <p class="file-manager-options__item">Редактировать</p>
+                                          <p class="file-manager-options__item">Выбрать медиа</p>
+                                          <p class="file-manager-options__item">Скачать</p>
+                                          <p class="file-manager-options__item">Удалить</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="media-item">
+                                    <div class="media-item__img">
+                                       <div class="media-item__img-bg"></div>
+                                       <img src="../../images/media4.png" alt="">
+                                       <div class="checkbox">
+                                          <span class="icon icon-check"></span>
+                                       </div>
+                                       <span class="media-item__play icon icon-play"></span>
+                                    </div>
+                                    <div class="media-item__text-block">
+                                       <p class="media-item__name h5b2">Photo178487588</p>
+                                       <p class="media-item__date">24.10.2021</p>
+                                    </div>
+                                    <div class="file-manager-options">
+                                       <div class="file-manager-options__head icon icon-dots-vertical"></div>
+                                       <div class="file-manager-options__body h4r">
+                                          <p class="file-manager-options__item">Редактировать</p>
+                                          <p class="file-manager-options__item">Выбрать медиа</p>
+                                          <p class="file-manager-options__item">Скачать</p>
+                                          <p class="file-manager-options__item">Удалить</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="media-item media-item--video">
+                                    <div class="media-item__img">
+                                       <div class="media-item__img-bg"></div>
+                                       <img src="../../images/media4.png" alt="">
+                                       <div class="checkbox">
+                                          <span class="icon icon-check"></span>
+                                       </div>
+                                       <span class="media-item__play icon icon-play"></span>
+                                    </div>
+                                    <div class="media-item__text-block">
+                                       <p class="media-item__name h5b2">Photo178487588</p>
+                                       <p class="media-item__date">24.10.2021</p>
+                                    </div>
+                                    <div class="file-manager-options">
+                                       <div class="file-manager-options__head icon icon-dots-vertical"></div>
+                                       <div class="file-manager-options__body h4r">
+                                          <p class="file-manager-options__item">Редактировать</p>
+                                          <p class="file-manager-options__item">Выбрать медиа</p>
+                                          <p class="file-manager-options__item">Скачать</p>
+                                          <p class="file-manager-options__item">Удалить</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="media-item">
+                                    <div class="media-item__img">
+                                       <div class="media-item__img-bg"></div>
+                                       <img src="../../images/media2.png" alt="">
+                                       <div class="checkbox">
+                                          <span class="icon icon-check"></span>
+                                       </div>
+                                       <span class="media-item__play icon icon-play"></span>
+                                    </div>
+                                    <div class="media-item__text-block">
+                                       <p class="media-item__name h5b2">Photo178487588</p>
+                                       <p class="media-item__date">24.10.2021</p>
+                                    </div>
+                                    <div class="file-manager-options">
+                                       <div class="file-manager-options__head icon icon-dots-vertical"></div>
+                                       <div class="file-manager-options__body h4r">
+                                          <p class="file-manager-options__item">Редактировать</p>
+                                          <p class="file-manager-options__item">Выбрать медиа</p>
+                                          <p class="file-manager-options__item">Скачать</p>
+                                          <p class="file-manager-options__item">Удалить</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="media-item">
+                                    <div class="media-item__img">
+                                       <div class="media-item__img-bg"></div>
+                                       <img src="../../images/media3.png" alt="">
+                                       <div class="checkbox">
+                                          <span class="icon icon-check"></span>
+                                       </div>
+                                       <span class="media-item__play icon icon-play"></span>
+                                    </div>
+                                    <div class="media-item__text-block">
+                                       <p class="media-item__name h5b2">Photo178487588</p>
+                                       <p class="media-item__date">24.10.2021</p>
+                                    </div>
+                                    <div class="file-manager-options">
+                                       <div class="file-manager-options__head icon icon-dots-vertical"></div>
+                                       <div class="file-manager-options__body h4r">
+                                          <p class="file-manager-options__item">Редактировать</p>
+                                          <p class="file-manager-options__item">Выбрать медиа</p>
+                                          <p class="file-manager-options__item">Скачать</p>
+                                          <p class="file-manager-options__item">Удалить</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="media-item">
+                                    <div class="media-item__img">
+                                       <div class="media-item__img-bg"></div>
+                                       <img src="../../images/media4.png" alt="">
+                                       <div class="checkbox">
+                                          <span class="icon icon-check"></span>
+                                       </div>
+                                       <span class="media-item__play icon icon-play"></span>
+                                    </div>
+                                    <div class="media-item__text-block">
+                                       <p class="media-item__name h5b2">Photo178487588</p>
+                                       <p class="media-item__date">24.10.2021</p>
+                                    </div>
+                                    <div class="file-manager-options">
+                                       <div class="file-manager-options__head icon icon-dots-vertical"></div>
+                                       <div class="file-manager-options__body h4r">
+                                          <p class="file-manager-options__item">Редактировать</p>
+                                          <p class="file-manager-options__item">Выбрать медиа</p>
+                                          <p class="file-manager-options__item">Скачать</p>
+                                          <p class="file-manager-options__item">Удалить</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="media-item">
+                                    <div class="media-item__img">
+                                       <div class="media-item__img-bg"></div>
+                                       <img src="../../images/media4.png" alt="">
+                                       <div class="checkbox">
+                                          <span class="icon icon-check"></span>
+                                       </div>
+                                       <span class="media-item__play icon icon-play"></span>
+                                    </div>
+                                    <div class="media-item__text-block">
+                                       <p class="media-item__name h5b2">Photo178487588</p>
+                                       <p class="media-item__date">24.10.2021</p>
+                                    </div>
+                                    <div class="file-manager-options">
+                                       <div class="file-manager-options__head icon icon-dots-vertical"></div>
+                                       <div class="file-manager-options__body h4r">
+                                          <p class="file-manager-options__item">Редактировать</p>
+                                          <p class="file-manager-options__item">Выбрать медиа</p>
+                                          <p class="file-manager-options__item">Скачать</p>
+                                          <p class="file-manager-options__item">Удалить</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="media-item">
+                                    <div class="media-item__img">
+                                       <div class="media-item__img-bg"></div>
+                                       <img src="../../images/media2.png" alt="">
+                                       <div class="checkbox">
+                                          <span class="icon icon-check"></span>
+                                       </div>
+                                       <span class="media-item__play icon icon-play"></span>
+                                    </div>
+                                    <div class="media-item__text-block">
+                                       <p class="media-item__name h5b2">Photo178487588</p>
+                                       <p class="media-item__date">24.10.2021</p>
+                                    </div>
+                                    <div class="file-manager-options">
+                                       <div class="file-manager-options__head icon icon-dots-vertical"></div>
+                                       <div class="file-manager-options__body h4r">
+                                          <p class="file-manager-options__item">Редактировать</p>
+                                          <p class="file-manager-options__item">Выбрать медиа</p>
+                                          <p class="file-manager-options__item">Скачать</p>
+                                          <p class="file-manager-options__item">Удалить</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="media-item">
+                                    <div class="media-item__img">
+                                       <div class="media-item__img-bg"></div>
+                                       <img src="../../images/media3.png" alt="">
+                                       <div class="checkbox">
+                                          <span class="icon icon-check"></span>
+                                       </div>
+                                       <span class="media-item__play icon icon-play"></span>
+                                    </div>
+                                    <div class="media-item__text-block">
+                                       <p class="media-item__name h5b2">Photo178487588</p>
+                                       <p class="media-item__date">24.10.2021</p>
+                                    </div>
+                                    <div class="file-manager-options">
+                                       <div class="file-manager-options__head icon icon-dots-vertical"></div>
+                                       <div class="file-manager-options__body h4r">
+                                          <p class="file-manager-options__item">Редактировать</p>
+                                          <p class="file-manager-options__item">Выбрать медиа</p>
+                                          <p class="file-manager-options__item">Скачать</p>
+                                          <p class="file-manager-options__item">Удалить</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="media-item">
+                                    <div class="media-item__img">
+                                       <div class="media-item__img-bg"></div>
+                                       <img src="../../images/media4.png" alt="">
+                                       <div class="checkbox">
+                                          <span class="icon icon-check"></span>
+                                       </div>
+                                       <span class="media-item__play icon icon-play"></span>
+                                    </div>
+                                    <div class="media-item__text-block">
+                                       <p class="media-item__name h5b2">Photo178487588</p>
+                                       <p class="media-item__date">24.10.2021</p>
+                                    </div>
+                                    <div class="file-manager-options">
+                                       <div class="file-manager-options__head icon icon-dots-vertical"></div>
+                                       <div class="file-manager-options__body h4r">
+                                          <p class="file-manager-options__item">Редактировать</p>
+                                          <p class="file-manager-options__item">Выбрать медиа</p>
+                                          <p class="file-manager-options__item">Скачать</p>
+                                          <p class="file-manager-options__item">Удалить</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="media-item">
+                                    <div class="media-item__img">
+                                       <div class="media-item__img-bg"></div>
+                                       <img src="../../images/media4.png" alt="">
+                                       <div class="checkbox">
+                                          <span class="icon icon-check"></span>
+                                       </div>
+                                       <span class="media-item__play icon icon-play"></span>
+                                    </div>
+                                    <div class="media-item__text-block">
+                                       <p class="media-item__name h5b2">Photo178487588</p>
+                                       <p class="media-item__date">24.10.2021</p>
+                                    </div>
+                                    <div class="file-manager-options">
+                                       <div class="file-manager-options__head icon icon-dots-vertical"></div>
+                                       <div class="file-manager-options__body h4r">
+                                          <p class="file-manager-options__item">Редактировать</p>
+                                          <p class="file-manager-options__item">Выбрать медиа</p>
+                                          <p class="file-manager-options__item">Скачать</p>
+                                          <p class="file-manager-options__item">Удалить</p>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- right sidebar start -->
+            <aside class="right-sidebar">
+               <div class="right-sidebar__head">
+                  <button class="burger-icon"><span class="icon icon-burger"></span></button>
+                  <p class="header__title h3">Уведомления<span>.</span></p>
+                  <button type="button" class="right-sidebar__btn-close">
+                     <span class="icon icon-triangle-right"></span>
+                  </button>
+                  <div class="header__buttons">
+                     <button type="button" class="header__notifications header__btn active">
+                        <span class="icon icon-bell"><span class="counter"></span></span>
+                     </button>
+                     <button type="button" class="header__btn header__exit">
+                        <span class="icon icon-exit"></span>
+                     </button>
+                  </div>
+                  <span class="icon icon-close right-sidebar__close--mobile"></span>
+               </div>
+               <div class="right-sidebar__body">
+                  <p class="right-sidebar__title h3">Уведомления</p>
+                  <div class="right-sidebar__content">
+                     <div class="card-notification">
+                        <div class="card-notification__icon">
+                           <span class="icon icon-person"></span>
+                        </div>
+                        <div class="card-notification__text-block">
+                           <div class="card-notification__title-row">
+                              <p class="card-notification__category h4sb">Профиль</p>
+                              <p class="card-notification__date">14.10.2021</p>
+                           </div>
+                           <p class="card-notification__descr h4r">Ваш пробный период подходит к концу, продлите
+                              или выберите новый</p>
+                           <div class="card-notification__buttons-block">
+                              <button type="button" class="card-notification__details btn btn-primary">Детали</button>
+                              <button type="button"
+                                 class="card-notification__ignore btn btn-secondary">Игнорировать</button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-notification">
+                        <div class="card-notification__icon">
+                           <span class="icon icon-folder"></span>
+                        </div>
+                        <div class="card-notification__text-block">
+                           <div class="card-notification__title-row">
+                              <p class="card-notification__category h4sb">Файл менеджер</p>
+                              <p class="card-notification__date">14.10.2021</p>
+                           </div>
+                           <p class="card-notification__descr h4r">В вашем хранилище осталось менее 15 % свободного
+                              места
+                           </p>
+                           <div class="card-notification__buttons-block">
+                              <button type="button" class="card-notification__details btn btn-primary">Детали</button>
+                              <button type="button"
+                                 class="card-notification__ignore btn btn-secondary">Игнорировать</button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-notification">
+                        <div class="card-notification__icon">
+                           <span class="icon icon-finance"></span>
+                        </div>
+                        <div class="card-notification__text-block">
+                           <div class="card-notification__title-row">
+                              <p class="card-notification__category h4sb">Финансы</p>
+                              <p class="card-notification__date">14.10.2021</p>
+                           </div>
+                           <p class="card-notification__descr h4r">Со счета было снято 20 000 рублей на нужды
+                              преподавателя</p>
+                           <div class="card-notification__buttons-block">
+                              <button type="button" class="card-notification__details btn btn-primary">Детали</button>
+                              <button type="button"
+                                 class="card-notification__ignore btn btn-secondary">Игнорировать</button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-notification">
+                        <div class="card-notification__icon">
+                           <span class="icon icon-blackboard"></span>
+                        </div>
+                        <div class="card-notification__text-block">
+                           <div class="card-notification__title-row">
+                              <p class="card-notification__category h4sb">Данные класа</p>
+                              <p class="card-notification__date">14.10.2021</p>
+                           </div>
+                           <p class="card-notification__descr h4r"><a href="#" class="card-notification__link">Олеся
+                                 Михайленко</a> была(а) добавлена в группу ”<a href="#"
+                                 class="card-notification__link">7 “Б”
+                                 класс</a></p>
+                           <div class="card-notification__buttons-block">
+                              <button type="button" class="card-notification__details btn btn-primary">Детали</button>
+                              <button type="button"
+                                 class="card-notification__ignore btn btn-secondary">Игнорировать</button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-notification">
+                        <div class="card-notification__icon">
+                           <span class="icon icon-calendar"></span>
+                        </div>
+                        <div class="card-notification__text-block">
+                           <div class="card-notification__title-row">
+                              <p class="card-notification__category h4sb">Календарь</p>
+                              <p class="card-notification__date">14.10.2021</p>
+                           </div>
+                           <p class="card-notification__descr h4r">У вас запланированно новое мероприятие <a href="#"
+                                 class="card-notification__link">“поход к врачу”</a></p>
+                           <div class="card-notification__buttons-block">
+                              <button type="button" class="card-notification__details btn btn-primary">Детали</button>
+                              <button type="button"
+                                 class="card-notification__ignore btn btn-secondary">Игнорировать</button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-notification">
+                        <div class="card-notification__icon">
+                           <span class="icon icon-calendar"></span>
+                        </div>
+                        <div class="card-notification__text-block">
+                           <div class="card-notification__title-row">
+                              <p class="card-notification__category h4sb">Календарь</p>
+                              <p class="card-notification__date">14.10.2021</p>
+                           </div>
+                           <p class="card-notification__descr h4r">У вас запланированно новое мероприятие <a href="#"
+                                 class="card-notification__link">“поход к врачу”</a></p>
+                           <div class="card-notification__buttons-block">
+                              <button type="button" class="card-notification__details btn btn-primary">Детали</button>
+                              <button type="button"
+                                 class="card-notification__ignore btn btn-secondary">Игнорировать</button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-notification">
+                        <div class="card-notification__icon">
+                           <span class="icon icon-calendar"></span>
+                        </div>
+                        <div class="card-notification__text-block">
+                           <div class="card-notification__title-row">
+                              <p class="card-notification__category h4sb">Календарь</p>
+                              <p class="card-notification__date">14.10.2021</p>
+                           </div>
+                           <p class="card-notification__descr h4r">У вас запланированно новое мероприятие <a href="#"
+                                 class="card-notification__link">“поход к врачу”</a></p>
+                           <div class="card-notification__buttons-block">
+                              <button type="button" class="card-notification__details btn btn-primary">Детали</button>
+                              <button type="button"
+                                 class="card-notification__ignore btn btn-secondary">Игнорировать</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </aside>
+            <!-- right sidebar end -->
+
+         </div>
+         <!-- CONTENT end -->
+
+         <!-- POPUP  -->
+         <div class="popup popup-transfer-of-authority" style="display: block;">
+            <div class="popup__body">
+               <div class="popup__content">
+                  <div class="steps-reg">
+                     <div class="steps-reg__wrapper h3">
+                        <span class="steps-reg__item active complited">1</span>
+                        <span class="steps-reg__item active complited">2</span>
+                        <span class="steps-reg__item active complited">3</span>
+                        <span class="steps-reg__item active complited"><span class="icon icon-check"></span></span>
+                     </div>
+                  </div>
+                  <p class="popup-transfer-of-authority__title h2">Данные успешно заполнены!</p>
+                  <p class="popup-transfer-of-authority__descr">После подтверждения действующего председателя вы
+                     получите уведомление и права перейдут к вам</p>
+                  <div class="popup-transfer-of-authority__checkbox icon icon-check">
+                  </div>
+                  <button type="button" class="popup-transfer-of-authority__btn btn btn-primary">Вернуться в
+                     профиль</button>
+               </div>
+            </div>
+         </div>
+         <!-- POPUP END  -->
+
+
+      </main>
+      <!-- MAIN end -->
+
+   </div>
+   <!-- WRAPPER end -->
+
+
+
+   <!-- SCRIPTS start  -->
+   <script src="../../js/main.min.js"></script>
+
+
+
+</body>
+
+</html>

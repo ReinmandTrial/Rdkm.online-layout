@@ -1,0 +1,73 @@
+.profile-achievements {
+   flex: 1 1 auto;
+   display: flex;
+   flex-direction: column;
+
+   &__title {
+      margin-bottom: 20px;
+   }
+
+   &__info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 35px;
+      @media (max-width: 767.98px) {
+         margin-bottom: 14px;
+      }
+      .search-small {
+         max-width: 290px;
+         margin-bottom: unset;
+         margin-right: 10px;
+         @media (max-width: 767.98px) {
+            max-width: 235px;
+         }
+      }
+   }
+
+   &__amount {
+      color: $middleGray;
+   }
+
+   &__grid {
+      flex: 1 1 auto;
+      display: grid;
+      grid-gap: 34px 20px;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      @media (max-width: 575.98px) {
+         grid-template-columns: 1fr;
+         grid-gap: 10px;
+      }
+   }
+
+   &__empty {
+      flex: 1 1 auto;
+      min-height: 300px;
+      background: url("../images/bd-large.png") 0 0/100% 100% no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: 767.98px) {
+         background: none;
+      }
+   }
+
+   &__empty-message {
+   }
+
+   &__empty-descr {
+      max-width: 255px;
+      color: $middleGray;
+      margin-bottom: 15px;
+      text-align: center;
+   }
+
+   &__empty-btn-add {
+      max-width: 200px;
+      margin: 0 auto;
+      padding: 8px;
+      @media (max-width: 767.98px) {
+         display: none;
+      }
+   }
+}

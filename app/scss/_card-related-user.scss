@@ -1,0 +1,63 @@
+.card-related-user {
+   height: 75px;
+   background: $white;
+   border-radius: 10px;
+   display: flex;
+   padding: 10px;
+   cursor: pointer;
+   @media (max-width: 767.98px) {
+      background: $background;
+   }
+   &__photo {
+      width: 55px;
+      height: 55px;
+      border-radius: 10px;
+      flex: none;
+      margin-right: 10px;
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__text-block {
+      flex: 1 1 auto;
+   }
+
+   &__status {
+      margin-bottom: 2px;
+      color: $lightGray;
+   }
+
+   &__name {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -moz-box;
+      -moz-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      line-clamp: 2;
+      box-orient: vertical;
+      word-break: break-all;
+   }
+
+   &__descr {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -moz-box;
+      -moz-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      line-clamp: 2;
+      box-orient: vertical;
+      word-break: break-all;
+      max-width: 170px;
+      color: $lightGray;
+   }
+
+   &__add {
+   }
+}

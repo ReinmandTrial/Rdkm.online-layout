@@ -1,0 +1,15 @@
+.payment {
+   @media (max-width: 767.98px) {
+      display: none;
+   }
+   &__flex {
+      display: flex;
+      flex-wrap: wrap;
+      grid-template: 15px;
+      margin-bottom: 15px;
+   }
+
+   &__add-card {
+      max-width: 300px;
+   }
+}

@@ -5,7 +5,7 @@
     border: 1px solid transparent;
     display: block;
     width: 100%;
-
+    text-align: center;
     &:focus {
     }
     &:active {
@@ -46,8 +46,14 @@
         border: 1px solid $green;
         color: $white;
     }
-    &-contour {
+    &-transparent {
+        padding: 14px;
+        border-radius: 10px;
+        border-color: transparent;
+        color: $blue;
+        text-decoration-line: underline;
         &:hover {
+            color: $lightBlue;
         }
     }
     &-filter {

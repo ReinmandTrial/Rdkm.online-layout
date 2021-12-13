@@ -29,7 +29,7 @@
       bottom: 0;
       left: 0;
       height: 88%;
-      transition: .25s ease-out;
+      transition: 0.25s ease-out;
       img {
          max-width: unset;
          height: 100%;
@@ -446,3 +446,214 @@
 }
 
 // file manager end
+
+// Страницы профиль
+.page-profile {
+   .content {
+      height: 100vh;
+      overflow: hidden;
+   }
+   .container {
+      overflow: hidden;
+   }
+   .body {
+      overflow: hidden;
+      @media (max-width: 767.98px) {
+         padding: unset;
+      }
+   }
+   &--chairman {
+      .profile__rightside {
+         justify-content: space-between;
+         row-gap: 30px;
+         // min-height: 100%;
+         .related-users {
+            margin-bottom: unset;
+         }
+         .connected-services {
+            margin-bottom: unset;
+         }
+         .profile__btn-transfer-of-authority {
+            margin-top: unset;
+         }
+      }
+   }
+}
+.profile {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   @media (max-width: 767.98px) {
+      background: $white;
+   }
+   &__main {
+      flex: 1 1 auto;
+      padding: 25px;
+      background: #ffffff;
+      border-radius: 25px;
+      width: 100%;
+      overflow: hidden;
+      @media (max-width: 767.98px) {
+         border-radius: unset;
+         padding: 10px 10px 30px;
+      }
+   }
+   @media (max-width: 767.98px) {
+      &__main--user-data-selected {
+         .profile__select-section,
+         .profile__box-transfer-of-authority,
+         .profile__rightside {
+            display: none;
+         }
+         .profile__leftside {
+            display: block;
+         }
+         .user-data {
+            display: flex;
+         }
+         &.profile__main--change-pass--mobile {
+            .data-profile,
+            .user-data__info {
+               display: none;
+            }
+         }
+      }
+      &__main--related-users-selected {
+         .profile__select-section,
+         .profile__box-transfer-of-authority {
+            display: none;
+         }
+         .profile__rightside {
+            height: 100%;
+         }
+         .related-users {
+            display: block;
+         }
+      }
+      &__main--connected-services-selected {
+         .profile__select-section,
+         .profile__box-transfer-of-authority {
+            display: none;
+         }
+         .profile__rightside {
+            height: 100%;
+         }
+         .connected-services {
+            display: block;
+         }
+      }
+      &__main--block-helpers-selected {
+         .profile__select-section,
+         .profile__box-transfer-of-authority {
+            display: none;
+         }
+         .profile__rightside {
+            height: 100%;
+         }
+         .block-helpers {
+            display: flex;
+         }
+      }
+   }
+   &__wrapper {
+      height: 100%;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+   }
+   &__scroll {
+      flex: 1 1 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      column-gap: 30px;
+      @media (max-width: 767.98px) {
+         flex-direction: column;
+      }
+   }
+
+   &__leftside {
+      max-width: 300px;
+      width: 100%;
+      height: 100%;
+      @media (max-width: 767.98px) {
+         display: none;
+         max-width: unset;
+      }
+   }
+
+   &__block-head {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      @media (max-width: 767.98px) {
+         margin-bottom: 10px;
+      }
+   }
+
+   &__back {
+      padding: 10px 15px 10px 0;
+      font-size: 20px;
+      color: $blue;
+      @media (min-width: 768px) {
+         display: none;
+      }
+   }
+
+   &__title {
+   }
+   &__rightside {
+      // height: 100%;
+      max-width: 645px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      @media (max-width: 767.98px) {
+         max-width: unset;
+         flex: 1 1 auto;
+      }
+   }
+   &__box-transfer-of-authority {
+      position: sticky;
+      bottom: 0;
+      margin-top: auto;
+      display: flex;
+      justify-content: flex-end;
+      background: $white;
+      margin-left: -1px;
+      @media (max-width: 767.98px) {
+         position: static;
+         margin-left: unset;
+      }
+   }
+   &__btn-transfer-of-authority {
+      max-width: 300px;
+      // align-self: flex-end;
+
+      @media (max-width: 767.98px) {
+         max-width: unset;
+      }
+   }
+   &__select-section {
+      @media (min-width: 768px) {
+         display: none;
+      }
+   }
+   &__select-section-btns {
+      display: flex;
+      flex-direction: column;
+      row-gap: 6px;
+      margin-bottom: 20px;
+   }
+
+   &__btn-select-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .icon {
+         font-size: 8px;
+      }
+   }
+}
+// Страницы профиль конец

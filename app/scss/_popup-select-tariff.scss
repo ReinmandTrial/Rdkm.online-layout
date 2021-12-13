@@ -1,0 +1,25 @@
+.popup-select-tariff {
+   .popup__content {
+      max-width: 470px;
+   }
+   &__title {
+      margin-bottom: 15px;
+   }
+
+   &__descr {
+      max-width: 301px;
+      margin-bottom: 25px;
+      color: $lightGray;
+   }
+
+   &__btns-block {
+      display: flex;
+      column-gap: 25px;
+      justify-content: flex-end;
+      .btn {
+         padding: 8.5px;
+         max-width: 140px;
+         width: 100%;
+      }
+   }
+}

@@ -1,0 +1,14 @@
+.connected-services {
+   margin-bottom: 20px;
+   @media (max-width: 767.98px) {
+      display: none;
+   }
+   // margin-bottom: 90px;
+   &__items {
+      max-width: 300px;
+      @media (max-width: 767.98px) {
+         max-width: 500px;
+         margin: 0 auto;
+      }
+   }
+}

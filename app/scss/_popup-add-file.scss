@@ -178,5 +178,92 @@
       padding: 9.5px 22px;
       margin-top: 10px;
    }
+   &__textarea {
+      height: unset;
+      margin-bottom: 15px;
+   }
+   &__file-name {
+      margin-top: 7px;
+   }
+   &--achievement {
+      &.popup-add-file--loaded {
+         .popup-add-file__insert {
+            background: none;
+         }
+      }
+      .popup__content {
+         @media (max-width: 575.98px) {
+            margin: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            min-height: calc(100vh - 30px);
+            display: flex;
+            flex-direction: column;
+         }
+      }
+      .popup-add-file__buttons-block {
+         @media (max-width: 575.98px) {
+            margin-top: auto;
+            flex-direction: column-reverse;
+            row-gap: 10px;
+            .btn {
+               margin-right: unset;
+            }
+         }
+      }
+      .popup-add-file__buttons-block .btn {
+         padding: 14px;
+      }
+      .popup-add-file__insert {
+         min-height: 200px;
+         height: unset;
+      }
+      .input__block {
+         margin-bottom: 20px;
+         .input__box {
+            height: 35px;
+         }
+         .input {
+            padding-top: 8px;
+            padding-bottom: 8px;
+         }
+      }
+      .popup-add-file__images-item {
+         width: 170px;
+         height: 180px;
+         padding: unset;
+      }
+   }
+   &--achievement-mobile {
+      .popup__content {
+         margin-top: auto;
+         background: transparent;
+         box-shadow: unset;
+         margin: auto 10px 30px;
+         padding: unset;
+         border-radius: unset;
+      }
+   }
+   &__options--mobile {
+      background: $background;
+      margin-bottom: 6px;
+      border-radius: 10px;
+   }
+   &__options--mobile-item {
+      display: block;
+      text-align: center;
+      width: 100%;
+      color: $lightGray;
+      padding: 12px;
+      &:not(:last-child) {
+         border-bottom: 1px solid rgba(213, 218, 234, 0.2);
+      }
+   }
+
+   &__btn-cancel--mobile {
+      background: $background;
+   }
 }
+
 // popup add file end

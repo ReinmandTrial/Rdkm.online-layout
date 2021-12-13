@@ -1,0 +1,29 @@
+.nav-profile {
+   flex: none;
+   display: flex;
+   align-items: center;
+   width: 100%;
+   overflow-x: auto;
+   margin-bottom: 25px;
+   @media (max-width: 767.98px) {
+      padding: 15px 10px 3px;
+      border-bottom: 1px solid $background;
+      margin-bottom: unset;
+   }
+   &__item {
+      padding-bottom: 10px;
+      flex: none;
+      @media (max-width: 767.98px) {
+         padding-bottom: 12px;
+      }
+      &:not(:last-child) {
+         margin-right: 40px;
+         @media (max-width: 767.98px) {
+            margin-right: 30px;
+         }
+      }
+      &.active {
+         border-bottom: 2px solid $blue;
+      }
+   }
+}

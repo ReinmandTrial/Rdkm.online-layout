@@ -106,5 +106,12 @@
          color: $red;
       }
    }
+
+   &--success {
+      border-color: $middleGray !important;
+      .card-reg-radio__check {
+         background: $green !important;
+      }
+   }
 }
 // карточка радио конец

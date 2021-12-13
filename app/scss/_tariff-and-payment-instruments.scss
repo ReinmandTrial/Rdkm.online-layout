@@ -1,0 +1,40 @@
+.tariff-and-payment-instruments {
+   flex: 1 1 auto;
+   padding: 25px;
+   background: #ffffff;
+   border-radius: 25px;
+   width: 100%;
+   overflow: hidden;
+   overflow-y: auto;
+   display: flex;
+   flex-direction: column;
+   row-gap: 50px;
+   @media (max-width: 767.98px) {
+      border-radius: unset;
+      padding: 10px 10px 30px;
+      &--tariff-selected {
+         .profile__select-section {
+            display: none;
+         }
+         .tariff {
+            display: block;
+         }
+      }
+      &--extra-space-selected {
+         .profile__select-section {
+            display: none;
+         }
+         .extra-space {
+            display: block;
+         }
+      }
+      &--payment-selected {
+         .profile__select-section {
+            display: none;
+         }
+         .payment {
+            display: block;
+         }
+      }
+   }
+}

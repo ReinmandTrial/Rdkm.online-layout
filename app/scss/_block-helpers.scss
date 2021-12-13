@@ -1,0 +1,38 @@
+.block-helpers {
+   // margin-bottom: 55px;
+   @media (max-width: 767.98px) {
+      display: flex;
+      flex-direction: column;
+      display: none;
+      height: 100%;
+   }
+   &__items {
+      margin-bottom: 15px;
+      @media (min-width: 768px) {
+         .card-chat-xs {
+            width: max-content;
+            &:not(.active) {
+               display: none;
+            }
+         }
+         .card-chat-xs__check {
+            display: none;
+         }
+      }
+   }
+   &__change {
+      color: $blue;
+      &:hover {
+         color: $lightBlue;
+      }
+      @media (max-width: 767.98px) {
+         display: none;
+      }
+   }
+   &__btn-save {
+      margin-top: auto;
+      @media (min-width: 768px) {
+         display: none;
+      }
+   }
+}

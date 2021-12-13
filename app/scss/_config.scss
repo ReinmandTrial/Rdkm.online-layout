@@ -39,6 +39,14 @@ $shadowModal: 2px 4px 10px rgba(0, 0, 0, 0.15);
    font-size: 18px;
    font-weight: 600;
 }
+.h3sb2 {
+   font-size: 18px;
+   font-weight: 600;
+   @media (max-width: 767.98px) {
+      font-size: 16px;
+      font-weight: 500;
+   }
+}
 .h3eb {
    font-size: 18px;
    font-weight: 800;
@@ -62,6 +70,14 @@ $shadowModal: 2px 4px 10px rgba(0, 0, 0, 0.15);
 .h4r {
    font-size: 14px;
    font-weight: 400;
+}
+.h4r2 {
+   font-size: 14px;
+   font-weight: 400;
+   @media (max-width: 767.98px) {
+      font-size: 12px;
+      font-weight: 500;
+   }
 }
 .h4sb {
    font-size: 14px;

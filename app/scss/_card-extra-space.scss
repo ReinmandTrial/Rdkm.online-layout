@@ -1,0 +1,27 @@
+.card-extra-space {
+   padding: 20px 12px;
+   border: 1px solid $lightGray;
+   background: $white;
+   text-align: center;
+   border-radius: 10px;
+   &.active {
+      border-color: $blue;
+   }
+   &__capacity {
+      color: $blue;
+      margin-bottom: 17px;
+   }
+
+   &__price-in-month {
+      color: $middleGray;
+      margin-bottom: 20px;
+   }
+
+   &__btn {
+      margin-bottom: 16px;
+   }
+
+   &__descr {
+      color: $lightGray;
+   }
+}

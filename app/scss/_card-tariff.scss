@@ -1,0 +1,166 @@
+.card-tariff {
+   padding: 11px;
+   border: 1px solid $lightGray;
+   border-radius: 10px;
+   background: $white;
+
+   @media (max-width: 575.98px) {
+      display: flex;
+   }
+   &.active {
+      border-color: $blue;
+      .card-tariff__checkbox {
+         border-color: $blue;
+         background: $blue;
+         &::before {
+            display: block;
+         }
+      }
+   }
+   &__checkbox {
+      flex: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 1px solid $middleGray;
+      margin-right: 25px;
+      margin-left: 10px;
+      color: $white;
+      font-size: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &::before {
+         display: none;
+      }
+      @media (min-width: 576px) {
+         display: none;
+      }
+   }
+
+   &__main {
+      @media (max-width: 575.98px) {
+         flex: 1 1 auto;
+      }
+   }
+
+   &__head {
+      text-align: center;
+      margin-bottom: 22px;
+      @media (max-width: 575.98px) {
+         text-align: left;
+         display: flex;
+         column-gap: 15px;
+         margin-bottom: 25px;
+      }
+   }
+
+   &__title {
+      flex: 1 1 50%;
+      margin-bottom: 22px;
+      @media (max-width: 575.98px) {
+         margin-bottom: unset;
+      }
+   }
+
+   &__name {
+      margin-bottom: 8px;
+   }
+
+   &__time {
+      color: $blue;
+   }
+
+   &__price {
+      flex: 1 1 50%;
+   }
+
+   &__price-all {
+      margin-bottom: 8px;
+      @media (max-width: 575.98px) {
+         color: $blue;
+      }
+   }
+
+   &__price-in-month {
+      color: $middleGray;
+   }
+
+   &__list {
+      margin-bottom: 22px;
+      @media (max-width: 575.98px) {
+         margin-bottom: unset;
+      }
+   }
+
+   &__list-item {
+      padding-left: 16px;
+      position: relative;
+      width: max-content;
+      margin: 0 auto;
+      &::before {
+         content: "";
+         position: absolute;
+         top: 4px;
+         left: 0;
+         width: 8px;
+         height: 8px;
+         border-radius: 50%;
+         background: $blue;
+      }
+      &:not(:last-child) {
+         margin-bottom: 15px;
+      }
+      @media (max-width: 575.98px) {
+         margin: unset;
+      }
+   }
+
+   &__btn {
+      margin-bottom: 22px;
+      @media (max-width: 575.98px) {
+         display: none;
+      }
+   }
+
+   &__descr {
+      text-align: center;
+      color: $lightGray;
+      @media (max-width: 575.98px) {
+         display: none;
+      }
+   }
+
+   &__funds {
+      margin-bottom: 22px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media (max-width: 575.98px) {
+         flex-direction: row;
+         margin-bottom: unset;
+         column-gap: 10px;
+         margin-top: 20px;
+      }
+   }
+
+   &__fund {
+      min-width: 145px;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      @media (max-width: 575.98px) {
+         min-width: unset;
+         padding: 7px 0;
+      }
+   }
+
+   &__fund-img {
+      margin-right: 12px;
+   }
+
+   &__fund-info {
+      font-size: 14px;
+      color: #6a4194;
+   }
+}
