@@ -38,6 +38,9 @@
       .input__box .icon::before {
          background: transparent !important;
       }
+      .select__head {
+         border-color: $red;
+      }
    }
 
    &__title {
