@@ -2,6 +2,29 @@
    flex: none;
    display: flex;
    align-items: center;
+
+   &--small {
+      .toggle__item {
+         width: 33px;
+         height: 16px;
+      }
+      .toggle__item span {
+         width: 16px;
+         height: 16px;
+      }
+      .toggle__descr {
+         margin-left: 6px;
+      }
+   }
+
+   &--mobile-text {
+      .toggle__descr {
+         @media (max-width: 767.98px) {
+            display: block;
+         }
+      }
+   }
+
    &.active {
       .toggle__item span {
          left: 25px;
@@ -11,12 +34,17 @@
          color: $blue;
       }
    }
+
+   &--small.active .toggle__item span {
+      left: 17px;
+   }
    &__item {
       width: 50px;
       height: 24px;
       border-radius: 50px;
       border: 1px solid $lightGray;
       position: relative;
+      flex: none;
       cursor: pointer;
       span {
          position: absolute;
