@@ -18,6 +18,26 @@
       margin-bottom: 22px;
    }
 
+   &__add {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      font-size: 14px;
+      background: $white;
+      margin-left: 12px;
+      @media (max-width: 767.98px) {
+         width: 24px;
+         height: 24px;
+         background: $blue;
+         color: $white;
+         font-size: 10.5px;
+         margin-left: 4px;
+      }
+   }
+
    &__grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));

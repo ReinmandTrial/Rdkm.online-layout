@@ -1,0 +1,16 @@
+.class-data-main {
+  background-image: url("../images/woman.svg");
+  background-repeat: no-repeat;
+  background-size: auto calc(100% - 53px);
+  background-position: 93% 53px;
+  @media (max-width: 767.98px) {
+     background-image: none;
+  }
+  &__form {
+     width: 100%;
+     max-width: 300px;
+     @media (max-width: 767.98px) {
+        max-width: unset;
+     }
+  }
+}

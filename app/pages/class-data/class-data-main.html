@@ -179,7 +179,7 @@
                      <ul class="class-data__nav nav-class-data">
                         <li class="nav-class-data__item h4sb2 active">Данные класса</li>
                         <li class="nav-class-data__item h4sb2">Список родителей</li>
-                        <li class="nav-class-data__item h4sb2">Список детей</li> 
+                        <li class="nav-class-data__item h4sb2">Список детей</li>
                      </ul>
                      <div class="class-data__content class-data-main">
                         <div class="class-data__wrapper">
@@ -205,18 +205,34 @@
                                     </div>
                                  </div>
                                  <div class="class-data-form__info">
-                                    <div class="class-data-form__card card-reg-radio active">
-                                       <span class="card-reg-radio__icon">
+                                    <div class="class-data-form__card card-radio-double">
+                                       <label class="card-radio-double__item">
+                                          <span class="card-radio-double__input-block">
+                                             <input type="radio" class="card-radio-double__input" checked>
+                                             <span class="card-radio-double__style">
+                                             </span>
+                                          </span>
+                                          <span class="card-radio-double__text h4sb">Школа</span>
+                                       </label>
+                                       <span class="card-radio-double__icon">
                                           <span class="icon icon-school"></span>
                                        </span>
-                                       <div class="card-reg-radio__text-block">
-                                          <p class="card-reg-radio__title h4sb">Школа</p>
-                                       </div>
-                                       <span class="card-reg-radio__check">
-                                          <span class="icon icon-check"></span>
-                                       </span>
+                                       <label class="card-radio-double__item">
+                                          <span class="card-radio-double__input-block">
+                                             <input type="radio" class="card-radio-double__input">
+                                             <span class="card-radio-double__style">
+                                             </span>
+                                          </span>
+                                          <span class="card-radio-double__text h4sb">Дет. сад</span>
+                                       </label>
                                     </div>
                                     <div class="class-data-form__info-inputs">
+                                       <div class="input__block input__block--standart input__block--data">
+                                          <p class="input__title">Страна</p>
+                                          <div class="input__box">
+                                             <input type="text" class="input" value="РФ" disabled>
+                                          </div>
+                                       </div>
                                        <div class="input__block input__block--standart input__block--data">
                                           <p class="input__title">Город</p>
                                           <div class="input__box">
@@ -250,7 +266,7 @@
                                     </div>
                                     <div class="class-data-form__btns">
                                        <button type="button"
-                                          class="class-data-form__btn-save-data btn btn-primary">Редактировать</button> 
+                                          class="class-data-form__btn-save-data btn btn-primary">Редактировать</button>
                                     </div>
                                  </div>
                               </form>

@@ -7,6 +7,8 @@
 @import "buttons";
 @import "checkbox";
 @import "check-block";
+@import "dropdown";  
+@import "popup";
 
 @import "left-sidebar";
 @import "logo";
@@ -14,6 +16,8 @@
 @import "header";
 @import "right-sidebar";
 @import "profile-small";
+@import "emoji"; 
+@import "info"; 
 
 @import "entrance__container";
 @import "entrance__tabs";
@@ -88,7 +92,40 @@
 @import "card-extra-space";
 @import "payment";
 @import "card-payment";
+@import "promo-code";
 @import "message-select-chat";
+@import "card-radio-double";
+@import "popup-profile-link-user";
+
+// class-data pages
+@import "class-data/class-data";
+@import "class-data/nav-class-data";
+@import "class-data/class-data-main";
+@import "class-data/class-data-form";
+@import "class-data/class-data-parents";  
+@import "class-data/class-data-table";  
+@import "class-data/card-class-data-table";  
+@import "class-data/class-data-table-options";  
+
+// class-data pages
+
+// calendar-pages 
+@import "dropdown-events"; 
+@import "calendar/calendar";
+@import "calendar/calendar-search";
+@import "calendar/calendar-search-item";
+@import "calendar/calendar-photo-input";
+@import "calendar/calendar-sidebar";
+@import "calendar/calendar-sidebar-content";
+@import "calendar/calendar-sidebar-form";
+@import "calendar/card-event";
+@import "calendar/card-event-full";
+@import "calendar/card-event-short";
+@import "calendar/card-event-info";
+@import "calendar/popup-calendar-info"; 
+// calendar-pages
+
+
 
 @import "popup-info";
 @import "popup-role";
@@ -109,7 +146,6 @@
 @import "popup-select-tariff";
 @import "popup-unsubscribe";
 
-@import "popup";
 @import "main";
 
 @import "test";

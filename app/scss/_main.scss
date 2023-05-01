@@ -608,6 +608,13 @@
 
    &__title {
    }
+
+   &__fatiff-expire {
+      color: $middleGray;
+      font-size: 12px;
+      font-weight: 500;
+   }
+
    &__rightside {
       // height: 100%;
       max-width: 645px;
@@ -663,283 +670,20 @@
 }
 // Страницы профиль конец
 
-.class-data-form {
-   width: 100%;
-   height: 100%;
-   display: flex;
-   flex-direction: column;
-   @media (max-width: 767.98px) {
-      // display: none;
+// Страницы данные класса
+.page-class-data {
+   .content {
+      height: 100vh;
+      overflow: hidden;
    }
-   &__info {
-      flex: 1 1 auto;
-      display: flex;
-      flex-direction: column;
+   .container {
+      overflow: hidden;
    }
-
-   &__card {
-      margin-bottom: 10px;
-   }
-
-   &__info-inputs {
-      margin-bottom: 20px;
-      .input__block:not(:last-child) {
-         margin-bottom: 15px;
-         @media (max-width: 767.98px) {
-            margin-bottom: 10px;
-         }
-      }
-   }
-
-   &__btns {
-      margin-top: auto;
-      margin-bottom: 25px;
-      display: flex;
-      flex-direction: column;
-      row-gap: 15px;
-      @media (max-width: 767.98px) {
-         margin-bottom: unset;
-      }
-      & > * {
-         max-width: 500px;
-         margin-left: auto;
-         margin-right: auto;
-      }
-   }
-
-   &__change-pass--mobile {
-      flex: 1 1 auto;
-      display: flex;
-      flex-direction: column;
-   }
-   &__confirm-pass {
-      margin-top: auto;
-   }
-}
-
-.class-data {
-   width: 100%;
-   height: 100%;
-   display: flex;
-   flex-direction: column;
-   @media (max-width: 767.98px) {
-      background: #ffffff;
-   }
-   &__nav {
-   }
-
-   &__content {
-      flex: 1 1 auto;
-      padding: 33px 25px 33px 53px;
-      background: #ffffff;
-      border-radius: 25px;
-      width: 100%;
+   .body {
       overflow: hidden;
       @media (max-width: 767.98px) {
-         border-radius: unset;
-         padding: 10px 10px 30px;
-      }
-   }
-
-   &__wrapper {
-      height: 100%;
-      overflow-y: auto;
-      display: flex;
-      flex-direction: column;
-   }
-
-   &__scroll {
-      flex: 1 1 auto;
-   }
-}
-.nav-class-data {
-   flex: none;
-   display: flex;
-   align-items: center;
-   width: 100%;
-   overflow-x: auto;
-   margin-bottom: 25px;
-   @media (max-width: 767.98px) {
-      padding: 15px 10px 3px;
-      border-bottom: 1px solid $background;
-      margin-bottom: unset;
-   }
-   &__item {
-      padding-bottom: 10px;
-      flex: none;
-      @media (max-width: 767.98px) {
-         padding-bottom: 12px;
-      }
-      &:not(:last-child) {
-         margin-right: 40px;
-         @media (max-width: 767.98px) {
-            margin-right: 30px;
-         }
-      }
-      &.active {
-         border-bottom: 2px solid $blue;
+         padding: unset;
       }
    }
 }
-
-.class-data-main {
-   background-image: url("../images/woman.svg");
-   background-repeat: no-repeat;
-   background-size: auto calc(100% - 53px);
-   background-position: 93% 53px;
-   @media (max-width: 767.98px) {
-      background-image: none;
-   }
-   &__form {
-      width: 100%;
-      max-width: 300px;
-      @media (max-width: 767.98px) {
-         max-width: unset;
-      }
-   }
-}
-
-//
-
-.class-data-parents {
-   &__subtitle {
-      margin-bottom: 20px;
-      @media (max-width: 767.98px) {
-         margin-bottom: 12px;
-      }
-   }
-
-   &__content {
-   }
-
-   &__head {
-      display: flex;
-      justify-content: space-between;
-      column-gap: 30px;
-      @media (max-width: 767.98px) {
-         flex-direction: column;
-      }
-   }
-
-   &__invite {
-      max-width: 300px;
-   }
-
-   &__data {
-      max-width: 300px;
-      width: 100%;
-   }
-
-   &__toggle {
-      margin-bottom: 7px;
-      @media (max-width: 767.98px) {
-         margin-bottom: 13px;
-      }
-   }
-   
-   &__btn { 
-      margin-bottom: 15px;
-      width: 100%;
-      @media (max-width: 767.98px) {
-         margin-bottom: 13px;
-      }
-   }
-}
-.class-data-form {
-   &__data {
-   }
-}
-.data-profile {
-   &__img-block {
-   }
-
-   &__img {
-   }
-
-   &__select {
-   }
-
-   &__select-icon {
-   }
-
-   &__select-text {
-   }
-
-   &__select--mobile {
-   }
-
-   &__text-block {
-   }
-
-   &__role {
-   }
-
-   &__school {
-   }
-
-   &__class {
-   }
-
-   &__type {
-   }
-} 
-.info {
-   position: relative;
-   &--bottom-left {
-      .info__popup {
-         bottom: unset;
-         right: 0;
-         top: calc(100% + 5px);
-         left: unset;
-      }
-   }
-   &__icon {
-      font-size: 12px;
-      color: $lightGray;
-      &:hover + .info__popup {
-         // opacity: 1;
-         // pointer-events: visible;
-         transition-delay: 0.3s;
-         visibility: visible;
-      }
-   }
-
-   &__popup {
-      position: absolute;
-      background: #ffffff;
-      box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
-      border-radius: 10px;
-      padding: 28px 8px 16px 20px;
-      max-width: 315px;
-      width: max-content;
-      bottom: calc(100% + 5px);
-      right: 0;
-      z-index: 5;
-      // opacity: 0;
-      // pointer-events: none;
-      visibility: hidden;
-      transition-delay: 0.2s;
-      &:hover { 
-         transition-delay: 0.3s;
-         visibility: visible;
-      }
-   }
-
-   &__popup-text {
-      color: $middleGray;
-   }
-
-   &__close {
-      color: $middleGray;
-      position: absolute;
-      top: 4px;
-      right: 8px;
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
-      font-size: 8px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-   }
-} 
+// Страницы данные класса конец

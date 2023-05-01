@@ -1,0 +1,96 @@
+.card-class-data-table {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  &__icon {
+     font-size: 15px;
+     color: $black;
+     &.icon-table-loc,
+     &.icon-table-end {
+        font-size: 12px;
+     }
+  }
+
+  &__photos-list {
+     display: flex;
+     align-items: center;
+  }
+
+  &__photo-list-item {
+     width: 24px;
+     height: 24px;
+     border-radius: 50%;
+     border: 2px solid $white;
+     overflow: hidden;
+     &:not(:first-child) {
+        margin-left: -12px;
+     }
+  }
+
+  &__divide {
+     display: block;
+     width: 11px;
+     height: 1.5px;
+     border-radius: 50px;
+     background: $black;
+  }
+
+  &__profile-list {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     flex-wrap: wrap;
+  }
+
+  &__profile-list-item {
+  }
+
+  &__profile {
+     display: flex;
+     align-items: center;
+     column-gap: 8px;
+  }
+
+  &__profile-photo {
+     width: 32px;
+     height: 32px;
+     border-radius: 50%;
+     overflow: hidden;
+     flex: none;
+     @media (max-width: 767.98px) {
+        width: 40px;
+        height: 40px;
+     }
+  }
+
+  &__text {
+     display: flex;
+     column-gap: 10px;
+     @media (max-width: 767.98px) {
+        display: block;
+     }
+  }
+
+  &__text-info {
+     display: flex;
+     column-gap: 8px;
+     align-items: center;
+  }
+
+  &__name {
+     @media (max-width: 767.98px) {
+        margin-bottom: 8px;
+     }
+  }
+
+  &__id {
+     color: $middleGray;
+     @media (min-width: 768px) {
+        display: none;
+     }
+  }
+
+  &__special-icon {
+     color: $blue;
+  }
+}

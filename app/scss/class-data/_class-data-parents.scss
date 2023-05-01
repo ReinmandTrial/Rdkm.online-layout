@@ -1,0 +1,58 @@
+.class-data-parents {
+   &__subtitle {
+      margin-bottom: 20px;
+      @media (max-width: 767.98px) {
+         margin-bottom: 12px;
+      }
+   }
+
+   &__content {
+   }
+
+   &__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 30px;
+      margin-bottom: 52px;
+      @media (max-width: 767.98px) {
+         flex-direction: column;
+         width: 100%;
+         align-items: stretch;
+         margin-bottom: 62px;
+      }
+   }
+
+   &__invite {
+      max-width: 300px;
+      @media (max-width: 767.98px) {
+         max-width: 500px;
+      }
+   }
+
+   &__data {
+      max-width: 300px;
+      width: 100%;
+      margin-bottom: unset;
+      @media (max-width: 767.98px) {
+         margin-bottom: 18px;
+      }
+   }
+
+   &__toggle {
+      margin-bottom: 7px;
+      @media (max-width: 767.98px) {
+         margin-bottom: 13px;
+      }
+   }
+
+   &__btn {
+      width: 100%;
+      &:not(:last-child) {
+         margin-bottom: 15px;
+         @media (max-width: 767.98px) {
+            margin-bottom: 13px;
+         }
+      }
+   }
+}

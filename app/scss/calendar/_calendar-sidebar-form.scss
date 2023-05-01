@@ -1,0 +1,31 @@
+.calendar-sidebar-form {
+  &__content {
+     margin-bottom: 25px;
+  }
+
+  &__input {
+     &:not(:last-child) {
+        margin-bottom: 15px;
+     }
+  }
+
+  &__photo-input {
+  }
+
+  &__btns {
+  }
+
+  &__btn {
+     display: block;
+     width: 100%;
+     &:not(:last-child) {
+        margin-bottom: 15px;
+     }
+
+     &--red {
+        color: $red !important;
+        text-decoration-line: none;
+        font-weight: 600;
+     }
+  }
+}

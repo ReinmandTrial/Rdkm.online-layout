@@ -1,0 +1,136 @@
+.class-data-table {
+  &__row {
+    min-height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 15px;
+    border-radius: 10px;
+    @media (max-width: 767.98px) {
+      padding: 0;
+    }
+    &:hover,
+    &.active,
+    &.open {
+      @media (min-width: 768px) {
+        background: $background;
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__row--dropdown {
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__row--dropdown.open &__row-body {
+    display: block;
+  }
+
+  &__head {
+  }
+
+  &__col {
+    &:nth-child(1) {
+      width: 16%;
+    }
+    &:nth-child(2) {
+      flex: auto;
+    }
+    &:nth-child(3) {
+      flex: none;
+      margin-left: 20px;
+    }
+  }
+
+  &__id {
+    background: $white;
+    border-radius: 10px;
+    padding: 10px;
+    width: fit-content;
+  }
+
+  &__search {
+    cursor: pointer;
+    padding: 10px;
+    background: $white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    max-width: 400px;
+  }
+
+  &__search-icon {
+    font-size: 12px;
+    &::placeholder {
+      color: #c0c3cb;
+    }
+  }
+
+  &__search-input {
+    flex: auto;
+    color: #c0c3cb;
+  }
+
+  &__row-head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__info {
+    color: $middleGray;
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
+  }
+
+  &__item {
+  }
+
+  &__options {
+  }
+
+  &__row-body {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px 0;
+    background: $white;
+    border-radius: 10px;
+  }
+  &__row-body-item {
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+      @media (max-width: 767.98px) {
+        margin-bottom: 18px;
+      }
+    }
+  }
+
+  &__head-mobile {
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__title-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 34px;
+  }
+
+  &__title {
+  }
+
+  &__info {
+  }
+
+  &__search-small {
+  }
+}

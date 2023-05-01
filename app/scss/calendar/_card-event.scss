@@ -1,0 +1,17 @@
+.card-event {
+  display: flex;
+  flex-direction: column;
+  &--full {
+     .card-event__short {
+        display: none;
+     }
+     .card-event__full {
+        display: flex;
+        flex: auto;
+     }
+  }
+
+  &__full {
+     display: none;
+  }
+}

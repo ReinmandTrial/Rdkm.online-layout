@@ -1,0 +1,40 @@
+.dropdown-events {
+  &__list {
+  }
+
+  &__item {
+     border-radius: 5px;
+     padding: 5px;
+     display: flex;
+     column-gap: 8px;
+     align-items: center;
+     background: $greenAlt;
+     min-height: 42px;
+     &:not(:last-child) {
+        margin-bottom: 10px;
+     }
+  }
+
+  &__icon {
+  }
+
+  &__text {
+  }
+
+  &__item--green {
+     background: $greenAlt;
+     color: $darkGreenAlt;
+  }
+  &__item--pink {
+     background: $pinkAlt;
+     color: $darkGreenAlt;
+  }
+  &__item--blue {
+     background: $blueAlt;
+     color: $blue;
+  }
+  &__item--purple {
+     background: $purpleAlt;
+     color: $darkPurpleAlt;
+  }
+}

@@ -1,0 +1,43 @@
+.class-data-table-options {
+  position: relative;
+  flex: none;
+  &__head {
+     cursor: pointer;
+     width: 22px;
+     height: 22px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 15px;
+     color: $middleGray;
+  }
+
+  &__body {
+     display: none;
+     position: absolute;
+     top: calc(100% + 4px);
+     right: 0;
+     max-width: 200px;
+     background: $white;
+     box-shadow: $shadowModal;
+     border-radius: 10px;
+     padding: 10px 0;
+     z-index: 30;
+     color: $middleGray;
+  }
+
+  &__item {
+     width: max-content;
+     padding: 6px 20px;
+     cursor: pointer;
+     min-width: 100%;
+     &:hover {
+        background: $background;
+     }
+  }
+  &.open {
+     .class-data-table-options__body {
+        display: block;
+     }
+  }
+}

@@ -3,6 +3,7 @@
    border: 1px solid $lightGray;
    border-radius: 10px;
    background: $white;
+   align-self: stretch;
 
    @media (max-width: 575.98px) {
       display: flex;
@@ -37,8 +38,12 @@
          display: none;
       }
    }
+   
 
    &__main {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
       @media (max-width: 575.98px) {
          flex: 1 1 auto;
       }
@@ -87,6 +92,10 @@
    }
 
    &__list {
+      flex: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       margin-bottom: 22px;
       @media (max-width: 575.98px) {
          margin-bottom: unset;
@@ -96,7 +105,7 @@
    &__list-item {
       padding-left: 16px;
       position: relative;
-      width: max-content;
+      width: fit-content;
       margin: 0 auto;
       &::before {
          content: "";
@@ -132,10 +141,11 @@
    }
 
    &__funds {
+      width: fit-content;
+      margin: 0 auto;
       margin-bottom: 22px;
       display: flex;
       flex-direction: column;
-      align-items: center;
       @media (max-width: 575.98px) {
          flex-direction: row;
          margin-bottom: unset;
@@ -162,5 +172,6 @@
    &__fund-info {
       font-size: 14px;
       color: #6a4194;
+      margin-left: auto;
    }
 }

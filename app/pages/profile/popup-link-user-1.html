@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Шаблон</title>
+  <link rel="stylesheet" href="../../css/style.min.css">
+</head>
+
+<body>
+
+  <!-- WRAPPER start -->
+  <div class="wrapper">
+
+    <!-- MAIN start  -->
+    <main class="main pages page-profile page-profile--parent">
+
+      <!-- left sidebar start -->
+
+      <!-- Класс closed добавлен изначально. При разрешшении меньше 1200px к нему добавляются стили.
+         для открытия сайдбара в дальнейшем необходимо убрать класс closed. При разрешении меньше 768px класс
+          closed удаляется и начинает работать класс mobile-open. При добавлении открывается, при удалении закрывается  -->
+
+      <aside class="left-sidebar closed">
+        <div class="left-sidebar__body">
+          <button type="button" class="left-sidebar__btn-open">
+            <span class="icon icon-triangle-right"></span>
+          </button>
+          <button type="button" class="left-sidebar__btn-close--mobile">
+            <span class="icon icon-close"></span>
+          </button>
+          <a href="#" class="left-sidebar__logo logo h3eb">Родительский
+            комитет<span class="logo--blue">.</span></a>
+          <div class="left-sidebar__content">
+            <div class="profile-small">
+              <div class="profile-small__head">
+                <a href="#" class="profile-small__img">
+                  <img src="../../images/profile-school.png" alt="">
+                </a>
+                <div class="profile-small__text-block">
+                  <p class="profile-small__name h7">МБОУ СОШ № 316</p>
+                  <p class="profile-small__num h4sb">5 «Б» </p>
+                  <p class="profile-small__type">Класс</p>
+                </div>
+                <button type="button" class="profile-small__change-class">
+                  <span class="icon icon-swap">
+                    <span class="profile-small__counter"></span>
+                  </span>
+                  <span class="icon icon-triangle-up"></span>
+                </button>
+              </div>
+              <div class="profile-small__body">
+                <div class="profile-small__classes-block">
+                  <div class="profile-small__item">
+                    <div class="profile-small__item-text-block">
+                      <p class="profile-small__item-class-name h4sb">9 “A” класс</p>
+                      <p class="profile-small__item-school h7">МБОУ СОШ № 316</p>
+                    </div>
+                    <span class="profile-small__item-icon icon icon-swap">
+                      <span class="profile-small__counter profile-small__counter--white"></span></span>
+                  </div>
+                  <div class="profile-small__item">
+                    <div class="profile-small__item-text-block">
+                      <p class="profile-small__item-class-name h4sb">8 “В” класс</p>
+                      <p class="profile-small__item-school h7">МБОУ СОШ № 316</p>
+                    </div>
+                    <span class="profile-small__item-icon icon icon-swap">
+                      <span class="profile-small__counter profile-small__counter--white"></span></span>
+                  </div>
+                </div>
+                <button type="button" class="profile-small__btn-add-class btn btn-secondary">Добавить класс
+                  +</button>
+              </div>
+            </div>
+            <div class="left-sidebar__menu">
+              <div class="menu-item active">
+                <span class="menu-item__icon icon icon-main-page"></span>
+                <p class="menu-item__title">Главная</p>
+              </div>
+              <div class="menu-item">
+                <span class="menu-item__icon icon icon-chat"></span>
+                <p class="menu-item__title">Чат</p>
+              </div>
+              <div class="menu-item">
+                <span class="menu-item__icon icon icon-finance"></span>
+                <p class="menu-item__title">Финансы</p>
+              </div>
+              <div class="menu-item">
+                <span class="menu-item__icon icon icon-calendar"></span>
+                <p class="menu-item__title">Календарь</p>
+              </div>
+              <div class="menu-item">
+                <span class="menu-item__icon icon icon-folder"></span>
+                <p class="menu-item__title">Файл менеджер</p>
+              </div>
+              <div class="menu-item">
+                <span class="menu-item__icon icon icon-voting"></span>
+                <p class="menu-item__title">Голосование</p>
+              </div>
+              <div class="menu-item">
+                <span class="menu-item__icon icon icon-blackboard"></span>
+                <p class="menu-item__title">Данные класса</p>
+              </div>
+              <div class="menu-item">
+                <span class="menu-item__icon icon icon-person"></span>
+                <p class="menu-item__title">Профиль</p>
+              </div>
+            </div>
+          </div>
+          <div class="left-sidebar__footer">
+            <div class="left-sidebar__footer-item ">
+              <span class="icon icon-exclamation"></span>
+              <p class="left-sidebar__footer-item-title">Версия 2.2</p>
+            </div>
+            <div class="left-sidebar__footer-item">
+              <span class="icon icon-comments"></span>
+              <p class="left-sidebar__footer-item-title">Обратная связь</p>
+            </div>
+            <div class="left-sidebar__footer-item left-sidebar__footer-item--exit">
+              <span class="icon icon-exit"></span>
+              <p class="left-sidebar__footer-item-title">Выйти</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- left sidebar end -->
+
+      <!-- CONTENT start  -->
+      <div class="content">
+        <div class="container">
+
+          <header class="header">
+            <button class="burger-icon"><span class="icon icon-burger"></span></button>
+            <p class="header__title h1">Профиль<span>.</span></p>
+            <div class="search__popup closed">
+              <div class="search">
+                <div class="search__head">
+                  <input type="text" class="search__input" placeholder="Поиск...">
+                  <span class="icon icon-search"></span>
+                </div>
+                <div class="search__body ">
+                  <div class="search__section">
+                    <p class="search__title h4sb">Календарь</p>
+                    <div class="search__block h4r">
+                      <p class="search__subtitle">День рождения Вани Семенова</p>
+                      <p class="search__subtitle">Поход в музей жизни космонавта</p>
+                      <p class="search__subtitle">Поездка на катере</p>
+                      <p class="search__subtitle">Мои расходы</p>
+                      <p class="search__subtitle">Хельсинки</p>
+                    </div>
+                  </div>
+                  <div class="search__section">
+                    <p class="search__title h4sb">Профиль</p>
+                    <div class="search__block h4r">
+                      <p class="search__subtitle">Профиль ребенка</p>
+                      <p class="search__subtitle">Тариф и платежные инструменты</p>
+                      <p class="search__subtitle">Данные и уведомления</p>
+                      <p class="search__subtitle">Список групп</p>
+                      <p class="search__subtitle">Хельсинки</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header__buttons">
+              <button type="button" class="header__notifications header__btn">
+                <span class="icon icon-bell"><span class="counter"></span></span>
+
+              </button>
+              <button type="button" class="header__btn header__exit">
+                <span class="icon icon-exit"></span>
+              </button>
+            </div>
+          </header>
+
+          <div class="body">
+            <div class="profile">
+              <ul class="nav-profile">
+                <li class="nav-profile__item h4sb2">Данные</li>
+                <li class="nav-profile__item h4sb2">Профиль ребенка</li>
+                <li class="nav-profile__item h4sb2 active">Тариф и платежные инструменты</li>
+                <li class="nav-profile__item h4sb2">Связанные группы</li>
+              </ul>
+              <div class="tariff-and-payment-instruments tariff-and-payment-instruments--payment-selected">
+                <div class="tariff">
+                  <div class="profile__block-head">
+                    <button type="button" class="profile__back icon icon-triangle-left"></button>
+                    <p class="profile__title h3sb2">Тарифный план</p>
+                  </div>
+                  <div class="tariff__grid">
+                    <div class="card-tariff">
+                      <span class="card-tariff__checkbox icon icon-check"></span>
+                      <div class="card-tariff__main">
+                        <div class="card-tariff__head">
+                          <div class="card-tariff__title">
+                            <p class="card-tariff__name h3sb">Базовый</p>
+                            <p class="card-tariff__time">1 месяц</p>
+                          </div>
+                          <div class="card-tariff__price">
+                            <p class="card-tariff__price-all h2">150₽</p>
+                            <p class="card-tariff__price-in-month">150руб/месяц</p>
+                          </div>
+                        </div>
+                        <ul class="card-tariff__list">
+                          <li class="card-tariff__list-item">Без скидки</li>
+                          <li class="card-tariff__list-item">Срок хранения данных 1 месяц</li>
+                          <li class="card-tariff__list-item">Объем хранилища 12 гб. у всего класса. <br/>
+Можно менять дополнительно.</li>
+                        </ul>
+                        <button type="button" class="card-tariff__btn btn btn-primary">Выбрать</button>
+                        <p class="card-tariff__descr h6m">При оплате за месяц, выбранный тариф будет
+                          продлеваться автоматически в течение одного года. Вы можете отменить
+                          автоматические платежи в любое время до даты платежа.</p>
+                      </div>
+                    </div>
+                    <div class="card-tariff">
+                      <span class="card-tariff__checkbox icon icon-check"></span>
+                      <div class="card-tariff__main">
+                        <div class="card-tariff__head">
+                          <div class="card-tariff__title">
+                            <p class="card-tariff__name h3sb">Популярный</p>
+                            <p class="card-tariff__time">6 месяцев</p>
+                          </div>
+                          <div class="card-tariff__price">
+                            <p class="card-tariff__price-all h2">720₽</p>
+                            <p class="card-tariff__price-in-month">120руб/месяц</p>
+                          </div>
+                        </div>
+                        <ul class="card-tariff__list">
+                          <li class="card-tariff__list-item">Скидка 20%</li>
+                          <li class="card-tariff__list-item">Срок хранения данных 6 мес.</li>
+                          <li class="card-tariff__list-item">Объем хранилища 12 гб. у всего класса. <br/>
+Можно менять дополнительно.</li>
+                        </ul>
+                        <button type="button" class="card-tariff__btn btn btn-primary">Выбрать</button>
+                        <p class="card-tariff__descr h6m">При оплате за месяц, выбранный тариф будет
+                          продлеваться автоматически в течение одного года. Вы можете отменить
+                          автоматические платежи в любое время до даты платежа.</p>
+                      </div>
+                    </div>
+                    <div class="card-tariff active">
+                      <span class="card-tariff__checkbox icon icon-check"></span>
+                      <div class="card-tariff__main">
+                        <div class="card-tariff__head">
+                          <div class="card-tariff__title">
+                            <p class="card-tariff__name h3sb">Продвинутый</p>
+                            <p class="card-tariff__time">12 месяцев</p>
+                          </div>
+                          <div class="card-tariff__price">
+                            <p class="card-tariff__price-all h2">1260₽</p>
+                            <p class="card-tariff__price-in-month">105руб/месяц</p>
+                          </div>
+                        </div>
+                        <ul class="card-tariff__list">
+                          <li class="card-tariff__list-item">Скидка 30%</li>
+                          <li class="card-tariff__list-item">Срок хранения данных 12 мес.</li>
+                          <li class="card-tariff__list-item">Объем хранилища 12 гб. у всего класса. <br/>
+Можно менять дополнительно.</li>
+                        </ul>
+                        <div class="card-tariff__funds">
+                          <div class="card-tariff__fund">
+                            <div class="card-tariff__fund-img">
+                              <img src="../../images/fund1.png" alt="">
+                            </div>
+                            <button type="button" class="card-tariff__fund-info icon icon-info"></button>
+                          </div>
+                          <div class="card-tariff__fund">
+                            <div class="card-tariff__fund-img">
+                              <img src="../../images/fund2.png" alt="">
+                            </div>
+                            <button type="button" class="card-tariff__fund-info icon icon-info"></button>
+                          </div>
+                        </div>
+                        <button type="button" class="card-tariff__btn btn btn-primary" disabled>Выбрано</button>
+                        <p class="card-tariff__descr h6m">При оплате за месяц, выбранный тариф будет
+                          продлеваться автоматически в течение одного года. Вы можете отменить
+                          автоматические платежи в любое время до даты платежа.</p>
+                      </div>
+                    </div>
+                    <div class="card-tariff">
+                      <span class="card-tariff__checkbox icon icon-check"></span>
+                      <div class="card-tariff__main">
+                        <div class="card-tariff__head">
+                          <div class="card-tariff__title">
+                            <p class="card-tariff__name h3sb">Двойняшки</p>
+                            <p class="card-tariff__time">12 месяцев</p>
+                          </div>
+                          <div class="card-tariff__price">
+                            <p class="card-tariff__price-all h2">2000₽</p>
+                            <p class="card-tariff__price-in-month">166руб/месяц</p>
+                          </div>
+                        </div>
+                        <ul class="card-tariff__list">
+                          <li class="card-tariff__list-item">Скидка 30%</li>
+                          <li class="card-tariff__list-item">Срок хранения данных 24 мес.</li>
+                          <li class="card-tariff__list-item">Объем хранилища 12 гб. у всего класса. <br/>
+Можно менять дополнительно.</li>
+                        </ul>
+                        <button type="button" class="card-tariff__btn btn btn-primary">Выбрать</button>
+                        <p class="card-tariff__descr h6m">При оплате за месяц, выбранный тариф будет
+                          продлеваться автоматически в течение одного года. Вы можете отменить
+                          автоматические платежи в любое время до даты платежа.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="extra-space">
+                  <div class="profile__block-head">
+                    <button type="button" class="profile__back icon icon-triangle-left"></button>
+                    <p class="profile__title h3sb2">Дополнительное пространство</p>
+                  </div>
+                  <div class="extra-space__grid">
+                    <div class="card-extra-space">
+                      <p class="card-extra-space__capacity h2">12гб</p>
+                      <p class="card-extra-space__price-in-month">150руб/месяц</p>
+                      <button type="button" class="card-extra-space__btn btn btn-primary">Выбрать</button>
+                      <p class="card-extra-space__descr h6m">При оплате за месяц, выбранный тариф будет
+                        продлеваться автоматически в течение одного года. Вы можете отменить автоматические
+                        платежи в любое время до даты платежа.</p>
+                    </div>
+                    <div class="card-extra-space active">
+                      <p class="card-extra-space__capacity h2">24гб</p>
+                      <p class="card-extra-space__price-in-month">150руб/месяц</p>
+                      <button type="button" class="card-extra-space__btn btn btn-primary" disabled>Выбрано</button>
+                      <p class="card-extra-space__descr h6m">При оплате за месяц, выбранный тариф будет
+                        продлеваться автоматически в течение одного года. Вы можете отменить автоматические
+                        платежи в любое время до даты платежа.</p>
+                    </div>
+                    <div class="card-extra-space">
+                      <p class="card-extra-space__capacity h2">36гб</p>
+                      <p class="card-extra-space__price-in-month">150руб/месяц</p>
+                      <button type="button" class="card-extra-space__btn btn btn-primary">Выбрать</button>
+                      <p class="card-extra-space__descr h6m">При оплате за месяц, выбранный тариф будет
+                        продлеваться автоматически в течение одного года. Вы можете отменить автоматические
+                        платежи в любое время до даты платежа.</p>
+                    </div>
+                  </div>
+                  <button type="button" class="extra-space__btn-refuse h4sb">Отказаться от подписки</button>
+                </div>
+                <div class="payment">
+                  <div class="profile__block-head">
+                    <button type="button" class="profile__back icon icon-triangle-left"></button>
+                    <p class="profile__title h3sb2">Платежные инструменты</p>
+                  </div>
+                  <div class="payment__flex">
+                    <div class="card-payment">
+                      <div class="card-payment__head">
+                        <div class="card-payment__logo">
+                          <img src="../../images/iomoney.svg" alt="">
+                        </div>
+                        <button type="button" class="card-payment__edit icon icon-pen"></button>
+                      </div>
+                      <p class="card-payment__num h3sb">**** 1234</p>
+                      <div class="card-payment__foot">
+                        <div class="card-payment__balance h3sb">
+                          563,06
+                          <span class="h4r">₽</span>
+                        </div>
+                        <div class="card-payment__mastercard">
+                          <img src="../../images/mastercard.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="button" class="payment__add-card btn btn-secondary">Добавить карту +</button>
+                </div>
+                <div class="profile__select-section">
+                  <div class="profile__select-section-btns">
+                    <button type="button" class=" profile__btn-select-section profile__btn-user-data btn btn-primary">
+                      Тарифные планы
+                      <span class="icon icon-triangle-right"></span>
+                    </button>
+                    <button type="button"
+                      class=" profile__btn-select-section profile__btn-related-users btn btn-primary">
+                      Дополнительное пространство
+                      <span class="icon icon-triangle-right"></span>
+                    </button>
+                    <button type="button"
+                      class=" profile__btn-select-section profile__btn-connected-services btn btn-primary">
+                      Платежные инстурменты
+                      <span class="icon icon-triangle-right"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- right sidebar start -->
+        <aside class="right-sidebar">
+          <div class="right-sidebar__head">
+            <button class="burger-icon"><span class="icon icon-burger"></span></button>
+            <p class="header__title h3">Уведомления<span>.</span></p>
+            <button type="button" class="right-sidebar__btn-close">
+              <span class="icon icon-triangle-right"></span>
+            </button>
+            <div class="header__buttons">
+              <button type="button" class="header__notifications header__btn active">
+                <span class="icon icon-bell"><span class="counter"></span></span>
+              </button>
+              <button type="button" class="header__btn header__exit">
+                <span class="icon icon-exit"></span>
+              </button>
+            </div>
+            <span class="icon icon-close right-sidebar__close--mobile"></span>
+          </div>
+          <div class="right-sidebar__body">
+            <p class="right-sidebar__title h3">Уведомления</p>
+            <div class="right-sidebar__content">
+              <div class="card-notification">
+                <div class="card-notification__icon">
+                  <span class="icon icon-person"></span>
+                </div>
+                <div class="card-notification__text-block">
+                  <div class="card-notification__title-row">
+                    <p class="card-notification__category h4sb">Профиль</p>
+                    <p class="card-notification__date">14.10.2021</p>
+                  </div>
+                  <p class="card-notification__descr h4r">Ваш пробный период подходит к концу, продлите
+                    или выберите новый</p>
+                  <div class="card-notification__buttons-block">
+                    <button type="button" class="card-notification__details btn btn-primary">Детали</button>
+                    <button type="button" class="card-notification__ignore btn btn-secondary">Игнорировать</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-notification">
+                <div class="card-notification__icon">
+                  <span class="icon icon-folder"></span>
+                </div>
+                <div class="card-notification__text-block">
+                  <div class="card-notification__title-row">
+                    <p class="card-notification__category h4sb">Файл менеджер</p>
+                    <p class="card-notification__date">14.10.2021</p>
+                  </div>
+                  <p class="card-notification__descr h4r">В вашем хранилище осталось менее 15 % свободного
+                    места
+                  </p>
+                  <div class="card-notification__buttons-block">
+                    <button type="button" class="card-notification__details btn btn-primary">Детали</button>
+                    <button type="button" class="card-notification__ignore btn btn-secondary">Игнорировать</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-notification">
+                <div class="card-notification__icon">
+                  <span class="icon icon-finance"></span>
+                </div>
+                <div class="card-notification__text-block">
+                  <div class="card-notification__title-row">
+                    <p class="card-notification__category h4sb">Финансы</p>
+                    <p class="card-notification__date">14.10.2021</p>
+                  </div>
+                  <p class="card-notification__descr h4r">Со счета было снято 20 000 рублей на нужды
+                    преподавателя</p>
+                  <div class="card-notification__buttons-block">
+                    <button type="button" class="card-notification__details btn btn-primary">Детали</button>
+                    <button type="button" class="card-notification__ignore btn btn-secondary">Игнорировать</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-notification">
+                <div class="card-notification__icon">
+                  <span class="icon icon-blackboard"></span>
+                </div>
+                <div class="card-notification__text-block">
+                  <div class="card-notification__title-row">
+                    <p class="card-notification__category h4sb">Данные класа</p>
+                    <p class="card-notification__date">14.10.2021</p>
+                  </div>
+                  <p class="card-notification__descr h4r"><a href="#" class="card-notification__link">Олеся
+                      Михайленко</a> была(а) добавлена в группу ”<a href="#" class="card-notification__link">7 “Б”
+                      класс</a></p>
+                  <div class="card-notification__buttons-block">
+                    <button type="button" class="card-notification__details btn btn-primary">Детали</button>
+                    <button type="button" class="card-notification__ignore btn btn-secondary">Игнорировать</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-notification">
+                <div class="card-notification__icon">
+                  <span class="icon icon-calendar"></span>
+                </div>
+                <div class="card-notification__text-block">
+                  <div class="card-notification__title-row">
+                    <p class="card-notification__category h4sb">Календарь</p>
+                    <p class="card-notification__date">14.10.2021</p>
+                  </div>
+                  <p class="card-notification__descr h4r">У вас запланированно новое мероприятие <a href="#"
+                      class="card-notification__link">“поход к врачу”</a></p>
+                  <div class="card-notification__buttons-block">
+                    <button type="button" class="card-notification__details btn btn-primary">Детали</button>
+                    <button type="button" class="card-notification__ignore btn btn-secondary">Игнорировать</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-notification">
+                <div class="card-notification__icon">
+                  <span class="icon icon-calendar"></span>
+                </div>
+                <div class="card-notification__text-block">
+                  <div class="card-notification__title-row">
+                    <p class="card-notification__category h4sb">Календарь</p>
+                    <p class="card-notification__date">14.10.2021</p>
+                  </div>
+                  <p class="card-notification__descr h4r">У вас запланированно новое мероприятие <a href="#"
+                      class="card-notification__link">“поход к врачу”</a></p>
+                  <div class="card-notification__buttons-block">
+                    <button type="button" class="card-notification__details btn btn-primary">Детали</button>
+                    <button type="button" class="card-notification__ignore btn btn-secondary">Игнорировать</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-notification">
+                <div class="card-notification__icon">
+                  <span class="icon icon-calendar"></span>
+                </div>
+                <div class="card-notification__text-block">
+                  <div class="card-notification__title-row">
+                    <p class="card-notification__category h4sb">Календарь</p>
+                    <p class="card-notification__date">14.10.2021</p>
+                  </div>
+                  <p class="card-notification__descr h4r">У вас запланированно новое мероприятие <a href="#"
+                      class="card-notification__link">“поход к врачу”</a></p>
+                  <div class="card-notification__buttons-block">
+                    <button type="button" class="card-notification__details btn btn-primary">Детали</button>
+                    <button type="button" class="card-notification__ignore btn btn-secondary">Игнорировать</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <!-- right sidebar end -->
+
+      </div>
+      <!-- CONTENT end -->
+
+      <!-- POPUP  -->
+      <div class="popup popup-profile-link-user" style="display: block;">
+        <div class="popup__body">
+          <div class="popup__content">
+            <button type="button" class="popup-close icon icon-close"></button>
+            <h3 class="popup-profile-link-user__title h2">Выберите, кого вы хотите привязать</h3>
+            <ul class="popup-profile-link-user__type-list">
+              <li class="popup-profile-link-user__type-item">
+                <div class="popup-profile-link-user__card card-reg-radio active">
+                  <span class="card-reg-radio__icon">
+                    <span class="icon icon-child"></span>
+                  </span>
+                  <div class="card-reg-radio__text-block">
+                    <p class="card-reg-radio__title h4sb">Ребенок</p>
+                    <p class="card-reg-radio__descr">Добавьте нового ребенка</p>
+                  </div>
+                </div>
+              </li>
+              <li class="popup-profile-link-user__type-item">
+                <div class="popup-profile-link-user__card card-reg-radio active">
+                  <span class="card-reg-radio__icon">
+                    <span class="icon icon-human"></span>
+                  </span>
+                  <div class="card-reg-radio__text-block">
+                    <p class="card-reg-radio__title h4sb">Родитель</p>
+                    <p class="card-reg-radio__descr">Выберите родителя из списка</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- POPUP END  -->
+
+
+    </main>
+    <!-- MAIN end -->
+
+  </div>
+  <!-- WRAPPER end -->
+
+
+
+  <!-- SCRIPTS start  -->
+  <script src="../../js/main.min.js"></script>
+
+
+
+</body>
+
+</html>

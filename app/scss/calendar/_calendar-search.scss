@@ -1,0 +1,70 @@
+.calendar-search {
+  position: relative;
+  &.open {
+     max-width: 290px;
+     .calendar-search__head {
+        width: 100%;
+        background: none;
+        padding: 2px 25px;
+        cursor: text;
+     }
+     .calendar-search__body {
+        display: block;
+     }
+  }
+
+  &__head {
+     overflow: hidden;
+     display: flex;
+     align-items: center;
+     width: 32px;
+     height: 32px;
+     border-radius: 50px;
+     padding: 2px 9px;
+     background: $background;
+     column-gap: 10px;
+     position: relative;
+     cursor: pointer;
+     z-index: 10;
+  }
+
+  &__icon {
+     font-size: 14px;
+     color: $middleGray;
+     flex: none;
+  }
+
+  &__input {
+     padding: 0;
+     flex: auto;
+     width: 100%;
+     font-size: 14px;
+     font-weight: 500;
+     &::placeholder {
+        color: $middleGray;
+     }
+  }
+
+  &__body {
+     position: absolute;
+     top: 100%;
+     left: 0;
+     width: 100%;
+     display: none;
+     padding: 44px 20px 20px;
+     margin-top: -32px;
+     background: $background;
+     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+     border-radius: 25px;
+  }
+
+  &__body-wrap {
+     display: flex;
+     flex-direction: column;
+     align-items: stretch;
+     row-gap: 10px;
+  }
+
+  &__item {
+  }
+}

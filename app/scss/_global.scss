@@ -63,3 +63,14 @@ textarea {
 	align-items: stretch;
 	padding: 0 23px 23px 23px;
 }
+
+.--mobile {
+	@media (min-width: 768px) {
+		display: none !important;
+	}
+}
+.--desktop{
+	@media (max-width: 767.98px) {
+		display: none !important;
+	}
+}

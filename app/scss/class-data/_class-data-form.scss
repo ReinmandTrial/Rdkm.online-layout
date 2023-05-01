@@ -1,0 +1,53 @@
+.class-data-form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 767.98px) {
+     // display: none;
+  }
+  &__info {
+     flex: 1 1 auto;
+     display: flex;
+     flex-direction: column;
+  }
+
+  &__card {
+     margin-bottom: 10px;
+  }
+
+  &__info-inputs {
+     margin-bottom: 20px;
+     .input__block:not(:last-child) {
+        margin-bottom: 15px;
+        @media (max-width: 767.98px) {
+           margin-bottom: 10px;
+        }
+     }
+  }
+
+  &__btns {
+     margin-top: auto;
+     margin-bottom: 25px;
+     display: flex;
+     flex-direction: column;
+     row-gap: 15px;
+     @media (max-width: 767.98px) {
+        margin-bottom: unset;
+     }
+     & > * {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+     }
+  }
+
+  &__change-pass--mobile {
+     flex: 1 1 auto;
+     display: flex;
+     flex-direction: column;
+  }
+  &__confirm-pass {
+     margin-top: auto;
+  }
+}

@@ -1,13 +1,36 @@
 .popup-change-pass {
+   .popup__content {
+      @media (max-width: 767.98px) {
+         margin: 15px;
+         padding: 28px 15px;
+      }
+   }
    &__title {
-      margin-bottom: 30px;
       text-align: center;
+      margin-bottom: 29px;
    }
 
-   &__input-container {
-      margin-bottom: 40px;
-      .input__block:not(:last-child) {
-         margin-bottom: 20px;
+   &__inputs {
+      margin-bottom: 16px;
+   }
+
+   &__input {
+      &:not(:last-child) {
+         margin-bottom: 25px;
       }
+   }
+
+   &__forgot {
+      margin-bottom: 42px;
+      color: $blue;
+      display: block;
+      width: fit-content;
+      margin-left: auto;
+      &:hover {
+         text-decoration-line: underline;
+      }
+   }
+
+   &__btn {
    }
 }

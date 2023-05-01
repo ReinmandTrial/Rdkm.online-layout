@@ -24,12 +24,14 @@
          }
 
          &__body {
-            display: none;
+            max-height: 0px;
+            // display: none;
          }
          &.open {
             box-shadow: $shadowModal;
             .search-small__body {
-               display: block;
+               // display: block;
+               max-height: 455px;
             }
          }
          &.closed {

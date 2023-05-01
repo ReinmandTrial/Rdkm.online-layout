@@ -1,0 +1,64 @@
+.popup-calendar-info {
+  @media (max-width: 575.98px) {
+  }
+  .popup__content {
+     @media (max-width: 575.98px) {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+        padding: 28px 15px;
+     }
+  }
+  &__title {
+     text-align: center;
+     margin-bottom: 28px;
+     @media (max-width: 575.98px) {
+        margin-top: auto;
+        margin-bottom: 10px;
+     }
+  }
+
+  &__descr {
+     text-align: center;
+     color: $middleGray;
+     max-width: 377px;
+     margin: 0 auto 22px;
+     @media (max-width: 575.98px) {
+        margin-bottom: 27px;
+     }
+     span {
+        color: $blue;
+     }
+  }
+
+  &__image {
+     font-size: 40px;
+     margin: 0 auto 45px;
+     color: $blue;
+     width: max-content;
+     &--check {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        color: $white;
+        background: $blue;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+  }
+
+  &__btns {
+     @media (max-width: 575.98px) {
+        margin-top: auto;
+     }
+  }
+
+  &__btn {
+     &:not(:last-child) {
+        margin-bottom: 18px;
+     }
+  }
+}

@@ -1,0 +1,14 @@
+
+.calendar-sidebar-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  &__card {
+     &--fill {
+        flex: auto;
+     }
+     &:not(:last-child) {
+        margin-bottom: 10px;
+     }
+  }
+}

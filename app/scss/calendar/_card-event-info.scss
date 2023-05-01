@@ -1,0 +1,19 @@
+.card-event-info {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  &__icon {
+     font-size: 18px;
+  }
+
+  &__text {
+  }
+
+  &__title {
+     margin-bottom: 2px;
+     color: $middleGray;
+  }
+
+  &__descr {
+  }
+}
