@@ -1,0 +1,35 @@
+.popup-voting-end-chairman {
+  &__title {
+     margin-bottom: 28px;
+     text-align: center;
+     @media (max-width: 767.98px) {
+        margin-bottom: 16px;
+     }
+  }
+
+  &__descr {
+     color: $middleGray;
+     text-align: center;
+     max-width: 377px;
+     margin: 0 auto 22px;
+     span {
+        color: $blue;
+     }
+  }
+
+  &__icon {
+     font-size: 40px;
+     color: $blue;
+     width: fit-content;
+     margin: 0 auto 45px;
+  }
+
+  &__btns {
+  }
+
+  &__btn {
+     &:not(:last-child) {
+        margin-bottom: 18px;
+     }
+  }
+}

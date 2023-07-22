@@ -1,0 +1,50 @@
+.voting-table-options {
+  position: relative;
+  width: fit-content;
+  &__head {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 24px;
+     height: 24px;
+     background: $white;
+     border-radius: 10px;
+  }
+
+  &__title {
+  }
+
+  &__icon {
+     font-size: 16px;
+     color: $middleGray;
+  }
+
+  &__body {
+     display: none;
+     position: absolute;
+     top: calc(100% + 4px);
+     right: 0;
+     background: $white;
+     box-shadow: $shadowModal;
+     border-radius: 10px;
+     padding: 10px 0;
+     z-index: 30;
+     color: $middleGray;
+  }
+
+  &__item {
+     color: $middleGray;
+     text-align: left;
+     width: max-content;
+     padding: 6px 20px;
+     cursor: pointer;
+     min-width: 100%;
+     &:hover {
+        background: $background;
+     }
+  }
+
+  &.open &__body {
+     display: block;
+  }
+}

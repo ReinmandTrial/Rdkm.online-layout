@@ -1,6 +1,6 @@
 @import "reset";
 @import "fonts";
-@import "../fonts/icon/style.scss";
+@import "../fonts/icon/style";
 @import "config";
 @import "global";
 @import "input";
@@ -124,6 +124,17 @@
 @import "calendar/card-event-info";
 @import "calendar/popup-calendar-info"; 
 // calendar-pages
+
+// votes-pages
+@import "votes/popup-voting-end-chairman"; 
+@import "votes/create-voting-steps"; 
+@import "votes/create-voting"; 
+@import "votes/voting-table-sidebar-card"; 
+@import "votes/voting-table-options"; 
+@import "votes/voting-table-sidebar"; 
+@import "votes/voting-table-sorting"; 
+@import "votes/voting-table";  
+// votes-pages
 
 
 

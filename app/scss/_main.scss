@@ -687,3 +687,57 @@
    }
 }
 // Страницы данные класса конец
+
+// Страницы голосования
+.page-voting {
+   .content {
+      height: 100vh;
+      overflow: hidden;
+   }
+   .container {
+      overflow: hidden;
+   }
+   .body {
+      overflow: hidden;
+      @media (max-width: 767.98px) {
+         padding: unset;
+      }
+   }
+}
+.voting {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   &__scroll {
+      height: 100%;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__content {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      @media (max-width: 767.98px) {
+         background: $white;
+         padding: 10px 20px 45px;
+      }
+   }
+
+   &__btn-create {
+      margin-bottom: 35px;
+      width: fit-content;
+      min-width: 190px;
+      @media (max-width: 767.98px) {
+         display: none;
+      }
+   }
+
+   &__table {
+      flex: auto;
+   }
+}
+// Страницы голосования конец

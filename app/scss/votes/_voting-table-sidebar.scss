@@ -1,0 +1,131 @@
+.voting-table-sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  border-radius: 25px;
+  background: $white;
+  box-shadow:
+     -5px 0px 30px 0px rgba(0, 0, 0, 0.1),
+     0px 0px 30px 0px #d5daea;
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  @media (max-width: 767.98px) {
+     position: fixed;
+     left: 0;
+     max-width: unset;
+     border-radius: unset;
+     box-shadow: none;
+  }
+  &__head {
+     padding: 10px 10px 5px;
+     flex: none;
+     display: flex;
+     align-items: center;
+  }
+
+  &__back {
+     flex: none;
+     width: 32px;
+     height: 32px;
+     border-radius: 50%;
+     font-size: 14px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: $middleGray;
+     background: $background;
+     @media (max-width: 767.98px) {
+        width: 42px;
+        height: 42px;
+        background: unset;
+        transform: rotate(180deg);
+        font-size: 20px;
+     }
+  }
+
+  &__head-title {
+     flex: auto;
+     text-align: center;
+     @media (min-width: 768px) {
+        display: none;
+     }
+  }
+
+  &__content {
+     flex: auto;
+     overflow-y: auto;
+     padding: 10px;
+  }
+
+  &__wrap {
+     display: flex;
+     flex-direction: column;
+  }
+
+  &__status {
+     padding: 10px;
+     text-align: center;
+     margin-bottom: 15px;
+     &.active {
+        color: $green;
+     }
+  }
+
+  &__dates {
+     margin-bottom: 15px;
+     border-radius: 10px;
+     background: $background;
+     padding: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+  }
+
+  &__dates-item {
+     display: flex;
+     column-gap: 10px;
+     align-items: center;
+     padding: 10px;
+     border-radius: 10px;
+     background: $white;
+     color: #3a414d;
+     width: fit-content;
+     .icon {
+        font-size: 16px;
+     }
+  }
+
+  &__dates-divide {
+     width: 15px;
+     height: 1px;
+     display: block;
+     background: $black;
+  }
+
+  &__title {
+     margin-bottom: 15px;
+     text-align: center;
+     @media (max-width: 767.98px) {
+        order: -1;
+     }
+  }
+
+  &__list {
+     margin-bottom: 15px;
+  }
+
+  &__list-item {
+     &:not(:last-child) {
+        margin-bottom: 15px;
+     }
+  }
+
+  &__amount {
+     margin-bottom: 15px;
+  }
+}
