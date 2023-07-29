@@ -136,6 +136,19 @@
 @import "votes/voting-table";  
 // votes-pages
 
+// finance-pages
+@import "finance/finance-head";  
+@import "finance/finance-body";  
+@import "finance/popup-finance-item";
+@import "finance/finance-table-sorting";  
+@import "finance/finance-table";
+@import "finance/select-budget-operation-card";
+@import "finance/popup-finance-consumption";
+@import "finance/popup-finance-top-up";
+@import "finance/popup-select-budget-operation";
+// finance-pages
+
+
 
 
 @import "popup-info";

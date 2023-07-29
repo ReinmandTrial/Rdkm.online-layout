@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Шаблон</title>
+  <link rel="stylesheet" href="../../css/style.min.css">
+</head>
+
+<body>
+
+  <!-- WRAPPER start -->
+  <div class="wrapper">
+
+    <!-- MAIN start  -->
+    <main class="main pages page-finance">
+
+      <!-- left sidebar start -->
+
+      <!-- Класс closed добавлен изначально. При разрешшении меньше 1200px к нему добавляются стили.
+         для открытия сайдбара в дальнейшем необходимо убрать класс closed. При разрешении меньше 768px класс
+          closed удаляется и начинает работать класс mobile-open. При добавлении открывается, при удалении закрывается  -->
+
+      <aside class="left-sidebar closed">
+        <div class="left-sidebar__body">
+          <button type="button" class="left-sidebar__btn-open">
+            <span class="icon icon-triangle-right"></span>
+          </button>
+          <button type="button" class="left-sidebar__btn-close--mobile">
+            <span class="icon icon-close"></span>
+          </button>
+          <a href="#" class="left-sidebar__logo logo h3eb">Родительский
+            комитет<span class="logo--blue">.</span></a>
+          <div class="left-sidebar__content">
+            <div class="profile-small">
+              <div class="profile-small__head">
+                <a href="#" class="profile-small__img">
+                  <img src="../../images/profile-school.png" alt="">
+                </a>
+                <div class="profile-small__text-block">
+                  <p class="profile-small__name h7">МБОУ СОШ № 316</p>
+                  <p class="profile-small__num h4sb">5 «Б» </p>
+                  <p class="profile-small__type">Класс</p>
+                </div>
+                <button type="button" class="profile-small__change-class">
+                  <span class="icon icon-swap">
+                    <span class="profile-small__counter"></span>
+                  </span>
+                  <span class="icon icon-triangle-up"></span>
+                </button>
+              </div>
+              <div class="profile-small__body">
+                <div class="profile-small__classes-block">
+                  <div class="profile-small__item">
+                    <div class="profile-small__item-text-block">
+                      <p class="profile-small__item-class-name h4sb">9 “A” класс</p>
+                      <p class="profile-small__item-school h7">МБОУ СОШ № 316</p>
+                    </div>
+                    <span class="profile-small__item-icon icon icon-swap">
+                      <span class="profile-small__counter profile-small__counter--white"></span></span>
+                  </div>
+                  <div class="profile-small__item">
+                    <div class="profile-small__item-text-block">
+                      <p class="profile-small__item-class-name h4sb">8 “В” класс</p>
+                      <p class="profile-small__item-school h7">МБОУ СОШ № 316</p>
+                    </div>
+                    <span class="profile-small__item-icon icon icon-swap">
+                      <span class="profile-small__counter profile-small__counter--white"></span></span>
+                  </div>
+                </div>
+                <button type="button" class="profile-small__btn-add-class btn btn-secondary">Добавить класс
+                  +</button>
+              </div>
+            </div>
+            <div class="left-sidebar__menu">
+              <div class="menu-item active">
+                <span class="menu-item__icon icon icon-main-page"></span>
+                <p class="menu-item__title">Главная</p>
+              </div>
+              <div class="menu-item">
+                <span class="menu-item__icon icon icon-chat"></span>
+                <p class="menu-item__title">Чат</p>
+              </div>
+              <div class="menu-item">
+                <span class="menu-item__icon icon icon-finance"></span>
+                <p class="menu-item__title">Финансы</p>
+              </div>
+              <div class="menu-item">
+                <span class="menu-item__icon icon icon-calendar"></span>
+                <p class="menu-item__title">Календарь</p>
+              </div>
+              <div class="menu-item">
+                <span class="menu-item__icon icon icon-folder"></span>
+                <p class="menu-item__title">Файл менеджер</p>
+              </div>
+              <div class="menu-item">
+                <span class="menu-item__icon icon icon-voting"></span>
+                <p class="menu-item__title">Голосование</p>
+              </div>
+              <div class="menu-item">
+                <span class="menu-item__icon icon icon-blackboard"></span>
+                <p class="menu-item__title">Данные класса</p>
+              </div>
+              <div class="menu-item">
+                <span class="menu-item__icon icon icon-person"></span>
+                <p class="menu-item__title">Профиль</p>
+              </div>
+            </div>
+          </div>
+          <div class="left-sidebar__footer">
+            <div class="left-sidebar__footer-item ">
+              <span class="icon icon-exclamation"></span>
+              <p class="left-sidebar__footer-item-title">Версия 2.2</p>
+            </div>
+            <div class="left-sidebar__footer-item">
+              <span class="icon icon-comments"></span>
+              <p class="left-sidebar__footer-item-title">Обратная связь</p>
+            </div>
+            <div class="left-sidebar__footer-item left-sidebar__footer-item--exit">
+              <span class="icon icon-exit"></span>
+              <p class="left-sidebar__footer-item-title">Выйти</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- left sidebar end -->
+
+      <!-- CONTENT start  -->
+      <div class="content">
+        <div class="container">
+
+          <header class="header">
+            <button class="burger-icon"><span class="icon icon-burger"></span></button>
+            <p class="header__title h1">Финансы<span>.</span></p>
+            <div class="header__buttons">
+              <button type="button" class="header__notifications header__btn">
+                <span class="icon icon-bell"><span class="counter"></span></span>
+
+              </button>
+              <button type="button" class="header__btn header__exit">
+                <span class="icon icon-exit"></span>
+              </button>
+            </div>
+          </header>
+
+          <div class="body">
+            <div class="finance">
+              <div class="finance__scroll">
+                <div class="finance__content">
+                  <div class="finance__head finance-head">
+                    <ul class="finance-head__list">
+                      <li class="finance-head__list-item">
+                        <h4 class="finance-head__list-title h4r2">Бюджет класса</h4>
+                        <p class="finance-head__list-descr h3m">0,00 ₽</p>
+                      </li>
+                      <li class="finance-head__list-item">
+                        <h4 class="finance-head__list-title h4r2">Сумма внутри бюджета</h4>
+                        <p class="finance-head__list-descr h3m">0,00 ₽</p>
+                      </li>
+                      <li class="finance-head__list-item">
+                        <h4 class="finance-head__list-title h4r2">Расход класса</h4>
+                        <p class="finance-head__list-descr h3m">0,00 ₽</p>
+                      </li>
+                      <li class="finance-head__list-item finance-head__new" style="display: none;">
+                        <span class="finance-head__new-icon icon icon-plus"></span>
+                        <h3 class="finance-head__new-title h4sb2">Пополнить баланс</h3>
+                      </li>
+                      <li class="finance-head__list-item finance-head__new">
+                        <span class="finance-head__new-icon icon icon-triangle-right"></span>
+                        <h3 class="finance-head__new-title h4sb2">Управление бюджетом</h3>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="finance__body finance-body">
+                    <h2 class="finance-body__title h3m">Список расходов</h2>
+                    <div class="finance-body__table finance-table">
+                      <div class="finance-table__toggle">toggle</div>
+                      <div class="finance-table__head">
+                        <div class="finance-table__item">
+                          <div class="finance-table__item-def finance-table__head-item">
+                            Название / ID
+                          </div>
+                        </div>
+                        <div class="finance-table__item">
+                          <div class="finance-table__sorting finance-table-sorting">
+                            <button type="button" class="finance-table-sorting__head">
+                              <span class="finance-table-sorting__title">Дата</span>
+                              <span class="finance-table-sorting__icon icon icon-triangle-down"></span>
+                            </button>
+                            <div class="finance-table-sorting__body">
+                              <button type="button" class="finance-table-sorting__item">input</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="finance-table__item">
+                          <div class="finance-table__sorting finance-table-sorting">
+                            <button type="button" class="finance-table-sorting__head">
+                              <span class="finance-table-sorting__title">Сценарий</span>
+                              <span class="finance-table-sorting__icon icon icon-triangle-down"></span>
+                            </button>
+                            <div class="finance-table-sorting__body">
+                              <button type="button" class="finance-table-sorting__item">Пополнение</button>
+                              <button type="button" class="finance-table-sorting__item">Голосование</button>
+                              <button type="button" class="finance-table-sorting__item">Мероприятие</button>
+                              <button type="button" class="finance-table-sorting__item">Файл-менеджер</button>
+                              <button type="button" class="finance-table-sorting__item">Прочее</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="finance-table__item">
+                          <div class="finance-table__item-def finance-table__head-item">
+                            Участники операции
+                          </div>
+                        </div>
+                        <div class="finance-table__item">
+                          <div class="finance-table__item-def finance-table__head-item">
+                            Сумма : общ / чел
+                          </div>
+                        </div>
+                        <div class="finance-table__item">
+                          <div class="finance-table__sorting finance-table-sorting">
+                            <button type="button" class="finance-table-sorting__head">
+                              <span class="finance-table-sorting__title">Тип операции</span>
+                              <span class="finance-table-sorting__icon icon icon-triangle-down"></span>
+                            </button>
+                            <div class="finance-table-sorting__body">
+                              <button type="button" class="finance-table-sorting__item">Расход</button>
+                              <button type="button" class="finance-table-sorting__item">Пополнение</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="finance-table__row">
+                        <div class="finance-table__item">
+                          <div class="finance-table__item-def finance-table__item-id">
+                            Название / ID
+                          </div>
+                        </div>
+                        <div class="finance-table__item">
+                          <div class="finance-table__item-def finance-table__item-date">
+                            <span class="icon icon-calendar"></span>
+                            21.02.2021
+                          </div>
+                        </div>
+                        <div class="finance-table__item">
+                          <div class="finance-table__item-def finance-table__item-script">
+                            Прочее
+                          </div>
+                        </div>
+                        <div class="finance-table__item">
+                          <button class="finance-table__item-def finance-table__item-members">
+                            15 участников
+                          </button>
+                        </div>
+                        <div class="finance-table__item">
+                          <div class="finance-table__item-def finance-table__item-sum">
+                            32000₽/ 2000₽
+                          </div>
+                        </div>
+                        <div class="finance-table__item">
+                          <div class="finance-table__item-def finance-table__item-type red">
+                            Расход
+                          </div>
+                        </div>
+                      </div>
+                      <div class="finance-table__row">
+                        <div class="finance-table__item">
+                          <div class="finance-table__item-def finance-table__item-id">
+                            Название / ID
+                          </div>
+                        </div>
+                        <div class="finance-table__item">
+                          <div class="finance-table__item-def finance-table__item-date">
+                            <span class="icon icon-calendar"></span>
+                            21.02.2021
+                          </div>
+                        </div>
+                        <div class="finance-table__item">
+                          <div class="finance-table__item-def finance-table__item-script">
+                            Прочее
+                          </div>
+                        </div>
+                        <div class="finance-table__item">
+                          <button class="finance-table__item-def finance-table__item-members">
+                            15 участников
+                          </button>
+                        </div>
+                        <div class="finance-table__item">
+                          <div class="finance-table__item-def finance-table__item-sum">
+                            32000₽/ 2000₽
+                          </div>
+                        </div>
+                        <div class="finance-table__item">
+                          <div class="finance-table__item-def finance-table__item-type">
+                            Пополнение
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- right sidebar start -->
+      <aside class="right-sidebar">
+        <div class="right-sidebar__head">
+          <button class="burger-icon"><span class="icon icon-burger"></span></button>
+          <p class="header__title h3">Уведомления<span>.</span></p>
+          <button type="button" class="right-sidebar__btn-close">
+            <span class="icon icon-triangle-right"></span>
+          </button>
+          <div class="header__buttons">
+            <button type="button" class="header__notifications header__btn active">
+              <span class="icon icon-bell"><span class="counter"></span></span>
+            </button>
+            <button type="button" class="header__btn header__exit">
+              <span class="icon icon-exit"></span>
+            </button>
+          </div>
+          <span class="icon icon-close right-sidebar__close--mobile"></span>
+        </div>
+        <div class="right-sidebar__body">
+          <p class="right-sidebar__title h3">Уведомления</p>
+          <div class="right-sidebar__content">
+            <div class="card-notification">
+              <div class="card-notification__icon">
+                <span class="icon icon-person"></span>
+              </div>
+              <div class="card-notification__text-block">
+                <div class="card-notification__title-row">
+                  <p class="card-notification__category h4sb">Профиль</p>
+                  <p class="card-notification__date">14.10.2021</p>
+                </div>
+                <p class="card-notification__descr h4r">Ваш пробный период подходит к концу, продлите
+                  или выберите новый</p>
+                <div class="card-notification__buttons-block">
+                  <button type="button" class="card-notification__details btn btn-primary">Детали</button>
+                  <button type="button" class="card-notification__ignore btn btn-secondary">Игнорировать</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-notification">
+              <div class="card-notification__icon">
+                <span class="icon icon-folder"></span>
+              </div>
+              <div class="card-notification__text-block">
+                <div class="card-notification__title-row">
+                  <p class="card-notification__category h4sb">Файл менеджер</p>
+                  <p class="card-notification__date">14.10.2021</p>
+                </div>
+                <p class="card-notification__descr h4r">В вашем хранилище осталось менее 15 % свободного
+                  места
+                </p>
+                <div class="card-notification__buttons-block">
+                  <button type="button" class="card-notification__details btn btn-primary">Детали</button>
+                  <button type="button" class="card-notification__ignore btn btn-secondary">Игнорировать</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-notification">
+              <div class="card-notification__icon">
+                <span class="icon icon-finance"></span>
+              </div>
+              <div class="card-notification__text-block">
+                <div class="card-notification__title-row">
+                  <p class="card-notification__category h4sb">Финансы</p>
+                  <p class="card-notification__date">14.10.2021</p>
+                </div>
+                <p class="card-notification__descr h4r">Со счета было снято 20 000 рублей на нужды
+                  преподавателя</p>
+                <div class="card-notification__buttons-block">
+                  <button type="button" class="card-notification__details btn btn-primary">Детали</button>
+                  <button type="button" class="card-notification__ignore btn btn-secondary">Игнорировать</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-notification">
+              <div class="card-notification__icon">
+                <span class="icon icon-blackboard"></span>
+              </div>
+              <div class="card-notification__text-block">
+                <div class="card-notification__title-row">
+                  <p class="card-notification__category h4sb">Данные класа</p>
+                  <p class="card-notification__date">14.10.2021</p>
+                </div>
+                <p class="card-notification__descr h4r"><a href="#" class="card-notification__link">Олеся
+                    Михайленко</a> была(а) добавлена в группу ”<a href="#" class="card-notification__link">7 “Б”
+                    класс</a></p>
+                <div class="card-notification__buttons-block">
+                  <button type="button" class="card-notification__details btn btn-primary">Детали</button>
+                  <button type="button" class="card-notification__ignore btn btn-secondary">Игнорировать</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-notification">
+              <div class="card-notification__icon">
+                <span class="icon icon-calendar"></span>
+              </div>
+              <div class="card-notification__text-block">
+                <div class="card-notification__title-row">
+                  <p class="card-notification__category h4sb">Календарь</p>
+                  <p class="card-notification__date">14.10.2021</p>
+                </div>
+                <p class="card-notification__descr h4r">У вас запланированно новое мероприятие <a href="#"
+                    class="card-notification__link">“поход к врачу”</a></p>
+                <div class="card-notification__buttons-block">
+                  <button type="button" class="card-notification__details btn btn-primary">Детали</button>
+                  <button type="button" class="card-notification__ignore btn btn-secondary">Игнорировать</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-notification">
+              <div class="card-notification__icon">
+                <span class="icon icon-calendar"></span>
+              </div>
+              <div class="card-notification__text-block">
+                <div class="card-notification__title-row">
+                  <p class="card-notification__category h4sb">Календарь</p>
+                  <p class="card-notification__date">14.10.2021</p>
+                </div>
+                <p class="card-notification__descr h4r">У вас запланированно новое мероприятие <a href="#"
+                    class="card-notification__link">“поход к врачу”</a></p>
+                <div class="card-notification__buttons-block">
+                  <button type="button" class="card-notification__details btn btn-primary">Детали</button>
+                  <button type="button" class="card-notification__ignore btn btn-secondary">Игнорировать</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-notification">
+              <div class="card-notification__icon">
+                <span class="icon icon-calendar"></span>
+              </div>
+              <div class="card-notification__text-block">
+                <div class="card-notification__title-row">
+                  <p class="card-notification__category h4sb">Календарь</p>
+                  <p class="card-notification__date">14.10.2021</p>
+                </div>
+                <p class="card-notification__descr h4r">У вас запланированно новое мероприятие <a href="#"
+                    class="card-notification__link">“поход к врачу”</a></p>
+                <div class="card-notification__buttons-block">
+                  <button type="button" class="card-notification__details btn btn-primary">Детали</button>
+                  <button type="button" class="card-notification__ignore btn btn-secondary">Игнорировать</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- right sidebar end -->
+
+
+      <div class="popup popup-finance-consumption" style="display: block;">
+        <div class="popup__body">
+          <div class="popup__content">
+            <h2 class="popup-finance-consumption__title h2">Добавить расход</h2>
+            <div class="popup-finance-consumption__inputs">
+              <div class="popup-finance-consumption__input-block">
+                <div class="popup-finance-consumption__input-box"> input</div>
+              </div>
+              <div class="popup-finance-consumption__input-block">
+                <div class="popup-finance-consumption__input-box"> input</div>
+              </div>
+              <div class="popup-finance-consumption__input-block">
+                <div class="popup-finance-consumption__input-box">
+                  <div class="popup-finance-consumption__input"></div>
+                  <span class="popup-finance-consumption__sign h4r">$</span>
+                </div>
+              </div>
+              <div class="popup-finance-consumption__input-block">
+                <div class="popup-finance-consumption__input-box"> input</div>
+              </div>
+            </div>
+            <button class="popup-finance-consumption__btn btn btn-primary">Далее</button>
+          </div>
+        </div>
+      </div>
+
+  </div>
+  <!-- CONTENT end -->
+
+
+
+  </main>
+  <!-- MAIN end -->
+
+  </div>
+  <!-- WRAPPER end -->
+
+
+
+  <!-- SCRIPTS start  -->
+  <script src="../../js/main.min.js"></script>
+
+
+
+</body>
+
+</html>

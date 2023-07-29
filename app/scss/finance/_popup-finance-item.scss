@@ -1,0 +1,45 @@
+.popup-finance-item {
+  .popup__content {
+     margin: 15px;
+     align-self: stretch;
+  }
+  &__title {
+     margin-bottom: 24px;
+  }
+
+  &__content {
+  }
+
+  &__row {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     column-gap: 20px;
+     &:not(:last-child) {
+        margin-bottom: 24px;
+     }
+  }
+
+  &__col {
+     &:last-child {
+        text-align: right;
+     }
+  }
+
+  &__term {
+     margin-bottom: 8px;
+     color: $middleGray;
+  }
+
+  &__descr {
+     &.red {
+        color: $red;
+     }
+     &.blue {
+        color: $blue;
+     }
+     &.tdlu {
+        text-decoration-line: underline;
+     }
+  }
+}

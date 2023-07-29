@@ -1,0 +1,81 @@
+.popup-finance-consumption {
+  &--success {
+     .popup-finance-consumption__title {
+        margin-bottom: 8px;
+        @media (max-width: 767.98px) {
+           margin-bottom: 16px;
+        }
+     }
+  }
+
+  .popup__content {
+     padding: 60px 40px 72px;
+     @media (max-width: 767.98px) {
+        margin: 15px;
+        align-self: stretch;
+        padding: 64px 15px 20px;
+        display: flex;
+        flex-direction: column;
+     }
+  }
+
+  &__main {
+     @media (max-width: 767.98px) {
+        margin: auto 0;
+     }
+  }
+
+  &__icon {
+     width: fit-content;
+     font-size: 32px;
+     color: $blue;
+     margin: 0 auto 16px;
+     @media (max-width: 767.98px) {
+        margin-bottom: 24px;
+        font-size: 42px;
+     }
+  }
+
+  &__descr {
+     text-align: center;
+     color: $middleGray;
+     margin-bottom: 30px;
+     @media (max-width: 767.98px) {
+        margin-bottom: 24px;
+     }
+  }
+
+  &__title {
+     margin-bottom: 24px;
+     text-align: center;
+  }
+
+  &__inputs {
+     margin-bottom: 24px;
+     @media (max-width: 767.98px) {
+        margin-bottom: auto;
+     }
+  }
+
+  &__input-block {
+     &:not(:last-child) {
+        margin-bottom: 16px;
+     }
+  }
+
+  &__input-box {
+     display: flex;
+     align-items: flex-end;
+  }
+
+  &__input {
+     flex: auto;
+  }
+
+  &__sign {
+     color: $middleGray;
+  }
+
+  &__btn {
+  }
+}

@@ -1,0 +1,68 @@
+.finance-head {
+  border-radius: 25px;
+  background: $white;
+  @media (max-width: 767.98px) {
+     background: $background;
+  }
+
+  &__list {
+     display: flex;
+     // flex-wrap: wrap;
+     gap: 12px;
+     @media (max-width: 767.98px) {
+        // justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+     }
+  }
+
+  &__list-item {
+     padding: 20px;
+     @media (max-width: 767.98px) {
+        padding: 8px;
+        text-align: center;
+     }
+  }
+
+  &__list-title {
+     color: $middleGray;
+     margin-bottom: 12px;
+     @media (max-width: 767.98px) {
+        margin-bottom: 8px;
+     }
+  }
+
+  &__list-descr {
+     color: $blue;
+     @media (max-width: 767.98px) {
+        font-size: 16px;
+     }
+  }
+
+  &__new {
+     @media (min-width: 768px) {
+        padding-top: 17px;
+     }
+  }
+
+  &__new-icon {
+     font-size: 14px;
+     width: 32px;
+     height: 32px;
+     border-radius: 50%;
+     background: $blue;
+     color: $white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0 auto 8px;
+  }
+
+  &__new-title {
+     color: $middleGray;
+     @media (max-width: 767.98px) {
+        font-weight: 500;
+     }
+  }
+}

@@ -1,0 +1,38 @@
+.popup-select-budget-operation {
+  .popup__content {
+    max-width: 450px;
+    padding: 60px 40px 72px;
+    @media (max-width: 767.98px) {
+      margin: 15px;
+      align-self: stretch;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  &__title {
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    column-gap: 16px;
+    row-gap: 16px;
+    justify-content: center;
+
+    @media (max-width: 575.98px) {
+      flex-direction: column;
+      width: fit-content;
+      align-items: stretch;
+      margin: 0 auto;
+    }
+  }
+
+  &__list-item {
+  }
+
+  &__card {
+  }
+}

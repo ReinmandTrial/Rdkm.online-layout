@@ -741,3 +741,54 @@
    }
 }
 // Страницы голосования конец
+
+// Страницы финансы
+.page-finance {
+   .content {
+      height: 100vh;
+      overflow: hidden;
+   }
+   .container {
+      overflow: hidden;
+   }
+   .body {
+      overflow: hidden;
+      @media (max-width: 767.98px) {
+         padding: unset;
+      }
+   }
+}
+.finance {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   &__scroll {
+      height: 100%;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__content {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      @media (max-width: 767.98px) {
+         background: $white;
+         padding: 10px 20px 45px;
+      }
+   }
+
+   &__head {
+      margin-bottom: 22px;
+   }
+
+   &__body {
+      flex: auto;
+      display: flex;
+      flex-direction: column;
+   }
+} 
+// Страницы финансы конец
